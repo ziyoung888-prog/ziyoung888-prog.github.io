@@ -5,88 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="吴子洋个人求职网站，展示电气工程、能源系统、光伏储能、风电建模和工程实践经历。"
+      content="吴子洋个人求职网站，展示电气工程、新能源系统、光伏储能、风电建模和工程实践经历。"
     />
-    <title>吴子洋 | Career Portfolio</title>
+    <title>吴子洋 | 电气工程与新能源系统</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="page-grid" aria-hidden="true"></div>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="返回首页">
         <span class="brand-mark">WZY</span>
-        <span class="brand-text">吴子洋 · Career Portfolio</span>
+        <span>
+          <strong>吴子洋</strong>
+          <small>Electrical Engineering Portfolio</small>
+        </span>
       </a>
+
       <nav class="nav" aria-label="主导航">
-        <a href="#about">关于</a>
-        <a href="#experience">经历</a>
-        <a href="#projects">项目</a>
-        <a href="#skills">技能</a>
-        <a href="#contact">联系</a>
+        <a href="#profile">Profile</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
-        <div class="hero-content">
-          <p class="eyebrow">Energy · Engineering · Data</p>
-          <h1>吴子洋</h1>
-          <p class="hero-subtitle">
-            电气工程硕士在读，聚焦电力系统、光伏储能、风电建模、电力电子与工程仿真，面向能源系统、自动化控制和技术支持相关岗位。
+        <div class="hero-copy">
+          <p class="eyebrow">POWER SYSTEMS / PV-BESS / WIND MODELLING</p>
+          <h1>面向新能源系统的电气工程应届生</h1>
+          <p class="hero-lead">
+            爱丁堡大学电气工程硕士在读，具备电力系统分析、电力电子、光伏储能系统设计、风电场建模与工程仿真经验。目标岗位方向为新能源工程、自动化控制、测试工程与技术支持。
           </p>
-          <div class="hero-actions" aria-label="主要操作">
-            <a class="button primary" href="#contact">联系我</a>
-            <a class="button secondary" href="./assets/wu-ziyang-resume.pdf">下载简历</a>
+
+          <div class="hero-actions">
+            <a class="button primary" href="./assets/wu-ziyang-resume.pdf">下载简历</a>
+            <a class="button secondary" href="#projects">查看项目</a>
+          </div>
+
+          <div class="signal-strip" aria-label="核心能力指标">
+            <span><strong>939 kWp</strong> PV design</span>
+            <span><strong>1164.8 kWh</strong> BESS sizing</span>
+            <span><strong>12 MW</strong> wind turbine model</span>
           </div>
         </div>
 
-        <aside class="profile-panel" aria-label="个人概览">
-          <img
-            src="./assets/profile-photo.png"
-            alt="吴子洋头像"
-            class="profile-image"
-          />
-          <div class="profile-meta">
-            <span>求职方向</span>
-            <strong>应届工程岗位</strong>
+        <aside class="hero-console" aria-label="候选人概览">
+          <div class="console-topline">
+            <span class="status-dot"></span>
+            <span>Candidate profile online</span>
           </div>
-          <div class="profile-meta">
-            <span>重点行业</span>
-            <strong>PV · BESS · Wind</strong>
+          <div class="portrait-frame">
+            <img src="./assets/profile-photo.png" alt="吴子洋头像" />
           </div>
-          <div class="profile-meta">
-            <span>当前地点</span>
-            <strong>抚州 / 英国经历</strong>
+          <div class="console-data">
+            <div>
+              <span>Name</span>
+              <strong>吴子洋</strong>
+            </div>
+            <div>
+              <span>Location</span>
+              <strong>抚州 / UK study experience</strong>
+            </div>
+            <div>
+              <span>Email</span>
+              <strong>zackwu2024@163.com</strong>
+            </div>
+            <div>
+              <span>Focus</span>
+              <strong>PV · BESS · Wind · Testing</strong>
+            </div>
           </div>
         </aside>
       </section>
 
-      <section id="about" class="section about-grid">
+      <section id="profile" class="section split-section">
         <div>
-          <p class="section-kicker">About</p>
-          <h2>以电气工程为基础，面向新能源系统与工程应用持续深入。</h2>
+          <p class="section-kicker">Profile</p>
+          <h2>用工程问题定义能力，而不是只罗列课程。</h2>
         </div>
-        <div class="section-copy">
+        <div class="body-copy">
           <p>
-            我具备电气工程与能源系统专业基础，系统学习过电力系统分析、电力电子、可再生能源集成、电网运行与调度、先进控制方法和数据驱动建模等课程。
+            我具备扎实的电气工程与能源系统基础，系统学习过电力系统分析、可再生能源集成、电网运行与调度、电力电子技术、先进控制方法和数据驱动建模。
           </p>
           <p>
-            在课程项目和科研训练中，我参与过电动汽车 V2G 能量管理、光伏与储能系统设计、风电场全生命周期建模等任务，能够使用 MATLAB/Simulink、PVsyst、ASHES、Multisim 等工具完成建模、仿真验证与数据分析。
+            在课程项目与实践中，我将理论模型落到工程工具中：用 PVsyst 完成光伏系统建模与损失分析，用 ASHES 进行风机系统建模与载荷分析，用 MATLAB/Simulink、Multisim 和 Vivado 完成控制、仿真与数字电路验证。
           </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="section-kicker">Selected Projects</p>
+          <h2>项目经历</h2>
+        </div>
+
+        <div class="project-stack">
+          <article class="project-feature">
+            <img src="./assets/project-energy.svg" alt="光伏储能系统示意图" />
+            <div class="project-content">
+              <span class="tag">PV + BESS / System Design</span>
+              <h3>珀斯港口光伏及储能系统设计</h3>
+              <p>
+                在 4 人团队中负责 939 kWp 光伏系统和 1164.8 kWh 储能系统设计与经济分析，目标是解决高电价地区峰值负荷问题。
+              </p>
+              <ul class="metric-list">
+                <li>使用 PVsyst 完成 3D 建模和损失分析，系统近端遮挡损失控制在 -0.8%。</li>
+                <li>完成 1.20 DC/AC 比优化，项目内部收益率 IRR 达 30.83%。</li>
+                <li>配置 1708 块双面组件与 26 台逆变器，论证 BESS 对峰值削减和电网支撑的作用。</li>
+              </ul>
+            </div>
+          </article>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <img src="./assets/project-bess.svg" alt="风电建模示意图" />
+              <span class="tag">Wind Farm / Modelling</span>
+              <h3>风电场全生命周期设计与 12 MW 级风电机组建模</h3>
+              <p>
+                独立完成 Blyth 近海风电场 7 台 12 MW 风机扩展方案，通过 MCP 分析和 Gaussian Wake Model 优化布局，将尾流损失控制在约 9%。
+              </p>
+            </article>
+
+            <article class="project-card">
+              <img src="./assets/project-career.svg" alt="EDA 实践示意图" />
+              <span class="tag">FPGA / Verilog HDL</span>
+              <h3>EDA 综合实践：交通信号灯控制器设计</h3>
+              <p>
+                使用 Vivado 与 Verilog HDL 完成基于 FPGA 的交通信号灯控制系统，负责数码管显示、LED 控制、状态机切换与系统仿真验证。
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section id="experience" class="section">
         <div class="section-heading">
-          <p class="section-kicker">Experience</p>
-          <h2>经历时间线</h2>
+          <p class="section-kicker">Education & Experience</p>
+          <h2>教育与工程实践</h2>
         </div>
+
         <div class="timeline">
           <article class="timeline-item">
             <time>2024.09 - 2026.07</time>
             <div>
               <h3>爱丁堡大学 · 电气工程硕士</h3>
               <p>
-                系统学习电力系统分析、可再生能源集成、电网运行与调度、电力电子技术、先进控制方法、数据驱动建模等课程，并在项目中使用 MATLAB/Simulink、PVsyst、ASHES 等工具进行系统建模、仿真验证与数据分析。
+                学习电力系统分析、可再生能源集成、电网运行与调度、电力电子、先进控制方法、数据驱动建模等课程，并在项目中使用 MATLAB/Simulink、PVsyst、ASHES 完成建模、仿真与数据分析。
               </p>
             </div>
           </article>
@@ -95,7 +162,7 @@
             <div>
               <h3>大连交通大学 · 电气工程及其自动化本科</h3>
               <p>
-                学习电路原理、电机与电力拖动、自动控制原理、信号与系统、嵌入式系统、电力电子技术和电力系统分析等课程，通过课程设计与实验积累电路建模、系统仿真和控制策略验证经验。
+                学习电路原理、电机与电力拖动、自动控制原理、信号与系统、嵌入式系统、电力电子技术和电力系统分析，通过课程设计与实验积累电路建模、系统仿真和控制策略验证经验。
               </p>
             </div>
           </article>
@@ -120,76 +187,48 @@
         </div>
       </section>
 
-      <section id="projects" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Projects</p>
-          <h2>项目与作品</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <img src="./assets/project-energy.svg" alt="能源项目占位图" />
-            <div>
-              <span class="tag">Energy Systems</span>
-              <h3>珀斯港口光伏及储能系统设计</h3>
-              <p>在 4 人团队中负责 939 kWp 光伏系统和 1164.8 kWh 储能系统设计与经济分析，使用 PVsyst 完成 3D 建模和损失分析，实现 1.20 DC/AC 比优化，项目 IRR 达 30.83%。</p>
-            </div>
-          </article>
-          <article class="project-card">
-            <img src="./assets/project-bess.svg" alt="储能项目占位图" />
-            <div>
-              <span class="tag">BESS</span>
-              <h3>风电场全生命周期设计与 12 MW 级风电机组建模</h3>
-              <p>独立完成 Blyth 近海风电场 7 台 12 MW 风机扩展方案，通过 MCP 分析和 Gaussian Wake Model 优化布局，将尾流损失控制在约 9%。</p>
-            </div>
-          </article>
-          <article class="project-card">
-            <img src="./assets/project-career.svg" alt="求职材料占位图" />
-            <div>
-              <span class="tag">Career Assets</span>
-              <h3>EDA 综合实践：交通信号灯控制器设计</h3>
-              <p>使用 Vivado 与 Verilog HDL 完成基于 FPGA 的交通信号灯控制系统，负责数码管显示、LED 控制、状态机切换和系统仿真验证。</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
       <section id="skills" class="section skills-section">
         <div class="section-heading">
-          <p class="section-kicker">Skills</p>
-          <h2>技能方向</h2>
+          <p class="section-kicker">Capability Matrix</p>
+          <h2>技能矩阵</h2>
         </div>
+
         <div class="skills-grid">
-          <div class="skill-block">
+          <article class="skill-block">
+            <span>01</span>
             <h3>Power Engineering</h3>
             <p>电力系统分析、电力电子、电机与电力拖动、自动控制、配电网分析</p>
-          </div>
-          <div class="skill-block">
-            <h3>Energy Storage</h3>
+          </article>
+          <article class="skill-block">
+            <span>02</span>
+            <h3>Renewable Systems</h3>
             <p>光伏储能系统设计、BESS 配置、峰值削减、经济性分析、并网支撑</p>
-          </div>
-          <div class="skill-block">
-            <h3>Data & Tools</h3>
+          </article>
+          <article class="skill-block">
+            <span>03</span>
+            <h3>Simulation Tools</h3>
             <p>MATLAB/Simulink、PVsyst、ASHES、Multisim、Vivado、MS Excel、MS Visio</p>
-          </div>
-          <div class="skill-block">
+          </article>
+          <article class="skill-block">
+            <span>04</span>
             <h3>Communication</h3>
             <p>英语熟练，雅思、大学英语六级；具备跨文化学习经历和技术文档表达能力</p>
-          </div>
+          </article>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section honors-section">
         <div class="section-heading">
           <p class="section-kicker">Honors</p>
           <h2>荣誉与证书</h2>
         </div>
         <div class="honor-list">
-          <span>2023 年辽宁省大学生交通科技大赛一等奖</span>
-          <span>2024 年校优秀毕业生</span>
-          <span>2022-2023 校三等优秀学生综合奖学金</span>
-          <span>2021-2022 优秀学生</span>
-          <span>2021-2022 校二等奖学金</span>
-          <span>2022 年高教杯全国大学生数学建模竞赛辽宁赛区奖项</span>
+          <span>辽宁省大学生交通科技大赛一等奖</span>
+          <span>校优秀毕业生</span>
+          <span>校三等优秀学生综合奖学金</span>
+          <span>优秀学生</span>
+          <span>校二等奖学金</span>
+          <span>高教杯数学建模竞赛辽宁赛区奖项</span>
           <span>计算机及外部设备装配调试员</span>
           <span>C2 驾照</span>
         </div>
@@ -198,19 +237,19 @@
       <section id="contact" class="section contact-section">
         <div>
           <p class="section-kicker">Contact</p>
-          <h2>欢迎联系我沟通应届工程岗位、实习机会或项目合作。</h2>
+          <h2>期待新能源、电气工程、测试工程与技术支持相关机会。</h2>
         </div>
-        <div class="contact-links">
+        <div class="contact-panel">
           <a href="mailto:zackwu2024@163.com">zackwu2024@163.com</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://github.com/ziyoung888-prog" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="./assets/wu-ziyang-resume.pdf">Resume PDF</a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <span>© 2026 吴子洋</span>
-      <button class="to-top" type="button" aria-label="返回顶部">Top</button>
+      <button class="to-top" type="button" aria-label="返回顶部">Back to top</button>
     </footer>
 
     <script src="./script.js"></script>
