@@ -592,6 +592,78 @@ h3 {
   font-size: 12px;
 }
 
+.case-visuals {
+  margin: 28px 0 10px;
+  border: 1px solid rgba(126, 247, 215, 0.24);
+  background:
+    linear-gradient(135deg, rgba(112, 245, 221, 0.08), rgba(7, 16, 21, 0.2)),
+    rgba(4, 12, 16, 0.42);
+  padding: clamp(18px, 3vw, 28px);
+}
+
+.case-visuals-heading {
+  max-width: 880px;
+  margin-bottom: 20px;
+}
+
+.case-visuals-heading h3 {
+  margin-bottom: 10px;
+  font-size: clamp(24px, 3.5vw, 38px);
+}
+
+.case-visuals-heading p:last-child {
+  color: #b8c9cb;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.project-visual-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.project-visual-card {
+  min-width: 0;
+  margin: 0;
+  border: 1px solid rgba(126, 247, 215, 0.18);
+  background: rgba(12, 27, 34, 0.76);
+}
+
+.project-visual-card-wide {
+  grid-column: 1 / -1;
+}
+
+.project-visual-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(126, 247, 215, 0.18);
+  background: #eef3ef;
+}
+
+.project-visual-card:not(.project-visual-card-wide) img {
+  aspect-ratio: 16 / 6;
+}
+
+.project-visual-card figcaption {
+  display: grid;
+  gap: 9px;
+  padding: 18px;
+  color: #c6dbdd;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.project-visual-card strong {
+  color: var(--cyan);
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .case-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -924,6 +996,7 @@ h3 {
 
   .signal-strip,
   .project-grid,
+  .project-visual-grid,
   .case-grid,
   .skills-grid,
   .workflow-grid {
