@@ -243,6 +243,7 @@ h3 {
 }
 
 .button,
+.case-link,
 .contact-panel a,
 .to-top {
   min-height: 46px;
@@ -264,6 +265,7 @@ h3 {
 }
 
 .button.secondary,
+.case-link,
 .contact-panel a,
 .to-top {
   color: var(--text);
@@ -271,11 +273,17 @@ h3 {
 }
 
 .button:hover,
+.case-link:hover,
 .contact-panel a:hover,
 .to-top:hover {
   transform: translateY(-2px);
   border-color: var(--cyan);
   background: rgba(112, 245, 221, 0.14);
+}
+
+.case-link {
+  width: fit-content;
+  margin-top: 24px;
 }
 
 .signal-strip {

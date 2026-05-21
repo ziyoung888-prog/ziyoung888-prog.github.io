@@ -174,6 +174,10 @@
                   <span class="lang lang-en">Configured 1708 bifacial modules and 26 inverters, demonstrating BESS value for peak shaving and grid support.</span>
                 </li>
               </ul>
+              <a class="case-link" href="#pv-bess-case">
+                <span class="lang lang-zh">查看项目详情</span>
+                <span class="lang lang-en">View project details</span>
+              </a>
             </div>
           </article>
 
@@ -216,17 +220,17 @@
 
         <article class="case-study" id="pv-bess-case">
           <div class="case-study-header">
-            <p class="section-kicker">Interview Reference Case</p>
+            <p class="section-kicker">Project Detail</p>
             <h3>
               <span class="lang lang-zh">PV-BESS 工程案例：Perth Harbour 光伏及储能系统设计</span>
               <span class="lang lang-en">PV-BESS Engineering Case: Perth Harbour Solar and Battery Storage Design</span>
             </h3>
             <p>
               <span class="lang lang-zh">
-                这部分按面试可查阅方式整理：先给 STAR 总结，再给关键技术细节、计算逻辑、结果指标、局限性和常见追问回答。
+                该项目来自 Solar Energy Group Project，面向港口商业用电场景，完成并网光伏与储能系统的技术经济设计。以下内容用于展示工程问题、设计方法、仿真结果和项目反思。
               </span>
               <span class="lang lang-en">
-                This section is structured for interview use: STAR summary first, followed by technical details, calculation logic, outcomes, limitations and likely follow-up answers.
+                This project comes from the Solar Energy Group Project and focuses on a commercial harbour electricity scenario. It presents the techno-economic design of a grid-connected PV and battery storage system, covering the engineering problem, design method, simulation results and project reflection.
               </span>
             </p>
           </div>
@@ -244,7 +248,10 @@
 
           <div class="case-grid">
             <section class="case-panel">
-              <h4>STAR</h4>
+              <h4>
+                <span class="lang lang-zh">项目概览（STAR）</span>
+                <span class="lang lang-en">Project Overview (STAR)</span>
+              </h4>
               <dl class="star-list">
                 <div>
                   <dt>Situation</dt>
@@ -355,35 +362,6 @@
               </ul>
             </section>
           </div>
-
-          <section class="case-panel case-wide">
-            <h4>
-              <span class="lang lang-zh">面试追问速查</span>
-              <span class="lang lang-en">Interview Follow-up Reference</span>
-            </h4>
-            <div class="qa-grid">
-              <details open>
-                <summary><span class="lang lang-zh">为什么选择 east-west dome 布局？</span><span class="lang lang-en">Why use an east-west dome layout?</span></summary>
-                <p><span class="lang lang-zh">因为港口停车场屋顶面积较大，east-west dome 可以提高覆盖率，让阵列在早晨和下午都有较好输出，同时降低行间互相遮挡。相比单一朝向，它牺牲部分正午峰值，但让日内发电曲线更平滑，更适合商业负荷和储能配合。</span><span class="lang lang-en">Because the car-park roof provides a large flat area. An east-west dome layout increases coverage, captures both morning and afternoon irradiance, and reduces row-to-row shading. Compared with a single orientation, it may sacrifice some noon peak output but gives a smoother daily generation profile, which is useful for commercial loads and storage integration.</span></p>
-              </details>
-              <details>
-                <summary><span class="lang lang-zh">为什么 DC/AC 比设为 1.20？</span><span class="lang lang-en">Why was the DC/AC ratio set to 1.20?</span></summary>
-                <p><span class="lang lang-zh">939 kWp DC 阵列配 780 kW AC 逆变器，DC/AC 约 1.20。这个比例可以在大部分运行时段提高逆变器利用率，同时让强日照时段的组件潜力得到发挥。代价是极少数峰值时段可能出现削峰，因此需要结合年发电收益和削峰损失综合判断。</span><span class="lang lang-en">The 939 kWp DC array with 780 kW AC inverter capacity gives a DC/AC ratio of about 1.20. This improves inverter utilisation during many operating hours and uses the module potential under strong irradiance. The trade-off is possible clipping in some peak periods, so the ratio should be judged by annual energy gain versus clipping loss.</span></p>
-              </details>
-              <details>
-                <summary><span class="lang lang-zh">BESS 在这个项目中解决什么问题？</span><span class="lang lang-en">What problem does BESS solve in this project?</span></summary>
-                <p><span class="lang lang-zh">BESS 用于吸收白天过剩光伏电量，并在负荷高峰或光伏输出下降时释放，起到 peak trimming、valley filling 和降低反送电压力的作用。报告也指出 1164.8 kWh 对完整系统调节仍不充分，因此真实工程中还要进一步优化容量、功率等级和调度策略。</span><span class="lang lang-en">BESS absorbs surplus PV generation during the day and releases energy during peak demand or reduced PV output, supporting peak trimming, valley filling and reducing back-feed pressure. The report also notes that 1164.8 kWh is still insufficient for full system regulation, so real projects would need further optimisation of capacity, power rating and dispatch strategy.</span></p>
-              </details>
-              <details>
-                <summary><span class="lang lang-zh">项目最大的局限是什么？</span><span class="lang lang-en">What was the main limitation?</span></summary>
-                <p><span class="lang lang-zh">主要局限是部分成本假设来自在线市场价格和平均估算，而不是正式供应商报价；同时储能容量和充放电功率对高渗透率 PV 的调节能力仍有限。真实项目需要更准确的负荷曲线、设备报价、并网约束、运维成本和储能调度模拟。</span><span class="lang lang-en">The main limitation was that some cost assumptions used online market prices and average estimates rather than formal supplier quotations. In addition, the storage capacity and charge-discharge capability were limited for high PV penetration. A real project would require more accurate load profiles, supplier quotations, grid constraints, O&M costs and storage dispatch simulation.</span></p>
-              </details>
-              <details>
-                <summary><span class="lang lang-zh">如果面试官问“你个人贡献是什么”？</span><span class="lang lang-en">If asked: what was your individual contribution?</span></summary>
-                <p><span class="lang lang-zh">可以回答：我负责 Australia solar resource 分析和 Perth Harbour 大型 PV 系统设计，完成需求推算、组件与逆变器配置、BESS 容量计算、PVsyst 3D 建模逻辑、遮挡和 PR 分析，并参与 discussion 和 Australia thermal application 部分。我的核心贡献是把港口用电目标转化成可仿真的 PV-BESS 工程方案。</span><span class="lang lang-en">You can answer: I was responsible for the Australia solar resource analysis and the Perth Harbour large-scale PV system design. I worked on demand estimation, module and inverter configuration, BESS capacity calculation, PVsyst 3D modelling logic, shading and PR analysis, and contributed to the discussion and Australia thermal application sections. My core contribution was translating the port energy target into a simulatable PV-BESS engineering design.</span></p>
-              </details>
-            </div>
-          </section>
         </article>
       </section>
 
