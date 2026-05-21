@@ -545,38 +545,80 @@ h3 {
   font-size: 12px;
 }
 
-.honor-groups {
+.award-timeline {
   display: grid;
-  gap: 18px;
+  border-top: 1px solid var(--line-strong);
 }
 
-.honor-group {
-  border: 1px solid var(--line);
-  background: rgba(12, 27, 34, 0.62);
-  padding: 22px;
+.award-item {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 26px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
 }
 
-.honor-group h3 {
-  color: var(--cyan);
-  font-size: 18px;
+.award-item time {
+  color: var(--amber);
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 700;
 }
 
-.honor-list {
+.award-body {
+  min-width: 0;
+  border: 1px solid rgba(126, 247, 215, 0.14);
+  background: rgba(12, 27, 34, 0.5);
+  padding: 20px;
+}
+
+.award-title-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 14px;
 }
 
-.honor-list span {
-  display: inline-flex;
-  min-height: 42px;
-  align-items: center;
-  border: 1px solid var(--line);
-  background: rgba(112, 245, 221, 0.06);
-  padding: 10px 14px;
-  color: #d9eeee;
-  font-size: 14px;
-  line-height: 1.5;
+.award-title-row h3 {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.award-level {
+  flex-shrink: 0;
+  border: 1px solid var(--line-strong);
+  color: var(--cyan);
+  background: rgba(112, 245, 221, 0.08);
+  padding: 6px 10px;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.award-meta {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.award-meta div {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 14px;
+}
+
+.award-meta dt {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+
+.award-meta dd {
+  margin: 0;
+  color: #c6dbdd;
+  font-size: 15px;
+  line-height: 1.65;
 }
 
 .workflow-section {
@@ -704,6 +746,17 @@ h3 {
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .award-item,
+  .award-meta div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .award-title-row {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .console-data div {
