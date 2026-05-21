@@ -26,6 +26,7 @@
         <nav class="nav" aria-label="主导航">
           <a href="#profile">Profile</a>
           <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#workflow">Workflow</a>
@@ -212,14 +213,186 @@
             </article>
           </div>
         </div>
+
+        <article class="case-study" id="pv-bess-case">
+          <div class="case-study-header">
+            <p class="section-kicker">Interview Reference Case</p>
+            <h3>
+              <span class="lang lang-zh">PV-BESS 工程案例：Perth Harbour 光伏及储能系统设计</span>
+              <span class="lang lang-en">PV-BESS Engineering Case: Perth Harbour Solar and Battery Storage Design</span>
+            </h3>
+            <p>
+              <span class="lang lang-zh">
+                这部分按面试可查阅方式整理：先给 STAR 总结，再给关键技术细节、计算逻辑、结果指标、局限性和常见追问回答。
+              </span>
+              <span class="lang lang-en">
+                This section is structured for interview use: STAR summary first, followed by technical details, calculation logic, outcomes, limitations and likely follow-up answers.
+              </span>
+            </p>
+          </div>
+
+          <div class="case-metrics">
+            <div><strong>939 kWp</strong><span>PV array capacity</span></div>
+            <div><strong>1708</strong><span>550 Wp bifacial modules</span></div>
+            <div><strong>4412.19 m2</strong><span>array area</span></div>
+            <div><strong>26 x 30 kW</strong><span>AC inverters</span></div>
+            <div><strong>1.20</strong><span>DC/AC ratio</span></div>
+            <div><strong>1164.8 kWh</strong><span>BESS capacity</span></div>
+            <div><strong>0.673</strong><span>annual PR</span></div>
+            <div><strong>30.83%</strong><span>IRR</span></div>
+          </div>
+
+          <div class="case-grid">
+            <section class="case-panel">
+              <h4>STAR</h4>
+              <dl class="star-list">
+                <div>
+                  <dt>Situation</dt>
+                  <dd>
+                    <span class="lang lang-zh">课程项目要求比较英国 Southampton 与澳大利亚 Perth 的并网光伏系统设计，覆盖住宅屋顶和港口大型场景，并从发电能力、经济收益、CO2 减排和政策环境进行综合评价。</span>
+                    <span class="lang lang-en">The group project compared grid-connected PV system designs in Southampton, UK and Perth, Australia, covering residential rooftop and harbour-scale cases, with evaluation across generation, economics, CO2 savings and policy context.</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Task</dt>
+                  <dd>
+                    <span class="lang lang-zh">我负责 Australia solar resource 分析和 Perth Harbour 大型光伏系统设计，需要基于港口用电目标、日照资源、安装空间和并网经济性，提出可仿真的 PV-BESS 方案。</span>
+                    <span class="lang lang-en">I was responsible for the Australia solar resource analysis and the Perth Harbour large-scale PV system design, translating port energy demand, solar resource, installation area and grid economics into a PV-BESS design that could be simulated.</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Action</dt>
+                  <dd>
+                    <span class="lang lang-zh">我基于 Fremantle Ports 年报中的能耗信息推算设计目标，选择 550 Wp 双面半片组件、30 kW 逆变器和 BYD 512 V 电池模型，在 PVsyst 中建立 3D 模型，采用 east-west dome 布局，分析近端遮挡、归一化发电量、PR、经济性和储能支撑作用。</span>
+                    <span class="lang lang-en">I estimated the design target from Fremantle Ports energy data, selected 550 Wp bifacial half-cell modules, 30 kW inverters and a BYD 512 V battery model, built the PVsyst 3D model, applied an east-west dome layout, and analysed near-shading, normalised production, PR, economics and the role of storage.</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Result</dt>
+                  <dd>
+                    <span class="lang lang-zh">方案形成 939 kWp 阵列、1164.8 kWh BESS、1.20 DC/AC 比，年发电约 1263.2 MWh，IRR 30.83%，回收期 3.3 年，30 年累计减排约 27,257.7 吨 CO2。项目也明确指出当前储能容量仍不足以完全解决高渗透率 PV 的调节问题，后续应扩大储能和优化调度。</span>
+                    <span class="lang lang-en">The design produced a 939 kWp PV array, 1164.8 kWh BESS and 1.20 DC/AC ratio, with annual production of about 1263.2 MWh, IRR of 30.83%, payback of 3.3 years and around 27,257.7 tons of CO2 savings over 30 years. The project also identified that the current storage capacity was not enough for full regulation under high PV penetration, so future work should expand storage and optimise dispatch.</span>
+                  </dd>
+                </div>
+              </dl>
+            </section>
+
+            <section class="case-panel">
+              <h4>
+                <span class="lang lang-zh">设计逻辑</span>
+                <span class="lang lang-en">Design Logic</span>
+              </h4>
+              <ul class="detail-list">
+                <li>
+                  <span class="lang lang-zh">需求推算：Fremantle Ports 年报提到 836 MWh/year 可满足 Victoria Quay 约 15% 用电，若目标为 50%，对应 2786.67 MWh/year。</span>
+                  <span class="lang lang-en">Demand estimate: Fremantle Ports reported that 836 MWh/year could meet around 15% of Victoria Quay energy needs; a 50% target corresponds to 2786.67 MWh/year.</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">最小阵列功率：按澳大利亚 8-9 h/day 平均日照估算，最小阵列功率约 848.3 kW。</span>
+                  <span class="lang lang-en">Minimum array power: using 8-9 h/day average sunshine in Australia, the estimated minimum array power was about 848.3 kW.</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">组件配置：选择 Mono 550 Wp 双面半片组件，总装机约 939 kWp，对应 939 kW / 550 W ≈ 1708 块组件。</span>
+                  <span class="lang lang-en">Module configuration: selected Mono 550 Wp bifacial half-cell modules; 939 kWp total capacity corresponds to about 1708 modules.</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">面积计算：单块组件约 1.134 m × 2.278 m，总阵列面积约 4412.19 m2。</span>
+                  <span class="lang lang-en">Area calculation: each module is about 1.134 m x 2.278 m, giving an array area of about 4412.19 m2.</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">逆变器配置：26 台 30 kW AC 组串逆变器，总 AC 容量 780 kW，DC/AC 比约 1.20，用于提高强日照时段组件潜力利用。</span>
+                  <span class="lang lang-en">Inverter configuration: 26 string inverters rated at 30 kW AC, giving 780 kW AC capacity and a DC/AC ratio of about 1.20 to use module potential during high-irradiance hours.</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">储能配置：BYD 512 V HVS12.8，1 串 91 并，理想容量 1 x 91 x 512 V x 25 Ah = 1164.8 kWh；80% DoD 下可用容量约 932 kWh。</span>
+                  <span class="lang lang-en">Storage configuration: BYD 512 V HVS12.8, 1 series and 91 parallel, ideal capacity 1 x 91 x 512 V x 25 Ah = 1164.8 kWh; usable capacity is about 932 kWh at 80% DoD.</span>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="case-grid">
+            <section class="case-panel">
+              <h4>
+                <span class="lang lang-zh">PVsyst 建模与损失分析</span>
+                <span class="lang lang-en">PVsyst Modelling and Loss Analysis</span>
+              </h4>
+              <ul class="detail-list">
+                <li>
+                  <span class="lang lang-zh">位置：Perth Harbour 项目位于 passenger station 前大型停车场屋顶，纬度 32°02'54"S，经度 115°44'50"E。</span>
+                  <span class="lang lang-en">Location: the Perth Harbour system was placed on the large car-park roof in front of the passenger station, at latitude 32°02'54"S and longitude 115°44'50"E.</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">布局：采用 Rows as domes east-west 布局，两个朝向约为 -39° 和 +141°，形成东西双面结构，提升早晚时段捕光并减少行间遮挡。</span>
+                  <span class="lang lang-en">Layout: used a rows-as-domes east-west layout with azimuths around -39° and +141°, forming a two-sided structure to capture morning and afternoon sunlight and reduce row-to-row shading.</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">遮挡：近端遮挡损失大多控制在 1%-10%，主要集中在 6:00-8:00 和 16:00-18:00；20%-40% 的遮挡峰值持续时间有限。</span>
+                  <span class="lang lang-en">Shading: near-shading loss was mostly controlled within 1%-10%, concentrated around 6:00-8:00 and 16:00-18:00; 20%-40% peak shading periods were limited in duration.</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">归一化发电：有用输出约 3.83 kWh/kWp/day，collection loss 约 1.25 kWh/kWp/day，system operation loss 约 0.39 kWh/kWp/day。</span>
+                  <span class="lang lang-en">Normalised production: useful output was about 3.83 kWh/kWp/day, collection loss about 1.25 kWh/kWp/day, and system operation loss about 0.39 kWh/kWp/day.</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">性能比：月度 PR 在 0.65-0.70 间波动，年平均 PR 约 0.673；12 月和 1 月发电最高，6 月和 7 月较低。</span>
+                  <span class="lang lang-en">Performance ratio: monthly PR fluctuated around 0.65-0.70, with annual average PR about 0.673; production was highest in December and January and lower in June and July.</span>
+                </li>
+              </ul>
+            </section>
+
+            <section class="case-panel">
+              <h4>
+                <span class="lang lang-zh">经济与环境结果</span>
+                <span class="lang lang-en">Economic and Environmental Results</span>
+              </h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">总安装投资：£678,036.83；年运营成本：£113,457.60。</span><span class="lang lang-en">Total installation investment: £678,036.83; annual operating cost: £113,457.60.</span></li>
+                <li><span class="lang lang-zh">年系统发电：1263.2 MWh；售电上网：850 MWh/year；峰时电价假设：£0.34/kWh。</span><span class="lang lang-en">Annual production: 1263.2 MWh; energy sold to grid: 850 MWh/year; peak tariff assumption: £0.34/kWh.</span></li>
+                <li><span class="lang lang-zh">经济性：回收期 3.3 年，NPV £3,980,509，IRR 30.83%，ROI 587.1%，LCOE £0.1112/kWh。</span><span class="lang lang-en">Economics: payback 3.3 years, NPV £3,980,509, IRR 30.83%, ROI 587.1%, LCOE £0.1112/kWh.</span></li>
+                <li><span class="lang lang-zh">环境效益：30 年累计减排约 27,257.7 吨 CO2。</span><span class="lang lang-en">Environmental benefit: around 27,257.7 tons of CO2 savings over 30 years.</span></li>
+                <li><span class="lang lang-zh">对比结论：与 Southampton Harbour Case 3 相比，Case 4 的回收期更短、IRR 和 ROI 更高，更适合强调短期回报和减排目标的商业港口场景。</span><span class="lang lang-en">Comparison: compared with Southampton Harbour Case 3, Case 4 had shorter payback and higher IRR and ROI, making it more suitable for commercial port scenarios prioritising short-term return and emissions reduction.</span></li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="case-panel case-wide">
+            <h4>
+              <span class="lang lang-zh">面试追问速查</span>
+              <span class="lang lang-en">Interview Follow-up Reference</span>
+            </h4>
+            <div class="qa-grid">
+              <details open>
+                <summary><span class="lang lang-zh">为什么选择 east-west dome 布局？</span><span class="lang lang-en">Why use an east-west dome layout?</span></summary>
+                <p><span class="lang lang-zh">因为港口停车场屋顶面积较大，east-west dome 可以提高覆盖率，让阵列在早晨和下午都有较好输出，同时降低行间互相遮挡。相比单一朝向，它牺牲部分正午峰值，但让日内发电曲线更平滑，更适合商业负荷和储能配合。</span><span class="lang lang-en">Because the car-park roof provides a large flat area. An east-west dome layout increases coverage, captures both morning and afternoon irradiance, and reduces row-to-row shading. Compared with a single orientation, it may sacrifice some noon peak output but gives a smoother daily generation profile, which is useful for commercial loads and storage integration.</span></p>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">为什么 DC/AC 比设为 1.20？</span><span class="lang lang-en">Why was the DC/AC ratio set to 1.20?</span></summary>
+                <p><span class="lang lang-zh">939 kWp DC 阵列配 780 kW AC 逆变器，DC/AC 约 1.20。这个比例可以在大部分运行时段提高逆变器利用率，同时让强日照时段的组件潜力得到发挥。代价是极少数峰值时段可能出现削峰，因此需要结合年发电收益和削峰损失综合判断。</span><span class="lang lang-en">The 939 kWp DC array with 780 kW AC inverter capacity gives a DC/AC ratio of about 1.20. This improves inverter utilisation during many operating hours and uses the module potential under strong irradiance. The trade-off is possible clipping in some peak periods, so the ratio should be judged by annual energy gain versus clipping loss.</span></p>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">BESS 在这个项目中解决什么问题？</span><span class="lang lang-en">What problem does BESS solve in this project?</span></summary>
+                <p><span class="lang lang-zh">BESS 用于吸收白天过剩光伏电量，并在负荷高峰或光伏输出下降时释放，起到 peak trimming、valley filling 和降低反送电压力的作用。报告也指出 1164.8 kWh 对完整系统调节仍不充分，因此真实工程中还要进一步优化容量、功率等级和调度策略。</span><span class="lang lang-en">BESS absorbs surplus PV generation during the day and releases energy during peak demand or reduced PV output, supporting peak trimming, valley filling and reducing back-feed pressure. The report also notes that 1164.8 kWh is still insufficient for full system regulation, so real projects would need further optimisation of capacity, power rating and dispatch strategy.</span></p>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">项目最大的局限是什么？</span><span class="lang lang-en">What was the main limitation?</span></summary>
+                <p><span class="lang lang-zh">主要局限是部分成本假设来自在线市场价格和平均估算，而不是正式供应商报价；同时储能容量和充放电功率对高渗透率 PV 的调节能力仍有限。真实项目需要更准确的负荷曲线、设备报价、并网约束、运维成本和储能调度模拟。</span><span class="lang lang-en">The main limitation was that some cost assumptions used online market prices and average estimates rather than formal supplier quotations. In addition, the storage capacity and charge-discharge capability were limited for high PV penetration. A real project would require more accurate load profiles, supplier quotations, grid constraints, O&M costs and storage dispatch simulation.</span></p>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">如果面试官问“你个人贡献是什么”？</span><span class="lang lang-en">If asked: what was your individual contribution?</span></summary>
+                <p><span class="lang lang-zh">可以回答：我负责 Australia solar resource 分析和 Perth Harbour 大型 PV 系统设计，完成需求推算、组件与逆变器配置、BESS 容量计算、PVsyst 3D 建模逻辑、遮挡和 PR 分析，并参与 discussion 和 Australia thermal application 部分。我的核心贡献是把港口用电目标转化成可仿真的 PV-BESS 工程方案。</span><span class="lang lang-en">You can answer: I was responsible for the Australia solar resource analysis and the Perth Harbour large-scale PV system design. I worked on demand estimation, module and inverter configuration, BESS capacity calculation, PVsyst 3D modelling logic, shading and PR analysis, and contributed to the discussion and Australia thermal application sections. My core contribution was translating the port energy target into a simulatable PV-BESS engineering design.</span></p>
+              </details>
+            </div>
+          </section>
+        </article>
       </section>
 
-      <section id="experience" class="section">
+      <section id="education" class="section">
         <div class="section-heading">
-          <p class="section-kicker">Education & Experience</p>
+          <p class="section-kicker">Education</p>
           <h2>
-            <span class="lang lang-zh">教育与工程实践</span>
-            <span class="lang lang-en">Education and Engineering Practice</span>
+            <span class="lang lang-zh">教育经历</span>
+            <span class="lang lang-en">Education</span>
           </h2>
         </div>
 
@@ -258,6 +431,19 @@
               </p>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <p class="section-kicker">Internship Experience</p>
+          <h2>
+            <span class="lang lang-zh">实习经历</span>
+            <span class="lang lang-en">Internship Experience</span>
+          </h2>
+        </div>
+
+        <div class="timeline">
           <article class="timeline-item">
             <time>2023.09 - 2023.10</time>
             <div>
