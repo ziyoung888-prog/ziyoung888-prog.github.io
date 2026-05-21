@@ -286,6 +286,29 @@ h3 {
   margin-top: 24px;
 }
 
+.back-link {
+  display: inline-flex;
+  margin-bottom: 30px;
+  color: var(--cyan);
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.back-link::before {
+  content: "<";
+  margin-right: 8px;
+}
+
+.project-detail-hero {
+  padding-bottom: clamp(30px, 5vw, 70px);
+}
+
+.project-detail-section {
+  padding-top: 0;
+  border-top: 0;
+}
+
 .signal-strip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
