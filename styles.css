@@ -125,6 +125,46 @@ a {
   color: var(--cyan);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.language-toggle {
+  min-width: 64px;
+  min-height: 36px;
+  border: 1px solid var(--line-strong);
+  color: var(--cyan);
+  background: rgba(112, 245, 221, 0.08);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.language-toggle:hover {
+  border-color: var(--cyan);
+  background: rgba(112, 245, 221, 0.16);
+}
+
+.lang,
+[data-lang-label] {
+  display: none;
+}
+
+body[data-lang="zh"] .lang-zh,
+body[data-lang="zh"] [data-lang-label="zh"],
+body[data-lang="en"] .lang-en,
+body[data-lang="en"] [data-lang-label="en"] {
+  display: inline;
+}
+
+body[data-lang="en"] {
+  --sans: "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
@@ -523,6 +563,39 @@ h3 {
   line-height: 1.5;
 }
 
+.workflow-section {
+  background:
+    linear-gradient(180deg, rgba(112, 245, 221, 0.04), rgba(73, 209, 124, 0.04)),
+    rgba(7, 16, 21, 0.38);
+}
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.workflow-step {
+  min-height: 250px;
+  border: 1px solid var(--line);
+  background: rgba(12, 27, 34, 0.72);
+  padding: 24px;
+}
+
+.workflow-step span:first-child {
+  display: inline-flex;
+  margin-bottom: 38px;
+  color: var(--amber);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+
+.workflow-step p {
+  color: #b8c9cb;
+  font-size: 16px;
+  line-height: 1.78;
+}
+
 .contact-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.92fr);
@@ -582,6 +655,12 @@ h3 {
     padding-bottom: 4px;
   }
 
+  .header-actions {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .hero {
     min-height: auto;
   }
@@ -592,7 +671,8 @@ h3 {
 
   .signal-strip,
   .project-grid,
-  .skills-grid {
+  .skills-grid,
+  .workflow-grid {
     grid-template-columns: 1fr;
   }
 
