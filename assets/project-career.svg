@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Career assets project</title>
+  <desc id="desc">Resume and interview asset bank illustration.</desc>
+  <rect width="960" height="600" fill="#eaf0f6"/>
+  <rect x="190" y="95" width="360" height="440" fill="#ffffff" stroke="#14213d" stroke-width="10"/>
+  <rect x="415" y="150" width="360" height="360" fill="#f7f4ee" stroke="#14213d" stroke-width="10"/>
+  <path d="M245 180h210M245 230h250M245 280h190M245 390h210M245 440h160" stroke="#235789" stroke-width="14"/>
+  <circle cx="595" cy="275" r="74" fill="#1f7a5b"/>
+  <path d="M510 405h170M510 450h125" stroke="#c88719" stroke-width="14"/>
+</svg>

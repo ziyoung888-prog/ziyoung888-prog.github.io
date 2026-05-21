@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Energy systems project</title>
+  <desc id="desc">Transmission line and energy control diagram illustration.</desc>
+  <rect width="960" height="600" fill="#eef2ec"/>
+  <path d="M60 480h840" stroke="#14213d" stroke-width="10"/>
+  <path d="M180 480l90-280 90 280M225 340h90M205 410h130" fill="none" stroke="#235789" stroke-width="12"/>
+  <path d="M600 480l90-280 90 280M645 340h90M625 410h130" fill="none" stroke="#235789" stroke-width="12"/>
+  <path d="M270 200c120 70 240 70 420 0" fill="none" stroke="#c88719" stroke-width="12"/>
+  <rect x="390" y="300" width="180" height="110" fill="#ffffff" stroke="#14213d" stroke-width="10"/>
+  <path d="M420 355h120M480 325v60" stroke="#1f7a5b" stroke-width="10"/>
+</svg>

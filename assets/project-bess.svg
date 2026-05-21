@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Battery storage project</title>
+  <desc id="desc">Battery energy storage blocks with grid connection.</desc>
+  <rect width="960" height="600" fill="#f7f4ee"/>
+  <rect x="90" y="145" width="500" height="310" fill="#ffffff" stroke="#14213d" stroke-width="10"/>
+  <rect x="132" y="195" width="92" height="210" fill="#1f7a5b"/>
+  <rect x="254" y="195" width="92" height="210" fill="#235789"/>
+  <rect x="376" y="195" width="92" height="210" fill="#1f7a5b"/>
+  <path d="M590 300h110" stroke="#14213d" stroke-width="12"/>
+  <circle cx="745" cy="300" r="62" fill="#ffffff" stroke="#14213d" stroke-width="10"/>
+  <path d="M720 300h50M745 275v50" stroke="#c88719" stroke-width="10"/>
+  <path d="M150 500h660" stroke="#d9e2ec" stroke-width="12"/>
+</svg>

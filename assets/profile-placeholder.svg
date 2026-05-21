@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-labelledby="title desc">
+  <title id="title">Profile placeholder</title>
+  <desc id="desc">A structured engineering profile placeholder image.</desc>
+  <rect width="640" height="800" fill="#e8eee8"/>
+  <path d="M80 70h480v660H80z" fill="#ffffff" stroke="#14213d" stroke-width="8"/>
+  <path d="M120 118h400v192H120z" fill="#235789"/>
+  <path d="M150 355h340M150 405h300M150 455h250" stroke="#14213d" stroke-width="16" stroke-linecap="square"/>
+  <circle cx="320" cy="214" r="70" fill="#f7f4ee" stroke="#14213d" stroke-width="8"/>
+  <path d="M215 625c25-74 72-112 141-112 68 0 114 38 139 112" fill="#1f7a5b" stroke="#14213d" stroke-width="8"/>
+  <path d="M120 680h400" stroke="#c88719" stroke-width="10"/>
+</svg>
