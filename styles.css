@@ -545,6 +545,22 @@ h3 {
   font-size: 12px;
 }
 
+.honor-groups {
+  display: grid;
+  gap: 18px;
+}
+
+.honor-group {
+  border: 1px solid var(--line);
+  background: rgba(12, 27, 34, 0.62);
+  padding: 22px;
+}
+
+.honor-group h3 {
+  color: var(--cyan);
+  font-size: 18px;
+}
+
 .honor-list {
   display: flex;
   flex-wrap: wrap;
