@@ -492,6 +492,43 @@ h3 {
   text-transform: uppercase;
 }
 
+.cost-note-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.cost-note-card {
+  border: 1px solid rgba(126, 247, 215, 0.18);
+  background: rgba(4, 12, 16, 0.34);
+  padding: 12px;
+  color: #c6dbdd;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.cost-note-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--amber);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.result-emphasis {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.result-emphasis li {
+  border: 1px solid rgba(126, 247, 215, 0.16);
+  background: rgba(4, 12, 16, 0.28);
+}
+
 .technical-deep-dive {
   background:
     linear-gradient(135deg, rgba(112, 245, 221, 0.06), rgba(255, 200, 87, 0.05)),
@@ -1219,6 +1256,7 @@ h3 {
   .hero,
   .project-brief-hero,
   .cost-layout,
+  .cost-note-grid,
   .deep-dive-head,
   .split-section,
   .contact-section,
@@ -1267,6 +1305,7 @@ h3 {
   .project-visual-grid,
   .case-grid,
   .case-map,
+  .result-emphasis,
   .skills-grid,
   .workflow-grid {
     grid-template-columns: 1fr;

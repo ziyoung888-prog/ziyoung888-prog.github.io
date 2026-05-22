@@ -209,15 +209,29 @@
                     </tbody>
                   </table>
                 </div>
+                <div class="cost-note-grid" aria-label="Cost model explanatory notes">
+                  <div class="cost-note-card">
+                    <strong><span class="lang lang-zh">电价口径</span><span class="lang lang-en">Tariff Basis</span></strong>
+                    <p><span class="lang lang-zh">£0.34/kWh 代表港口购电侧峰时零售电价。实际上网收益通常低于零售电价，因此财务结果应理解为相对乐观情景。</span><span class="lang lang-en">£0.34/kWh represents the port's peak retail purchase tariff. Real export revenue is usually lower than retail price, so the financial result should be read as optimistic.</span></p>
+                  </div>
+                  <div class="cost-note-card">
+                    <strong><span class="lang lang-zh">成本主因</span><span class="lang lang-en">Cost Driver</span></strong>
+                    <p><span class="lang lang-zh">电池成本 £355,990.11，占总安装投资约 52.5%，是平准化度电成本、回收期和收益敏感性的关键来源。</span><span class="lang lang-en">Battery cost is £355,990.11, about 52.5% of CAPEX, making it the key driver for LCOE, payback and sensitivity.</span></p>
+                  </div>
+                  <div class="cost-note-card">
+                    <strong><span class="lang lang-zh">GST 说明</span><span class="lang lang-en">GST Note</span></strong>
+                    <p><span class="lang lang-zh">税项明确为澳大利亚 10% 商品及服务税（Goods and Services Tax, GST），避免被误解为英国增值税。</span><span class="lang lang-en">The tax item is Australian Goods and Services Tax (GST, 10%), avoiding confusion with UK VAT.</span></p>
+                  </div>
+                </div>
               </div>
 
               <aside class="cost-callout">
                 <p><strong><span class="lang lang-zh">电价假设</span><span class="lang lang-en">Tariff Assumption</span></strong></p>
-                <p><span class="lang lang-zh">澳大利亚峰时电价采用 £0.34/kWh，谷时电价采用 £0.06/kWh；英国对比案例采用 £0.20/kWh。该电价假设直接影响收益、回收期和内部收益率。</span><span class="lang lang-en">Australia peak tariff was assumed at £0.34/kWh and off-peak tariff at £0.06/kWh; the UK comparison case used £0.20/kWh. This tariff assumption directly affects revenue, payback and IRR.</span></p>
+                <p><span class="lang lang-zh">澳大利亚峰时电价采用 £0.34/kWh，谷时电价采用 £0.06/kWh；英国对比案例采用 £0.20/kWh。£0.34/kWh 代表港口购电侧峰时零售电价，实际上网售电收益通常低于该值，因此该财务结果代表相对乐观的课程建模情景。</span><span class="lang lang-en">Australia peak tariff was assumed at £0.34/kWh and off-peak tariff at £0.06/kWh; the UK comparison case used £0.20/kWh. The £0.34/kWh value represents the port's peak retail purchase tariff; real grid-export revenue is usually lower, so this financial result represents a relatively optimistic coursework modelling scenario.</span></p>
                 <p><strong><span class="lang lang-zh">运营成本</span><span class="lang lang-en">Operating Cost</span></strong></p>
                 <p><span class="lang lang-zh">年度运营成本（Operating Expenditure, OPEX）为 £113,457.60/year，包括逆变器更换准备金 £22,909.78、维修 £1,000、清洗 £500、电池更换准备金 £71,198.02、设施保险 £8,499.90 和联邦税 £9,349.90。</span><span class="lang lang-en">Annual OPEX is £113,457.60/year, including inverter replacement provision £22,909.78, repairs £1,000, cleaning £500, battery replacement provision £71,198.02, facility insurance £8,499.90 and federal tax £9,349.90.</span></p>
                 <p><strong><span class="lang lang-zh">度电成本怎么算</span><span class="lang lang-en">How LCOE Was Interpreted</span></strong></p>
-                <p><span class=”lang lang-zh”>平准化度电成本（Levelized Cost of Energy, LCOE）表示生命周期总成本与生命周期总发电量之比。本模型折现率设为 0%（课程基准假设），即未进行时间价值折现。Case 4 的 LCOE 为 £0.1112/kWh，来自光伏仿真软件经济模型输出，不应简单用总投资除以第一年发电量，因为模型还包含运营成本、折旧、替换准备金和长期发电衰减。</span><span class=”lang lang-en”>LCOE is the ratio of lifetime total cost to lifetime total generation. This model uses a 0% discount rate (course baseline assumption), so no time-value discounting is applied. Case 4 LCOE is £0.1112/kWh from the PVsyst economic model; it should not be calculated simply as CAPEX divided by first-year output, because the model also includes OPEX, depreciation, replacement provisions and long-term generation degradation.</span></p>
+                <p><span class="lang lang-zh">平准化度电成本（Levelized Cost of Energy, LCOE）表示生命周期总成本与生命周期总发电量之比。本模型折现率设为 0%（课程基准假设），即未进行时间价值折现。Case 4 的 LCOE 为 £0.1112/kWh，来自光伏仿真软件经济模型输出，不应简单用总投资除以第一年发电量，因为模型还包含运营成本、折旧、替换准备金和长期发电衰减。</span><span class="lang lang-en">LCOE is the ratio of lifetime total cost to lifetime total generation. This model uses a 0% discount rate (course baseline assumption), so no time-value discounting is applied. Case 4 LCOE is £0.1112/kWh from the PVsyst economic model; it should not be calculated simply as CAPEX divided by first-year output, because the model also includes OPEX, depreciation, replacement provisions and long-term generation degradation.</span></p>
               </aside>
             </div>
           </section>
@@ -367,7 +381,7 @@
           <div class="case-grid" id="section-results">
             <section class="case-panel section-anchor">
               <h4><span class="lang lang-zh">经济与环境结果</span><span class="lang lang-en">Economic and Environmental Results</span></h4>
-              <ul class="detail-list">
+              <ul class="detail-list result-emphasis">
                 <li><span class="lang lang-zh">年发电量：1263.2 MWh/year；比发电量约 1345 kWh/kWp/year。</span><span class="lang lang-en">Annual production: 1263.2 MWh/year; specific production about 1345 kWh/kWp/year.</span></li>
                 <li><span class="lang lang-zh">港口模拟负荷覆盖率：太阳能保障率（Solar Fraction, SF）97.78%。该指标针对模型中的设计负荷，不代表完整港口全站所有用电。</span><span class="lang lang-en">Simulated load coverage: 97.78% solar fraction. This refers to the modelled design load, not every electrical load across the entire port.</span></li>
                 <li><span class="lang lang-zh">财务结果：投资回收期 3.3 年，20 年净现值（Net Present Value, NPV）£3,980,509，内部收益率（Internal Rate of Return, IRR）30.83%，投资回报率（Return on Investment, ROI）587.1%。上述结果高度依赖峰时电价假设（£0.34/kWh）；若采用更保守的上网收购电价，IRR 将回落至商业光伏典型区间（10–15%）。</span><span class="lang lang-en">Financial results: 3.3-year payback, £3,980,509 20-year NPV, 30.83% IRR and 587.1% ROI. These figures are highly sensitive to the peak tariff assumption of £0.34/kWh; under a more conservative export rate, IRR would fall to the 10–15% range typical of commercial PV projects.</span></li>
