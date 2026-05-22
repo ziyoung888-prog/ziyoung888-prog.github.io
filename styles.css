@@ -347,6 +347,11 @@ h3 {
   object-fit: cover;
 }
 
+.brief-hero-media img[src$=".svg"] {
+  object-fit: contain;
+  background: #071015;
+}
+
 .brief-hero-media figcaption {
   position: relative;
   padding: 14px 16px;
