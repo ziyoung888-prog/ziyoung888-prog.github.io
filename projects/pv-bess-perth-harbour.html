@@ -72,10 +72,12 @@
             </span>
           </p>
           <div class="tag-row">
-            <span class="tag-chip"><span class="lang lang-zh">光伏仿真软件（PVsyst）V8.0.7</span><span class="lang lang-en">PVsyst V8.0.7</span></span>
-            <span class="tag-chip"><span class="lang lang-zh">并网光伏（Grid-Connected PV）</span><span class="lang lang-en">Grid-Connected PV</span></span>
-            <span class="tag-chip"><span class="lang lang-zh">电池储能系统（Battery Energy Storage System, BESS）容量配置</span><span class="lang lang-en">BESS Sizing</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">PVsyst V8.0.7</span><span class="lang lang-en">PVsyst V8.0.7</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">并网光伏</span><span class="lang lang-en">Grid-Connected PV</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">储能容量配置</span><span class="lang lang-en">BESS Sizing</span></span>
             <span class="tag-chip"><span class="lang lang-zh">技术经济分析</span><span class="lang lang-en">Techno-Economic Analysis</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">双面半片组件</span><span class="lang lang-en">Bifacial Modules</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">Meteonorm 8.2</span><span class="lang lang-en">Meteonorm 8.2</span></span>
           </div>
         </div>
 
@@ -202,7 +204,7 @@
                       <tr><th><span class="lang lang-zh">逆变器成本</span><span class="lang lang-en">Inverters</span></th><td><span class="lang lang-zh">26 台 30 kWac 逆变器，单价 £881.15，总计 £22,909.78。</span><span class="lang lang-en">26 x 30 kWac inverters at £881.15 each, total £22,909.78.</span></td></tr>
                       <tr><th><span class="lang lang-zh">电池成本</span><span class="lang lang-en">Batteries</span></th><td><span class="lang lang-zh">91 个 BYD Battery Box Premium HVS 12.8 电池单元，单价 £3,911.98，总计 £355,990.11，是安装成本中最大单项。</span><span class="lang lang-en">91 BYD Battery Box Premium HVS 12.8 battery units at £3,911.98 each, total £355,990.11, the largest single installation-cost item.</span></td></tr>
                       <tr><th><span class="lang lang-zh">工程与安装</span><span class="lang lang-en">Engineering and Installation</span></th><td><span class="lang lang-zh">附件与紧固件 £56,666.03；工程研究与分析 £28,333.02；全局安装成本 £79,332.45。</span><span class="lang lang-en">Accessories and fasteners £56,666.03; engineering studies and analysis £28,333.02; global installation cost £79,332.45.</span></td></tr>
-                      <tr><th><span class="lang lang-zh">保险与税费</span><span class="lang lang-en">Insurance and Tax</span></th><td><span class="lang lang-zh">建筑保险 £9,206.53；增值税/商品服务税项在模型中计入 £55,971.36。</span><span class="lang lang-en">Building insurance £9,206.53; VAT/GST-related tax item £55,971.36 in the model.</span></td></tr>
+                      <tr><th><span class="lang lang-zh">保险与税费</span><span class="lang lang-en">Insurance and Tax</span></th><td><span class="lang lang-zh">建筑保险 £9,206.53；澳大利亚商品及服务税（Goods and Services Tax，GST，税率 10%）£55,971.36。</span><span class="lang lang-en">Building insurance £9,206.53; Australian Goods and Services Tax (GST, 10%) £55,971.36.</span></td></tr>
                       <tr><th><span class="lang lang-zh">总安装投资</span><span class="lang lang-en">Total Installation Cost</span></th><td><span class="lang lang-zh">总安装成本 £678,036.83；其中可折旧资产 £505,193.47。</span><span class="lang lang-en">Total installation cost £678,036.83; depreciable asset £505,193.47.</span></td></tr>
                     </tbody>
                   </table>
@@ -215,7 +217,7 @@
                 <p><strong><span class="lang lang-zh">运营成本</span><span class="lang lang-en">Operating Cost</span></strong></p>
                 <p><span class="lang lang-zh">年度运营成本（Operating Expenditure, OPEX）为 £113,457.60/year，包括逆变器更换准备金 £22,909.78、维修 £1,000、清洗 £500、电池更换准备金 £71,198.02、设施保险 £8,499.90 和联邦税 £9,349.90。</span><span class="lang lang-en">Annual OPEX is £113,457.60/year, including inverter replacement provision £22,909.78, repairs £1,000, cleaning £500, battery replacement provision £71,198.02, facility insurance £8,499.90 and federal tax £9,349.90.</span></p>
                 <p><strong><span class="lang lang-zh">度电成本怎么算</span><span class="lang lang-en">How LCOE Was Interpreted</span></strong></p>
-                <p><span class="lang lang-zh">平准化度电成本（Levelized Cost of Energy, LCOE）表示生命周期内“折现后的总成本 / 折现后的总发电量”。报告中光伏仿真软件输出的 Case 4 LCOE 为 £0.1112/kWh，不应简单用总投资除以第一年发电量，因为模型还包含运营成本、折旧、替换准备金和长期发电量。</span><span class="lang lang-en">LCOE means discounted lifetime cost divided by discounted lifetime electricity generation. The PVsyst output for Case 4 is £0.1112/kWh; it should not be calculated simply as total CAPEX divided by first-year output, because the model includes OPEX, depreciation, replacement provisions and long-term generation.</span></p>
+                <p><span class=”lang lang-zh”>平准化度电成本（Levelized Cost of Energy, LCOE）表示生命周期总成本与生命周期总发电量之比。本模型折现率设为 0%（课程基准假设），即未进行时间价值折现。Case 4 的 LCOE 为 £0.1112/kWh，来自光伏仿真软件经济模型输出，不应简单用总投资除以第一年发电量，因为模型还包含运营成本、折旧、替换准备金和长期发电衰减。</span><span class=”lang lang-en”>LCOE is the ratio of lifetime total cost to lifetime total generation. This model uses a 0% discount rate (course baseline assumption), so no time-value discounting is applied. Case 4 LCOE is £0.1112/kWh from the PVsyst economic model; it should not be calculated simply as CAPEX divided by first-year output, because the model also includes OPEX, depreciation, replacement provisions and long-term generation degradation.</span></p>
               </aside>
             </div>
           </section>
@@ -364,34 +366,4 @@
 
           <div class="case-grid" id="section-results">
             <section class="case-panel section-anchor">
-              <h4><span class="lang lang-zh">经济与环境结果</span><span class="lang lang-en">Economic and Environmental Results</span></h4>
-              <ul class="detail-list">
-                <li><span class="lang lang-zh">年发电量：1263.2 MWh/year；比发电量约 1345 kWh/kWp/year。</span><span class="lang lang-en">Annual production: 1263.2 MWh/year; specific production about 1345 kWh/kWp/year.</span></li>
-                <li><span class="lang lang-zh">港口模拟负荷覆盖率：太阳能保障率（Solar Fraction, SF）97.78%。该指标针对模型中的设计负荷，不代表完整港口全站所有用电。</span><span class="lang lang-en">Simulated load coverage: 97.78% solar fraction. This refers to the modelled design load, not every electrical load across the entire port.</span></li>
-                <li><span class="lang lang-zh">财务结果：投资回收期 3.3 年，20 年净现值（Net Present Value, NPV）£3,980,509，内部收益率（Internal Rate of Return, IRR）30.83%，投资回报率（Return on Investment, ROI）587.1%。</span><span class="lang lang-en">Financial results: 3.3-year payback, £3,980,509 20-year NPV, 30.83% IRR and 587.1% ROI.</span></li>
-                <li><span class="lang lang-zh">度电成本：平准化度电成本（Levelized Cost of Energy, LCOE）£0.1112/kWh；30 年累计二氧化碳（Carbon Dioxide, CO2）减排约 27,257.7 吨。</span><span class="lang lang-en">Energy cost and carbon: £0.1112/kWh LCOE and about 27,257.7 tonnes of CO2 savings over 30 years.</span></li>
-              </ul>
-            </section>
-
-            <section class="case-panel section-anchor" id="section-review">
-              <h4><span class="lang lang-zh">专业复核与局限</span><span class="lang lang-en">Engineering Review and Limitations</span></h4>
-              <ul class="detail-list">
-                <li><span class="lang lang-zh">储能规模偏小：931.8 kWh 可用容量可支持日内移峰，但相对于 1263.2 MWh 年发电量仍有限，难以完全吸收所有富余光伏电量。</span><span class="lang lang-en">Storage remains modest: 931.8 kWh usable capacity supports intraday shifting but is limited relative to 1263.2 MWh/year generation, so it cannot absorb all surplus PV energy.</span></li>
-                <li><span class="lang lang-zh">组件参数为通用模型：报告采用光伏仿真软件（PVsyst）数据库中的通用组件和电池参数，真实采购前应使用厂家数据表重新校核。</span><span class="lang lang-en">Generic component data: the report used PVsyst generic module and battery parameters; real procurement would require re-checking with manufacturer datasheets.</span></li>
-                <li><span class="lang lang-zh">屋顶结构未详细验算：本项目聚焦电气与经济仿真，实际落地前还需开展屋面承载、风荷载、防火间距、运维通道和并网审批评估。</span><span class="lang lang-en">Roof structure was not fully engineered: the project focused on electrical and economic simulation; real deployment would also require roof loading, wind loading, fire spacing, maintenance access and grid-connection studies.</span></li>
-                <li><span class="lang lang-zh">电价与收益敏感：内部收益率对上网电价、运营成本和电池更换周期敏感，因此应在后续版本中增加敏感性分析。</span><span class="lang lang-en">Revenue is tariff-sensitive: IRR depends on export tariff, operating cost and battery replacement assumptions, so future work should add sensitivity analysis.</span></li>
-              </ul>
-            </section>
-          </div>
-        </article>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <span>© 2026 吴子洋</span>
-      <button class="to-top" type="button" aria-label="返回顶部">Back to top</button>
-    </footer>
-
-    <script src="../script.js"></script>
-  </body>
-</html>
+              <h4><span class="lang lang-zh">经济与环境结果</span><span class="lang lang-en">Economic and Environmental Results</spa
