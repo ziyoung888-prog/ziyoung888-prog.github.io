@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Blyth Offshore Wind Farm extension design by Ziyang Wu, including wind resource assessment, MCP analysis, P90 wind speed, turbine selection, layout constraints, Gaussian wake modelling and environmental review."
+    />
+    <title>Blyth Offshore Wind Farm Extension | 吴子洋</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body data-lang="zh">
+    <div class="page-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="../index.html#top" aria-label="返回首页">
+        <span class="brand-mark">WZY</span>
+        <span>
+          <strong>吴子洋</strong>
+          <small>Electrical Engineering Portfolio</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="nav" aria-label="项目页面导航">
+          <a href="../index.html#projects">
+            <span class="lang lang-zh">项目</span>
+            <span class="lang lang-en">Projects</span>
+          </a>
+          <a href="../index.html#education">
+            <span class="lang lang-zh">教育</span>
+            <span class="lang lang-en">Education</span>
+          </a>
+          <a href="../index.html#experience">
+            <span class="lang lang-zh">实习</span>
+            <span class="lang lang-en">Experience</span>
+          </a>
+          <a href="../index.html#contact">
+            <span class="lang lang-zh">联系</span>
+            <span class="lang lang-en">Contact</span>
+          </a>
+        </nav>
+        <button class="language-toggle" type="button" aria-label="Switch language">
+          <span data-lang-label="zh">EN</span>
+          <span data-lang-label="en">中文</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section project-detail-hero project-brief-hero">
+        <div class="brief-copy">
+          <a class="back-link" href="../index.html#projects">
+            <span class="lang lang-zh">返回项目经历</span>
+            <span class="lang lang-en">Back to Projects</span>
+          </a>
+          <p class="section-kicker">
+            <span class="lang lang-zh">项目详情 · 风能原理硕士课程</span>
+            <span class="lang lang-en">Project Detail · Principles of Wind Energy MSc Course</span>
+          </p>
+          <h1>
+            <span class="lang lang-zh">Blyth 近海风电场扩建方案设计与尾流评估</span>
+            <span class="lang lang-en">Blyth Offshore Wind Farm Extension Design and Wake Assessment</span>
+          </h1>
+          <p class="hero-lead">
+            <span class="lang lang-zh">
+              该项目以英国 Northumberland 海岸附近的 Blyth Offshore Demonstrator Wind Farm 为对象，目标是在既有 5 台 8.3MW Vestas V164 风机基础上，提出新增超过 75MW 的近海风电扩建方案。我完成了风资源特性分析、测量-相关-预测法（Measure-Correlate-Predict, MCP）长期风速估计、P90 风速评估、12MW 级风机选型、风机坐标布置、遮影/噪声约束、以及高斯尾流模型（Gaussian Wake Model）分析。
+            </span>
+            <span class="lang lang-en">
+              This project designed an extension for the Blyth Offshore Demonstrator Wind Farm near the Northumberland coast. Starting from the existing five 8.3MW Vestas V164 turbines, I developed an additional >75MW offshore layout, covering wind characterisation, Measure-Correlate-Predict analysis, P90 wind-speed estimation, 12MW turbine selection, layout constraints, noise and shadow screening, and Gaussian wake modelling.
+            </span>
+          </p>
+          <div class="tag-row">
+            <span class="tag-chip"><span class="lang lang-zh">近海风电场选址</span><span class="lang lang-en">Offshore Layout</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">测量-相关-预测法（MCP）</span><span class="lang lang-en">MCP Analysis</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">P90 风速评估</span><span class="lang lang-en">P90 Wind Speed</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">高斯尾流模型</span><span class="lang lang-en">Gaussian Wake Model</span></span>
+          </div>
+        </div>
+
+        <figure class="brief-hero-media">
+          <img src="../assets/projects/wind-blyth-layout-map.png" alt="Blyth offshore wind farm extension layout map" />
+          <figcaption>
+            <span class="lang lang-zh">推荐扩建布置：黑色三角标记为新增 N1-N7 风机，黄色点为既有 T1-T5 风机，背景为 Blyth 近海航海图。</span>
+            <span class="lang lang-en">Recommended extension layout: black triangles mark new N1-N7 turbines, yellow points show existing T1-T5 turbines, overlaid on the Blyth offshore chart.</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section project-detail-section">
+        <article class="case-study" id="wind-case">
+          <div class="case-metrics case-metrics-compact">
+            <div><strong>84 MW</strong><span><span class="lang lang-zh">新增装机容量</span><span class="lang lang-en">new capacity</span></span></div>
+            <div><strong>7 x 12 MW</strong><span><span class="lang lang-zh">新增风机方案</span><span class="lang lang-en">new turbine scheme</span></span></div>
+            <div><strong>220 m</strong><span><span class="lang lang-zh">转子直径</span><span class="lang lang-en">rotor diameter</span></span></div>
+            <div><strong>8.69 m/s</strong><span><span class="lang lang-zh">长期平均风速</span><span class="lang lang-en">long-term mean wind speed</span></span></div>
+            <div><strong>8.21 m/s</strong><span><span class="lang lang-zh">P90 年平均风速</span><span class="lang lang-en">P90 annual wind speed</span></span></div>
+            <div><strong>225° SSW</strong><span><span class="lang lang-zh">主导风向</span><span class="lang lang-en">prevailing direction</span></span></div>
+            <div><strong>R² 0.874</strong><span><span class="lang lang-zh">MCP 最优参考站</span><span class="lang lang-en">best MCP reference</span></span></div>
+            <div><strong>8.94%</strong><span><span class="lang lang-zh">代表性尾流损失</span><span class="lang lang-en">representative wake loss</span></span></div>
+          </div>
+
+          <nav class="case-map" aria-label="Project section navigation">
+            <a href="#section-overview"><span class="lang lang-zh">项目概览</span><span class="lang lang-en">Overview</span></a>
+            <a href="#section-resource"><span class="lang lang-zh">风资源</span><span class="lang lang-en">Wind Resource</span></a>
+            <a href="#section-layout"><span class="lang lang-zh">选型与布置</span><span class="lang lang-en">Layout</span></a>
+            <a href="#section-wake"><span class="lang lang-zh">尾流模型</span><span class="lang lang-en">Wake Model</span></a>
+            <a href="#section-evidence"><span class="lang lang-zh">图表证据</span><span class="lang lang-en">Evidence</span></a>
+            <a href="#section-review"><span class="lang lang-zh">工程复核</span><span class="lang lang-en">Review</span></a>
+          </nav>
+
+          <div class="case-grid" id="section-overview">
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">项目概览（Situation, Task, Action, Result, STAR）</span><span class="lang lang-en">Project Overview (STAR)</span></h4>
+              <dl class="star-list">
+                <div>
+                  <dt>Situation</dt>
+                  <dd>
+                    <span class="lang lang-zh">既有 Blyth Offshore Demonstrator Wind Farm 已建成 5 台 Vestas V164 风机，业主希望扩建一个高收益的近海风电项目，并要求新增容量超过 75MW、候选风机单机容量 11-14MW、转子直径小于 230m。</span>
+                    <span class="lang lang-en">The existing Blyth Offshore Demonstrator Wind Farm has five Vestas V164 turbines. The owner wanted a profitable extension with more than 75MW of new capacity, using 11-14MW turbines with rotor diameter below 230m.</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Task</dt>
+                  <dd>
+                    <span class="lang lang-zh">需要提交可复核的计算表、带注释的风机布置图和 5 分钟展示材料，覆盖风资源评估、长期风速估计、年发电量估算、尾流损失、遮影、噪声和环境影响。</span>
+                    <span class="lang lang-en">The deliverables required an auditable workbook, annotated turbine-layout map and short presentation covering wind resource, long-term wind speed, energy capture, wake loss, shadow flicker, noise and environmental considerations.</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Action</dt>
+                  <dd>
+                    <span class="lang lang-zh">我基于 10 分钟风速数据完成风切变、湍流强度和风向统计；用 Boulmer 气象站建立 MCP 相关关系；用十年数据估计 120m 高度长期风速与 P90 风速；选取 7 台 GE Vernova GE Haliade-X 12MW 风机，并用主导风向 225° 的高斯尾流模型评估有效风速下降。</span>
+                    <span class="lang lang-en">I processed 10-minute wind data for shear, turbulence and directionality; selected Boulmer as the MCP reference station; estimated long-term and P90 wind speed at 120m height using decade-scale data; selected seven GE Vernova GE Haliade-X 12MW turbines; and evaluated effective wind-speed reduction with a Gaussian wake model under the 225 degree prevailing wind direction.</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Result</dt>
+                  <dd>
+                    <span class="lang lang-zh">最终方案新增 84MW 容量，满足课程 brief 的容量和转子直径约束；Boulmer 与 Blyth 的相关性最高（R²=0.874）；估计长期平均风速约 8.69m/s，P90 年平均风速约 8.21m/s；代表性尾流分析显示总功率从 61.19MW 降至 55.72MW，尾流损失约 8.94%。</span>
+                    <span class="lang lang-en">The final scheme added 84MW and met the capacity and rotor-diameter constraints. Boulmer had the strongest correlation with Blyth (R²=0.874), long-term mean wind speed was about 8.69m/s, P90 annual wind speed was about 8.21m/s, and the representative wake case reduced total power from 61.19MW to 55.72MW, giving about 8.94% wake loss.</span>
+                  </dd>
+                </div>
+              </dl>
+            </section>
+
+            <section class="case-panel section-anchor" id="section-resource">
+              <h4><span class="lang lang-zh">风资源与 MCP 逻辑</span><span class="lang lang-en">Wind Resource and MCP Logic</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">测量期平均风速为 8.70m/s，平均湍流强度约 7.8%；在 8.26m/s 风速区间内，湍流强度约 7.0%，可归入国际电工委员会 IEC 61400-1 的 I.C 类风况判断。</span><span class="lang lang-en">The measurement-period mean wind speed was 8.70m/s and average turbulence intensity was about 7.8%; around the 8.26m/s bin, turbulence intensity was about 7.0%, supporting an IEC 61400-1 Class I.C assessment.</span></li>
+                <li><span class="lang lang-zh">风切变计算同时比较对数律和幂律。对数律得到 120m 高度风速约 9.98m/s，幂律得到约 8.85m/s；项目后续采用较保守的长期平均风速和 P90 风速进行产能与风险判断。</span><span class="lang lang-en">Wind shear was checked with both logarithmic and power-law methods. The log-law estimate at 120m was about 9.98m/s, while the power-law estimate was about 8.85m/s; later energy and risk checks used more conservative long-term and P90 values.</span></li>
+                <li><span class="lang lang-zh">在多个周边气象站中，Boulmer 与 Blyth 的日均风速相关性最好，线性相关 R²=0.874，高于 0.8 的常用筛选门槛，因此被选为 MCP 参考站。</span><span class="lang lang-en">Among nearby weather stations, Boulmer had the strongest daily-average wind-speed correlation with Blyth, with R²=0.874, above the common 0.8 screening threshold, so it was selected as the MCP reference station.</span></li>
+                <li><span class="lang lang-zh">十年尺度估算得到 120m 高度十年平均风速约 8.55m/s，Blyth 长期平均风速约 8.69m/s，P90 年平均风速约 8.21m/s。P90 用于表达保守年景下仍可能达到的风资源水平。</span><span class="lang lang-en">The decade-scale estimate gave about 8.55m/s at 120m, the Blyth long-term mean wind speed was about 8.69m/s, and the P90 annual wind speed was about 8.21m/s. P90 expresses the wind resource expected to be exceeded in conservative years.</span></li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="case-grid" id="section-layout">
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">风机选型与容量配置</span><span class="lang lang-en">Turbine Selection and Sizing</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">候选机型为 GE Vernova GE Haliade-X 12MW，单机额定功率 12MW，7 台合计 84MW，超过 75MW 扩建目标，同时减少海上运维对象数量。</span><span class="lang lang-en">The selected model was the GE Vernova GE Haliade-X 12MW. Seven turbines provide 84MW, exceeding the 75MW extension target while limiting the number of offshore assets to maintain.</span></li>
+                <li><span class="lang lang-zh">关键参数包括 220m 转子直径、110m 叶片半径、138m 轮毂高度、248m 叶尖高度、38,000m2 扫掠面积、3m/s 切入风速、10.103m/s 额定风速、34m/s 切出风速和最大功率系数 Cp=0.50。</span><span class="lang lang-en">Key parameters include 220m rotor diameter, 110m blade radius, 138m hub height, 248m tip height, 38,000m2 swept area, 3m/s cut-in speed, 10.103m/s rated speed, 34m/s cut-out speed and maximum power coefficient Cp=0.50.</span></li>
+                <li><span class="lang lang-zh">风机功率曲线采用分段逻辑：低于切入风速或高于切出风速输出为 0；低于额定风速时按 0.5ρAv3Cp 估算并限制不超过额定功率；高于额定风速后按 12MW 限幅。</span><span class="lang lang-en">The power curve used a piecewise model: zero output below cut-in or above cut-out, 0.5ρAv3Cp under rated speed capped at rated power, and a 12MW limit above rated speed.</span></li>
+                <li><span class="lang lang-zh">布置方案给出 N1-N7 坐标，并结合原有 T1-T5 位置检查 5D-7D 间距、主导风向上的前后排遮挡、海岸居民点距离和航海图可用水域。</span><span class="lang lang-en">The layout defined N1-N7 coordinates and checked them against existing T1-T5 turbines for 5D-7D spacing, upstream-downstream overlap under prevailing wind, nearby coastal receptors and available offshore chart area.</span></li>
+              </ul>
+            </section>
+
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">约束条件与场址判断</span><span class="lang lang-en">Constraints and Site Judgement</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">遮影距离按 10 倍转子直径筛选，新风机 220m 转子对应 2200m 最大遮影检查半径。由于方案位于近海，主要居民点不在关键遮影影响范围内。</span><span class="lang lang-en">Shadow flicker was screened using 10 rotor diameters, giving a 2200m check radius for the 220m rotor. Since the layout is offshore, main residential receptors fall outside the critical shadow-flicker area.</span></li>
+                <li><span class="lang lang-zh">安全退距采用 1.1 倍最大叶尖高度，248m 叶尖高度对应 272.8m 退距。近海方案基本不受道路和架空线路退距限制，但该数值用于说明工程筛选口径。</span><span class="lang lang-en">Set-back distance used 1.1 times maximum tip height, so 248m tip height gives 272.8m. Offshore siting avoids most road and overhead-line constraints, but the value documents the engineering screening basis.</span></li>
+                <li><span class="lang lang-zh">噪声按声功率级、距离衰减和大气吸收计算，对 Blyth Beach、Port of Blyth、Car Park、Light House 和 Shanti Art 等受体进行对比。新增风机后各点总声压级仍低于 35dB(A) 判断线。</span><span class="lang lang-en">Noise was calculated from sound power level, distance attenuation and atmospheric absorption for receptors including Blyth Beach, Port of Blyth, Car Park, Light House and Shanti Art. Total sound pressure levels after adding turbines remained below the 35dB(A) screening line.</span></li>
+                <li><span class="lang lang-zh">环境复核覆盖打桩水下噪声、海鸟觅食和迁徙风险、以及施工碳排放和材料污染等议题。网页展示这些内容作为前期场址筛查，而不是替代正式环境影响评价。</span><span class="lang lang-en">Environmental review covered piling underwater noise, seabird foraging and migration risk, construction carbon and material-pollution topics. The page presents these as early site-screening considerations, not as a substitute for a formal environmental impact assessment.</span></li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="case-panel section-anchor" id="section-wake">
+            <h4><span class="lang lang-zh">高斯尾流模型与结果解释</span><span class="lang lang-en">Gaussian Wake Model and Result Interpretation</span></h4>
+            <ul class="detail-list">
+              <li><span class="lang lang-zh">尾流模型以主导风向 225°（SSW）为代表工况，自由来流风速 U0=8.21m/s，尾流扩张系数 k=0.05，推力系数 CT=0.80。先将经纬度转换为平面坐标，再旋转坐标系，使风向与下游方向一致。</span><span class="lang lang-en">The representative wake case used prevailing wind direction 225 degrees (SSW), free-stream speed U0=8.21m/s, wake expansion coefficient k=0.05 and thrust coefficient CT=0.80. Latitude and longitude were first converted to planar coordinates, then rotated so the wind direction aligned with the downstream axis.</span></li>
+              <li><span class="lang lang-zh">对每一对上游/下游风机计算轴向距离和横向偏移，再用高斯速度亏损模型估计单个尾流影响；多个上游尾流采用平方和叠加，得到每台风机的有效风速。</span><span class="lang lang-en">For each upstream-downstream turbine pair, downstream distance and lateral offset were calculated, then a Gaussian velocity-deficit model estimated the single-wake impact. Multiple upstream wakes were combined with a square-root-sum-of-squares approach to obtain each turbine's effective wind speed.</span></li>
+              <li><span class="lang lang-zh">代表性结果显示，N2、N3、N4、N5、N7 基本保持 8.21m/s 来流；N6 受尾流影响降至约 7.48m/s；既有 T1-T5 多处位于下游，部分有效风速约 7.18-8.03m/s。</span><span class="lang lang-en">The representative result shows N2, N3, N4, N5 and N7 largely retained the 8.21m/s free-stream speed; N6 fell to about 7.48m/s; several existing T1-T5 turbines were downstream and had effective wind speeds around 7.18-8.03m/s.</span></li>
+              <li><span class="lang lang-zh">该工况下无尾流总功率约 61.19MW，有尾流总功率约 55.72MW，损失约 5.47MW，即 8.94%。该数值适合作为布局筛选和工程讨论依据，正式年发电量仍应使用多风向、多风速和全年频率加权模型。</span><span class="lang lang-en">For this case, total no-wake power was about 61.19MW and wake-adjusted power was about 55.72MW, a 5.47MW or 8.94% loss. This is suitable for layout screening and engineering discussion; a bankable annual-energy result would require multi-direction, multi-speed and full-year frequency weighting.</span></li>
+            </ul>
+          </section>
+
+          <section class="case-visuals section-anchor" aria-labelledby="section-evidence-title" id="section-evidence">
+            <div class="case-visuals-heading">
+              <p class="section-kicker"><span class="lang lang-zh">图表证据</span><span class="lang lang-en">Visual Evidence</span></p>
+              <h3 id="section-evidence-title">
+                <span class="lang lang-zh">从风资源到布置与尾流的计算链</span>
+                <span class="lang lang-en">Calculation Chain from Wind Resource to Layout and Wake</span>
+              </h3>
+              <p>
+                <span class="lang lang-zh">以下图表来自课程交付物和计算表，展示项目不是简单“放置风机”，而是从风况统计、长期修正、风机选型、场址约束到尾流损失逐步收敛。</span>
+                <span class="lang lang-en">These visuals come from the coursework deliverables and calculation workbook, showing a step-by-step convergence from wind statistics, long-term correction and turbine sizing to site constraints and wake loss.</span>
+              </p>
+            </div>
+
+            <div class="project-visual-grid">
+              <figure class="project-visual-card project-visual-card-wide">
+                <img src="../assets/projects/wind-blyth-satellite-constraints.png" alt="Satellite constraint map for Blyth offshore wind farm extension" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">卫星约束图</span><span class="lang lang-en">Satellite Constraint Map</span></strong>
+                  <span class="lang lang-zh">黄色圆用于既有风机遮影/间距检查，红色圆用于新增风机约束检查。该图把居民点、原有风机和新增风机候选位置放在同一个空间语境中。</span>
+                  <span class="lang lang-en">Yellow circles support existing-turbine checks and red circles support new-turbine checks. The map places receptors, existing turbines and proposed locations in one spatial context.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card project-visual-card-compact">
+                <img src="../assets/projects/wind-resource-summary.png" alt="Wind resource summary with wind rose and SSW prevailing direction" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">风资源摘要</span><span class="lang lang-en">Wind Resource Summary</span></strong>
+                  <span class="lang lang-zh">测量期平均风速约 8.70m/s，平均湍流强度约 7.8%，主导风向为 SSW 225°。该结果直接影响风机排布方向和尾流模型的代表性工况。</span>
+                  <span class="lang lang-en">The measured mean wind speed was about 8.70m/s, mean turbulence intensity about 7.8%, and prevailing direction SSW 225 degrees. These values drive layout orientation and the representative wake case.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card project-visual-card-compact">
+                <img src="../assets/projects/wind-speed-histogram.jpg" alt="Annual wind speed histogram for Blyth wind resource analysis" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">年风速直方图</span><span class="lang lang-en">Annual Wind-Speed Histogram</span></strong>
+                  <span class="lang lang-zh">风速频率集中在 7-11m/s 区间，接近 12MW 风机从部分负载进入额定功率区的关键范围，因此机型额定风速和功率曲线选择会显著影响发电量估计。</span>
+                  <span class="lang lang-en">The wind-speed frequency concentrates around 7-11m/s, near the transition from partial-load operation to rated output for the 12MW turbine, making rated speed and power-curve assumptions important.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/wind-p90-fit.jpg" alt="P90 Rayleigh and Weibull fit for wind speed probability" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">P90 与分布拟合</span><span class="lang lang-en">P90 and Distribution Fit</span></strong>
+                  <span class="lang lang-zh">对测量风速直方图叠加瑞利分布（Rayleigh Distribution）和威布尔分布（Weibull Distribution），其中威布尔参数约为 C=9.08m/s、k=2.07，并得到 P90 年平均风速约 8.21m/s。</span>
+                  <span class="lang lang-en">The measured histogram is compared with Rayleigh and Weibull distributions. The Weibull parameters are about C=9.08m/s and k=2.07, and the P90 annual wind speed is about 8.21m/s.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/wind-wake-visualization.png" alt="Gaussian wake model visualization of effective wind speed" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">高斯尾流有效风速图</span><span class="lang lang-en">Gaussian Wake Effective-Speed Plot</span></strong>
+                  <span class="lang lang-zh">颜色表示每台风机的有效风速。红色点说明尾流影响较小，蓝色点说明处于下游尾流区。该图用于解释为什么不能只按海域面积均匀摆放风机。</span>
+                  <span class="lang lang-en">Colour indicates effective wind speed at each turbine. Red points have lower wake impact and blue points sit in stronger downstream wake regions, explaining why a simple evenly spaced layout is not enough.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/wind-bird-migration.png" alt="Bird migration route considered in environmental review" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">环境影响复核</span><span class="lang lang-en">Environmental Review</span></strong>
+                  <span class="lang lang-zh">项目复核了海鸟迁徙、觅食和飞行高度风险，并结合既有研究说明选址仍需避开关键迁徙通道和高敏感栖息地。</span>
+                  <span class="lang lang-en">The project reviewed seabird migration, foraging and flight-height risks, using literature evidence to highlight the need to avoid key migration corridors and sensitive habitats.</span>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <div class="case-grid" id="section-review">
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">工程复核与不确定性</span><span class="lang lang-en">Engineering Review and Uncertainty</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">MCP 数据窗口有限：目标测量数据主要覆盖 2013-2014 年，虽然 Boulmer 相关性最高，但长期风资源最好用更长时间序列、再分析数据或现场测风补充。</span><span class="lang lang-en">MCP data window is limited: the target measurement dataset mainly covers 2013-2014. Although Boulmer had the best correlation, long-term resource assessment should be supplemented with longer records, reanalysis data or additional site measurement.</span></li>
+                <li><span class="lang lang-zh">尾流模型为筛选级：高斯模型可以解释相对位置和有效风速下降，但正式融资级评估应使用多风向概率、风速分箱、湍流相关推力系数和完整年发电量模型。</span><span class="lang lang-en">Wake modelling is screening-level: the Gaussian model explains relative placement and effective-speed reduction, but bankable assessment should include directional probabilities, speed bins, turbulence-dependent thrust coefficients and full annual-energy modelling.</span></li>
+                <li><span class="lang lang-zh">噪声与遮影为初步筛查：项目用 35dB(A) 和 10D 遮影半径作为前期判断，真实开发还要结合当地许可标准、累积噪声、夜间工况和居民敏感点。</span><span class="lang lang-en">Noise and shadow checks are preliminary: the project used 35dB(A) and 10D shadow radius as screening criteria. Real development would need local permitting standards, cumulative noise, night-time operation and receptor-specific assessment.</span></li>
+                <li><span class="lang lang-zh">环境影响需要正式调查：网页中的海鸟、水下噪声和施工碳排放内容用于体现工程意识，不能替代正式的生态调查、海洋许可和环境影响评价。</span><span class="lang lang-en">Environmental impact needs formal survey: seabird, underwater-noise and construction-carbon content demonstrates engineering awareness, but does not replace ecological survey, marine consent and environmental impact assessment.</span></li>
+              </ul>
+            </section>
+
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">我的工作产出</span><span class="lang lang-en">My Deliverables</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">建立可追溯 Excel 计算表，包含风切变、风向频率、MCP 相关性、P90、概率分布、功率曲线、坐标布置、噪声计算和尾流模型步骤。</span><span class="lang lang-en">Built an auditable Excel workbook covering wind shear, direction frequency, MCP correlation, P90, probability distribution, power curve, coordinate layout, noise calculation and wake-model steps.</span></li>
+                <li><span class="lang lang-zh">制作带注释的风电场布置 PDF，说明新增风机 N1-N7 的位置、与既有 T1-T5 的关系，以及遮影、尾流、噪声和环境约束。</span><span class="lang lang-en">Produced an annotated wind-farm layout PDF explaining N1-N7 positions, their relationship to existing T1-T5 turbines, and shadow, wake, noise and environmental constraints.</span></li>
+                <li><span class="lang lang-zh">完成 5 分钟项目展示材料，将计算链压缩为风资源、长期风速、能量捕获、场址评估和环境影响五个部分。</span><span class="lang lang-en">Created a five-minute project presentation that condensed the calculation chain into wind resource, long-term speed, energy capture, site assessment and environmental impact sections.</span></li>
+                <li><span class="lang lang-zh">把新增风机容量、风况数据、风险边界和尾流损失转化为可以向工程团队解释的设计依据。</span><span class="lang lang-en">Translated new capacity, wind-resource evidence, risk boundaries and wake loss into design rationale that can be explained to an engineering team.</span></li>
+              </ul>
+            </section>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 吴子洋</span>
+      <button class="to-top" type="button" aria-label="返回顶部"><span class="lang lang-zh">返回顶部</span><span class="lang lang-en">Back to top</span></button>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -760,6 +760,12 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
+.project-card img.project-card-media-contain {
+  object-fit: contain;
+  padding: 8px;
+  background: #f3f6f3;
+}
+
 .metric-list {
   display: grid;
   gap: 10px;
@@ -1317,4 +1323,7 @@ h3 {
   }
 
   .footer {
-    alig
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

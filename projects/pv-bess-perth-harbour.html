@@ -366,4 +366,34 @@
 
           <div class="case-grid" id="section-results">
             <section class="case-panel section-anchor">
-              <h4><span class="lang lang-zh">经济与环境结果</span><span class="lang lang-en">Economic and Environmental Results</spa
+              <h4><span class="lang lang-zh">经济与环境结果</span><span class="lang lang-en">Economic and Environmental Results</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">年发电量：1263.2 MWh/year；比发电量约 1345 kWh/kWp/year。</span><span class="lang lang-en">Annual production: 1263.2 MWh/year; specific production about 1345 kWh/kWp/year.</span></li>
+                <li><span class="lang lang-zh">港口模拟负荷覆盖率：太阳能保障率（Solar Fraction, SF）97.78%。该指标针对模型中的设计负荷，不代表完整港口全站所有用电。</span><span class="lang lang-en">Simulated load coverage: 97.78% solar fraction. This refers to the modelled design load, not every electrical load across the entire port.</span></li>
+                <li><span class="lang lang-zh">财务结果：投资回收期 3.3 年，20 年净现值（Net Present Value, NPV）£3,980,509，内部收益率（Internal Rate of Return, IRR）30.83%，投资回报率（Return on Investment, ROI）587.1%。上述结果高度依赖峰时电价假设（£0.34/kWh）；若采用更保守的上网收购电价，IRR 将回落至商业光伏典型区间（10–15%）。</span><span class="lang lang-en">Financial results: 3.3-year payback, £3,980,509 20-year NPV, 30.83% IRR and 587.1% ROI. These figures are highly sensitive to the peak tariff assumption of £0.34/kWh; under a more conservative export rate, IRR would fall to the 10–15% range typical of commercial PV projects.</span></li>
+                <li><span class="lang lang-zh">度电成本：平准化度电成本（Levelized Cost of Energy, LCOE）£0.1112/kWh；30 年累计二氧化碳（Carbon Dioxide, CO2）减排约 27,257.7 吨。</span><span class="lang lang-en">Energy cost and carbon: £0.1112/kWh LCOE and about 27,257.7 tonnes of CO2 savings over 30 years.</span></li>
+              </ul>
+            </section>
+
+            <section class="case-panel section-anchor" id="section-review">
+              <h4><span class="lang lang-zh">专业复核与局限</span><span class="lang lang-en">Engineering Review and Limitations</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">储能规模偏小：931.8 kWh 可用容量可支持日内移峰，但相对于 1263.2 MWh 年发电量仍有限，难以完全吸收所有富余光伏电量。</span><span class="lang lang-en">Storage remains modest: 931.8 kWh usable capacity supports intraday shifting but is limited relative to 1263.2 MWh/year generation, so it cannot absorb all surplus PV energy.</span></li>
+                <li><span class="lang lang-zh">组件参数为通用模型：报告采用光伏仿真软件（PVsyst）数据库中的通用组件和电池参数，真实采购前应使用厂家数据表重新校核。</span><span class="lang lang-en">Generic component data: the report used PVsyst generic module and battery parameters; real procurement would require re-checking with manufacturer datasheets.</span></li>
+                <li><span class="lang lang-zh">屋顶结构未详细验算：本项目聚焦电气与经济仿真，实际落地前还需开展屋面承载、风荷载、防火间距、运维通道和并网审批评估。</span><span class="lang lang-en">Roof structure was not fully engineered: the project focused on electrical and economic simulation; real deployment would also require roof loading, wind loading, fire spacing, maintenance access and grid-connection studies.</span></li>
+                <li><span class="lang lang-zh">电价与收益敏感：内部收益率对上网电价、运营成本和电池更换周期敏感，因此应在后续版本中增加敏感性分析。</span><span class="lang lang-en">Revenue is tariff-sensitive: IRR depends on export tariff, operating cost and battery replacement assumptions, so future work should add sensitivity analysis.</span></li>
+              </ul>
+            </section>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 吴子洋</span>
+      <button class="to-top" type="button" aria-label="返回顶部"><span class="lang lang-zh">返回顶部</span><span class="lang lang-en">Back to top</span></button>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
