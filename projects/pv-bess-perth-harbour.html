@@ -5,48 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Perth Harbour PV-BESS 项目详情，展示光伏储能系统设计、PVsyst 建模、经济性分析和工程结果。"
+      content="Perth Harbour PV-BESS project detail by Ziyang Wu, including bilingual engineering background, PVsyst modelling, sizing logic, simulation evidence, economics and project reflection."
     />
-    <title>PV-BESS Project Detail | 吴子洋</title>
+    <title>Perth Harbour PV-BESS Project | 吴子洋</title>
     <link rel="stylesheet" href="../styles.css" />
-    <style>
-      /* ── Page-specific additions ── */
-      .spec-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin-top: 1rem; }
-      .spec-table th { text-align: left; padding: 0.45rem 0.7rem; background: rgba(255,255,255,0.06); font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.12); }
-      .spec-table td { padding: 0.42rem 0.7rem; border-bottom: 1px solid rgba(255,255,255,0.07); vertical-align: top; }
-      .spec-table tr:hover td { background: rgba(255,255,255,0.035); }
-      .spec-table td:first-child { color: var(--clr-accent, #7ee8a2); white-space: nowrap; min-width: 11rem; }
-      .spec-table td.num { font-variant-numeric: tabular-nums; }
-      .tag-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.2rem; }
-      .tag-chip { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
-        padding: 0.2rem 0.55rem; border-radius: 3px; background: rgba(126,232,162,0.12); color: #7ee8a2; border: 1px solid rgba(126,232,162,0.25); }
-      .faq-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem; }
-      .faq-list li { border-left: 3px solid rgba(126,232,162,0.45); padding-left: 1rem; }
-      .faq-q { font-weight: 700; margin-bottom: 0.35rem; font-size: 0.92rem; }
-      .faq-a { font-size: 0.88rem; line-height: 1.65; opacity: 0.88; }
-      .compare-wrap { overflow-x: auto; }
-      .compare-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 640px; }
-      .compare-table th { background: rgba(255,255,255,0.07); padding: 0.5rem 0.6rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.15); font-weight: 700; }
-      .compare-table th:first-child { text-align: left; }
-      .compare-table td { padding: 0.42rem 0.6rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.06); font-variant-numeric: tabular-nums; }
-      .compare-table td:first-child { text-align: left; color: rgba(255,255,255,0.7); }
-      .compare-table tr.highlight td { background: rgba(126,232,162,0.07); }
-      .compare-table .best { color: #7ee8a2; font-weight: 700; }
-      .loss-bar-wrap { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.8rem; }
-      .loss-row { display: flex; align-items: center; gap: 0.8rem; }
-      .loss-label { font-size: 0.8rem; min-width: 13rem; opacity: 0.8; }
-      .loss-bar-outer { flex: 1; height: 8px; background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; }
-      .loss-bar-inner { height: 100%; border-radius: 4px; background: rgba(126,232,162,0.6); }
-      .loss-pct { font-size: 0.78rem; min-width: 3rem; text-align: right; opacity: 0.75; }
-      .callout { background: rgba(126,232,162,0.07); border: 1px solid rgba(126,232,162,0.2); border-radius: 6px; padding: 1rem 1.2rem; margin-top: 1rem; font-size: 0.87rem; line-height: 1.65; }
-      .callout strong { color: #7ee8a2; }
-      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-      @media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
-      .section-anchor { scroll-margin-top: 4rem; }
-      .toc { display: flex; flex-wrap: wrap; gap: 0.6rem 1.2rem; margin-bottom: 2rem; padding: 1rem 1.2rem; background: rgba(255,255,255,0.04); border-radius: 6px; font-size: 0.82rem; }
-      .toc a { color: rgba(255,255,255,0.65); text-decoration: none; }
-      .toc a:hover { color: #7ee8a2; }
-    </style>
   </head>
   <body data-lang="zh">
     <div class="page-grid" aria-hidden="true"></div>
@@ -61,11 +23,23 @@
       </a>
 
       <div class="header-actions">
-        <nav class="nav" aria-label="项目导航">
-          <a href="../index.html#projects">Projects</a>
-          <a href="../index.html#education">Education</a>
-          <a href="../index.html#experience">Experience</a>
-          <a href="../index.html#contact">Contact</a>
+        <nav class="nav" aria-label="项目页面导航">
+          <a href="../index.html#projects">
+            <span class="lang lang-zh">项目</span>
+            <span class="lang lang-en">Projects</span>
+          </a>
+          <a href="../index.html#education">
+            <span class="lang lang-zh">教育</span>
+            <span class="lang lang-en">Education</span>
+          </a>
+          <a href="../index.html#experience">
+            <span class="lang lang-zh">实习</span>
+            <span class="lang lang-en">Experience</span>
+          </a>
+          <a href="../index.html#contact">
+            <span class="lang lang-zh">联系</span>
+            <span class="lang lang-en">Contact</span>
+          </a>
         </nav>
         <button class="language-toggle" type="button" aria-label="Switch language">
           <span data-lang-label="zh">EN</span>
@@ -75,614 +49,152 @@
     </header>
 
     <main>
-      <!-- ═══ Hero ═══ -->
-      <section class="section project-detail-hero">
-        <a class="back-link" href="../index.html#projects">
-          <span class="lang lang-zh">← 返回项目经历</span>
-          <span class="lang lang-en">← Back to Projects</span>
-        </a>
-        <p class="section-kicker">Project Detail · Solar Energy &amp; Photovoltaic Systems (MSc)</p>
-        <h1>
-          <span class="lang lang-zh">Perth Harbour 光伏储能系统设计与技术经济分析</span>
-          <span class="lang lang-en">PV and Battery Energy Storage System Design for Perth Harbour — Techno-Economic Analysis</span>
-        </h1>
-        <p class="hero-lead">
-          <span class="lang lang-zh">
-            爱丁堡大学 Solar Energy &amp; Photovoltaic Systems 课程组项目（Group 7，共 4 人），完成英国 Southampton 与澳大利亚 Perth 四类并网光伏系统的设计与对比分析，涵盖住宅屋顶和港口商业场景。我负责 Perth 太阳能资源分析、Perth 住宅光伏系统设计，以及 Fremantle 港口大型 PV-BESS 系统的全流程方案——包括负荷估算、组件选型、PVsyst 3D 仿真建模、损失分析和经济评估。
-          </span>
-          <span class="lang lang-en">
-            This MSc course group project (Group 7, four members) at the University of Edinburgh compared grid-connected PV system designs in Southampton, UK and Perth, Australia across four scenarios. I was responsible for the Perth solar resource analysis, the Perth residential rooftop design (Case 2) and the end-to-end design of the Fremantle Harbour large-scale PV-BESS system (Case 4), covering load estimation, component selection, PVsyst 3D simulation, loss analysis and economic evaluation.
-          </span>
-        </p>
-
-        <div class="tag-row">
-          <span class="tag-chip">PVsyst V8.0.7</span>
-          <span class="tag-chip">Grid-Connected PV</span>
-          <span class="tag-chip">BESS Sizing</span>
-          <span class="tag-chip">Techno-Economic Analysis</span>
-          <span class="tag-chip">Bifacial Modules</span>
-          <span class="tag-chip">Meteonorm 8.2</span>
-          <span class="tag-chip">IRR / NPV / LCOE</span>
-          <span class="tag-chip">East-West Dome Layout</span>
+      <section class="section project-detail-hero project-brief-hero">
+        <div class="brief-copy">
+          <a class="back-link" href="../index.html#projects">
+            <span class="lang lang-zh">返回项目经历</span>
+            <span class="lang lang-en">Back to Projects</span>
+          </a>
+          <p class="section-kicker">
+            <span class="lang lang-zh">项目详情 · 太阳能及光伏系统硕士课程</span>
+            <span class="lang lang-en">Project Detail · Solar Energy and Photovoltaic Systems MSc Course</span>
+          </p>
+          <h1>
+            <span class="lang lang-zh">珀斯港光伏储能系统设计与技术经济分析</span>
+            <span class="lang lang-en">PV and Battery Energy Storage System Design for Perth Harbour</span>
+          </h1>
+          <p class="hero-lead">
+            <span class="lang lang-zh">
+              该项目来自爱丁堡大学太阳能及光伏系统（Solar Energy and Photovoltaic Systems）课程组项目。我负责澳大利亚珀斯（Perth）太阳能资源分析、住宅屋顶光伏（Photovoltaic, PV）方案，以及弗里曼特尔港（Fremantle Harbour）大型光伏储能系统（Photovoltaic and Battery Energy Storage System, PV-BESS）的工程设计、光伏仿真软件（PVsyst）建模、损失分析和经济评估。
+            </span>
+            <span class="lang lang-en">
+              This University of Edinburgh MSc group project compared grid-connected PV systems in Southampton and Perth. My core responsibility was the Fremantle Harbour PV-BESS case: translating port electricity demand, solar resource, available roof area and tariff assumptions into a simulated, costed engineering design.
+            </span>
+          </p>
+          <div class="tag-row">
+            <span class="tag-chip"><span class="lang lang-zh">光伏仿真软件（PVsyst）V8.0.7</span><span class="lang lang-en">PVsyst V8.0.7</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">并网光伏（Grid-Connected PV）</span><span class="lang lang-en">Grid-Connected PV</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">电池储能系统（Battery Energy Storage System, BESS）容量配置</span><span class="lang lang-en">BESS Sizing</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">技术经济分析</span><span class="lang lang-en">Techno-Economic Analysis</span></span>
+          </div>
         </div>
+
+        <figure class="brief-hero-media">
+          <img src="../assets/projects/perth-harbour-site-photo.png" alt="Perth Harbour port roof used for the PV-BESS case study" />
+          <figcaption>
+            <span class="lang lang-zh">项目选址：客运站前大型停车场屋顶，被抽象为港口屋顶光伏储能系统的可仿真场景。</span>
+            <span class="lang lang-en">Project site: the large car-park roof in front of the passenger station, converted into a simulatable harbour PV-BESS scenario.</span>
+          </figcaption>
+        </figure>
       </section>
 
-      <!-- ═══ Key Metrics ═══ -->
       <section class="section project-detail-section">
         <article class="case-study" id="pv-bess-case">
-
-          <div class="case-metrics">
-            <div><strong>939 kWp</strong><span>Fremantle PV capacity</span></div>
-            <div><strong>1708</strong><span>Mono 550 Wp bifacial modules</span></div>
-            <div><strong>4412 m²</strong><span>array area</span></div>
-            <div><strong>26 × 30 kW</strong><span>AC string inverters</span></div>
-            <div><strong>1.20</strong><span>DC/AC ratio</span></div>
-            <div><strong>931.8 kWh</strong><span>BESS usable capacity</span></div>
-            <div><strong>1263.2 MWh</strong><span>annual production</span></div>
-            <div><strong>67.29%</strong><span>performance ratio (PR)</span></div>
-            <div><strong>97.78%</strong><span>solar fraction</span></div>
-            <div><strong>3.3 yr</strong><span>payback period</span></div>
-            <div><strong>30.83%</strong><span>IRR</span></div>
-            <div><strong>£0.1112/kWh</strong><span>LCOE</span></div>
+          <div class="case-metrics case-metrics-compact">
+            <div><strong>939 kWp</strong><span><span class="lang lang-zh">光伏阵列容量</span><span class="lang lang-en">PV array capacity</span></span></div>
+            <div><strong>1708</strong><span><span class="lang lang-zh">550 Wp 双面组件</span><span class="lang lang-en">550 Wp bifacial modules</span></span></div>
+            <div><strong>780 kWac</strong><span><span class="lang lang-zh">交流侧逆变器容量</span><span class="lang lang-en">AC inverter capacity</span></span></div>
+            <div><strong>1.20</strong><span><span class="lang lang-zh">直流/交流容量比</span><span class="lang lang-en">DC/AC ratio</span></span></div>
+            <div><strong>931.8 kWh</strong><span><span class="lang lang-zh">储能有效容量</span><span class="lang lang-en">usable BESS capacity</span></span></div>
+            <div><strong>1263.2 MWh</strong><span><span class="lang lang-zh">年发电量</span><span class="lang lang-en">annual production</span></span></div>
+            <div><strong>67.29%</strong><span><span class="lang lang-zh">性能比</span><span class="lang lang-en">performance ratio</span></span></div>
+            <div><strong>30.83%</strong><span><span class="lang lang-zh">内部收益率</span><span class="lang lang-en">internal rate of return</span></span></div>
           </div>
 
-          <!-- Table of Contents -->
-          <nav class="toc" aria-label="页内导航">
-            <strong style="opacity:0.5; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em;">Jump to:</strong>
-            <a href="#section-star"><span class="lang lang-zh">STAR 概览</span><span class="lang lang-en">STAR Overview</span></a>
-            <a href="#section-specs"><span class="lang lang-zh">完整技术规格</span><span class="lang lang-en">Full Tech Specs</span></a>
-            <a href="#section-design-logic"><span class="lang lang-zh">设计逻辑</span><span class="lang lang-en">Design Logic</span></a>
-            <a href="#section-pvsyst"><span class="lang lang-zh">PVsyst 建模与损失</span><span class="lang lang-en">PVsyst &amp; Losses</span></a>
-            <a href="#section-economics"><span class="lang lang-zh">经济分析</span><span class="lang lang-en">Economics</span></a>
-            <a href="#section-faq"><span class="lang lang-zh">HR 深度追问</span><span class="lang lang-en">HR Deep Dive</span></a>
-            <a href="#section-compare"><span class="lang lang-zh">四方案对比</span><span class="lang lang-en">Four-Case Compare</span></a>
-            <a href="#section-visuals"><span class="lang lang-zh">工程图示</span><span class="lang lang-en">Visuals</span></a>
+          <nav class="case-map" aria-label="Project section navigation">
+            <a href="#section-overview"><span class="lang lang-zh">项目概览</span><span class="lang lang-en">Overview</span></a>
+            <a href="#section-sizing"><span class="lang lang-zh">容量配置</span><span class="lang lang-en">Sizing</span></a>
+            <a href="#section-simulation"><span class="lang lang-zh">仿真证据</span><span class="lang lang-en">Simulation</span></a>
+            <a href="#section-results"><span class="lang lang-zh">经济结果</span><span class="lang lang-en">Results</span></a>
+            <a href="#section-review"><span class="lang lang-zh">专业复核</span><span class="lang lang-en">Engineering Review</span></a>
           </nav>
 
-          <!-- ═══ STAR ═══ -->
-          <div class="case-grid" id="section-star">
+          <div class="case-grid" id="section-overview">
             <section class="case-panel section-anchor">
-              <h4>
-                <span class="lang lang-zh">项目概览（STAR）</span>
-                <span class="lang lang-en">Project Overview (STAR)</span>
-              </h4>
+              <h4><span class="lang lang-zh">项目概览（Situation, Task, Action, Result, STAR）</span><span class="lang lang-en">Project Overview (STAR)</span></h4>
               <dl class="star-list">
                 <div>
                   <dt>Situation</dt>
                   <dd>
-                    <span class="lang lang-zh">该课程项目要求以 4 人小组形式，对英国与另一国家的并网光伏系统进行对比设计与评估。我们选择了澳大利亚 Perth 与英国 Southampton，分别设计住宅屋顶系统和大型港口商业系统，并从太阳能资源、市场政策、技术经济性和 CO₂ 减排四个维度进行综合评价。澳大利亚 Perth 年均太阳辐射超过 5.0 kWh/m²/day（GHI 5.4–6.2 kWh/m²/day），显著优于英国 Southampton 的约 3.0–3.7 kWh/m²/day，是高收益光伏项目的理想选址。</span>
-                    <span class="lang lang-en">The course required a four-person team to compare grid-connected PV system designs between the UK and another country. We chose Perth, Australia and Southampton, UK, designing residential rooftop and large-scale port systems in each location, with evaluation across solar resource, market policy, techno-economics and CO₂ reduction. Perth's annual average solar radiation exceeds 5.0 kWh/m²/day (GHI 5.4–6.2 kWh/m²/day), substantially higher than Southampton's ~3.0–3.7 kWh/m²/day, making it an excellent location for high-yield PV projects.</span>
+                    <span class="lang lang-zh">课程要求四人小组比较英国南安普敦（Southampton）与澳大利亚珀斯（Perth）的并网光伏系统，覆盖住宅屋顶和港口商业场景，并从太阳能资源、工程配置、经济性和减排效果进行评价。</span>
+                    <span class="lang lang-en">The course required a four-person team to compare grid-connected PV systems in Southampton, UK and Perth, Australia, across residential rooftop and commercial port scenarios, considering solar resource, engineering design, economics and carbon savings.</span>
                   </dd>
                 </div>
                 <div>
                   <dt>Task</dt>
                   <dd>
-                    <span class="lang lang-zh">我负责：① 澳大利亚太阳能资源分析；② Perth 住宅屋顶 PV 系统设计（Case 2，13.2 kWp）；③ Fremantle 港口大型 PV-BESS 系统设计（Case 4，939 kWp + 931.8 kWh 储能）。对于港口系统，需要基于 Fremantle Ports 实际能耗数据推算设计目标（目标覆盖港口 50% 用电），在 PVsyst V8.0.7 中完成 3D 建模、遮挡分析、损失计算和 20 年财务模型。</span>
-                    <span class="lang lang-en">My responsibilities were: ① Australia solar resource analysis; ② Perth residential rooftop PV design (Case 2, 13.2 kWp); ③ Fremantle Harbour large-scale PV-BESS design (Case 4, 939 kWp + 931.8 kWh storage). For the harbour system, I needed to derive the design target from Fremantle Ports' actual energy data (targeting 50% of port electricity supply) and complete 3D modelling, shading analysis, loss calculation and a 20-year financial model in PVsyst V8.0.7.</span>
+                    <span class="lang lang-zh">我负责珀斯太阳能资源分析和弗里曼特尔港大型光伏储能系统（Photovoltaic and Battery Energy Storage System, PV-BESS）方案，需要把港口用电目标、屋顶面积、气象数据和电价假设转化为可在光伏仿真软件（PVsyst）中验证的工程模型。</span>
+                    <span class="lang lang-en">I was responsible for the Perth solar resource analysis and the Fremantle Harbour PV-BESS design, converting port load targets, roof area, weather data and tariff assumptions into an engineering model that could be validated in PVsyst.</span>
                   </dd>
                 </div>
                 <div>
                   <dt>Action</dt>
                   <dd>
-                    <span class="lang lang-zh">
-                      <strong>需求推算：</strong>Fremantle Ports 年报显示 836 MWh/year 可覆盖 Victoria Quay 约 15% 用电；我推算覆盖 50% 需约 2786.67 MWh/year，按 8–9 h/day 日照换算最小阵列功率约 848.3 kW。<br/>
-                      <strong>组件与逆变器选型：</strong>选择 Generic Mono 550 Wp 双面半片组件（1.134 m × 2.278 m），配置 122 串 × 14 只共 1708 块，总装机 939 kWp；选用 26 台 Generic 30 kWac 串型逆变器（工作电压 450–700 V），DC/AC = 1.20。<br/>
-                      <strong>储能配置：</strong>选用 BYD Battery Box Premium HVS 12.8（512 V / 25 Ah 单体），91 只并联，理想容量 1164.8 kWh，80% DoD 后可用 931.8 kWh。<br/>
-                      <strong>PVsyst 建模：</strong>在停车场屋顶建立 east-west dome 3D 模型（倾角 10°，方位角 -39°/-141° 双面），使用 Meteonorm 8.2 (1996–2015) 气象数据，模拟年 10 降效状态，分析遮挡、热损、线损、衰减等全链路损失；建立 20 年财务模型（峰时电价 £0.34/kWh，谷时 £0.06/kWh，OPEX £113,457.60/year）。
-                    </span>
-                    <span class="lang lang-en">
-                      <strong>Demand estimation:</strong> Fremantle Ports' annual report stated that 836 MWh/year covers about 15% of Victoria Quay energy; I back-calculated that a 50% target requires about 2,786.67 MWh/year, giving a minimum array power of about 848.3 kW using 8–9 h/day average sunshine.<br/>
-                      <strong>Module and inverter selection:</strong> Selected Generic Mono 550 Wp bifacial half-cell modules (1.134 m × 2.278 m), configured as 122 strings × 14 modules = 1,708 units, 939 kWp total; 26 Generic 30 kWac string inverters (operating range 450–700 V), DC/AC = 1.20.<br/>
-                      <strong>Storage sizing:</strong> Selected BYD Battery Box Premium HVS 12.8 (512 V / 25 Ah per unit), 91 units in parallel, ideal capacity 1,164.8 kWh, 931.8 kWh usable at 80% DoD.<br/>
-                      <strong>PVsyst modelling:</strong> Built an east-west dome 3D model on the car-park roof (10° tilt, azimuths -39°/+141°), used Meteonorm 8.2 (1996–2015) weather data, simulated at Year 10 degradation state, and analysed shading, thermal, wiring, soiling and degradation losses through the full chain; built a 20-year financial model (peak tariff £0.34/kWh, off-peak £0.06/kWh, OPEX £113,457.60/year).
-                    </span>
+                    <span class="lang lang-zh">完成负荷目标推算、550 Wp 双面半片组件选型、26 台 30 kW 串型逆变器配置、电池储能系统（Battery Energy Storage System, BESS）容量计算、三维（3D）场景建模、近端遮挡和系统损失分析，并建立 20 年财务模型。</span>
+                    <span class="lang lang-en">I estimated the design load target, selected 550 Wp bifacial half-cell modules, configured 26 x 30 kW string inverters, sized the BESS, built the 3D scene, analysed near-shading and system losses, and prepared a 20-year financial model.</span>
                   </dd>
                 </div>
                 <div>
                   <dt>Result</dt>
                   <dd>
-                    <span class="lang lang-zh">
-                      Fremantle 港口方案年发电 1263.2 MWh，太阳能保障率 97.78%，PR 67.29%，LCOE £0.1112/kWh，3.3 年回收投资，20 年 NPV £3,980,509，IRR 30.83%，ROI 587.1%，30 年累计减排约 27,257.7 吨 CO₂。Perth 住宅方案年发电 17,601 kWh，PR 70.31%，LCOE £0.5632/kWh，16 年回收，20 年 NPV £40,173。项目也识别出当前 BESS 容量不足以完全平抑高渗透率 PV 对电网的冲击，建议后续扩大储能规模并优化充放电调度策略。
-                    </span>
-                    <span class="lang lang-en">
-                      The Fremantle harbour design achieved 1,263.2 MWh/year production, 97.78% solar fraction, 67.29% PR, LCOE of £0.1112/kWh, 3.3-year payback, 20-year NPV of £3,980,509, IRR 30.83%, ROI 587.1% and about 27,257.7 tonnes of CO₂ savings over 30 years. The Perth residential design produced 17,601 kWh/year, 70.31% PR, LCOE £0.5632/kWh, 16-year payback and 20-year NPV of £40,173. The project also identified that the current BESS capacity is insufficient to fully buffer high-penetration PV grid impact, and recommended expanding storage and optimising charge/discharge scheduling.
-                    </span>
+                    <span class="lang lang-zh">形成 939 kWp 光伏阵列、931.8 kWh 可用储能容量和 1.20 直流/交流容量比（Direct Current/Alternating Current ratio, DC/AC ratio）的方案；仿真年发电量 1263.2 MWh，性能比（Performance Ratio, PR）67.29%，平准化度电成本（Levelized Cost of Energy, LCOE）£0.1112/kWh，投资回收期 3.3 年，内部收益率（Internal Rate of Return, IRR）30.83%。</span>
+                    <span class="lang lang-en">The final design used a 939 kWp PV array, 931.8 kWh usable storage and a 1.20 DC/AC ratio. Simulated annual production was 1263.2 MWh, with 67.29% PR, £0.1112/kWh LCOE, 3.3-year payback and 30.83% IRR.</span>
                   </dd>
                 </div>
               </dl>
             </section>
-          </div>
 
-          <!-- ═══ Full Technical Specs ═══ -->
-          <div class="case-grid" id="section-specs">
-            <section class="case-panel section-anchor" style="grid-column: 1 / -1;">
-              <h4>
-                <span class="lang lang-zh">完整技术规格（Case 4 — Fremantle Harbour）</span>
-                <span class="lang lang-en">Full Technical Specifications — Case 4: Fremantle Harbour</span>
-              </h4>
-
-              <div class="two-col">
-                <div>
-                  <p style="font-weight:600; font-size:0.85rem; opacity:0.6; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:0.5rem;">
-                    <span class="lang lang-zh">光伏阵列</span><span class="lang lang-en">PV Array</span>
-                  </p>
-                  <table class="spec-table">
-                    <tr><td><span class="lang lang-zh">组件型号</span><span class="lang lang-en">Module model</span></td><td>Generic Mono 550 Wp Twin half-cells bifacial</td></tr>
-                    <tr><td><span class="lang lang-zh">单片功率</span><span class="lang lang-en">Unit power</span></td><td class="num">550 Wp (STC)</td></tr>
-                    <tr><td><span class="lang lang-zh">组件技术</span><span class="lang lang-en">Cell technology</span></td><td><span class="lang lang-zh">单晶硅双面半片（Monocrystalline Si bifacial, twin half-cell）</span><span class="lang lang-en">Monocrystalline Si bifacial, twin half-cell</span></td></tr>
-                    <tr><td><span class="lang lang-zh">组件尺寸</span><span class="lang lang-en">Module size</span></td><td class="num">1.134 m × 2.278 m ≈ 2.583 m²</td></tr>
-                    <tr><td><span class="lang lang-zh">总块数</span><span class="lang lang-en">Total modules</span></td><td class="num">1708（122 串 × 14 并）</td></tr>
-                    <tr><td><span class="lang lang-zh">总装机容量</span><span class="lang lang-en">Total capacity</span></td><td class="num">939 kWp (STC)</td></tr>
-                    <tr><td><span class="lang lang-zh">阵列总面积</span><span class="lang lang-en">Array area</span></td><td class="num">4412 m²（组件面积），电池面积 4073 m²</td></tr>
-                    <tr><td><span class="lang lang-zh">工况输出（50°C）</span><span class="lang lang-en">Operating output</span></td><td class="num">Pmpp 862 kWp，Umpp 529 V，Impp 1629 A</td></tr>
-                    <tr><td><span class="lang lang-zh">倾角 / 方位角</span><span class="lang lang-en">Tilt / Azimuth</span></td><td><span class="lang lang-zh">前面：10° / -39°；背面：10° / +141°（东西 dome 双面）</span><span class="lang lang-en">Front: 10° / -39°; Back: 10° / +141° (east-west dome)</span></td></tr>
-                    <tr><td><span class="lang lang-zh">衰减率</span><span class="lang lang-en">Degradation rate</span></td><td class="num">0.4%/year（第 10 年仿真）</td></tr>
-                  </table>
-                </div>
-
-                <div>
-                  <p style="font-weight:600; font-size:0.85rem; opacity:0.6; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:0.5rem;">
-                    <span class="lang lang-zh">逆变器</span><span class="lang lang-en">Inverters</span>
-                  </p>
-                  <table class="spec-table">
-                    <tr><td><span class="lang lang-zh">型号</span><span class="lang lang-en">Model</span></td><td>Generic 30 kWac inverter</td></tr>
-                    <tr><td><span class="lang lang-zh">单台功率</span><span class="lang lang-en">Unit power</span></td><td class="num">30 kWac</td></tr>
-                    <tr><td><span class="lang lang-zh">台数</span><span class="lang lang-en">Quantity</span></td><td class="num">26 台</td></tr>
-                    <tr><td><span class="lang lang-zh">总 AC 容量</span><span class="lang lang-en">Total AC power</span></td><td class="num">780 kWac</td></tr>
-                    <tr><td>DC/AC ratio</td><td class="num">1.20（DC 939 kWp / AC 780 kWac）</td></tr>
-                    <tr><td><span class="lang lang-zh">工作电压</span><span class="lang lang-en">Operating voltage</span></td><td class="num">450–700 V</td></tr>
-                    <tr><td><span class="lang lang-zh">输出电压</span><span class="lang lang-en">Output voltage</span></td><td class="num">400 Vac (三相)</td></tr>
-                    <tr><td><span class="lang lang-zh">接线截面</span><span class="lang lang-en">Wire section</span></td><td>Copper 26 × 3 × 10 mm²</td></tr>
-                  </table>
-
-                  <p style="font-weight:600; font-size:0.85rem; opacity:0.6; text-transform:uppercase; letter-spacing:0.06em; margin: 1.2rem 0 0.5rem;">
-                    <span class="lang lang-zh">储能系统（BESS）</span><span class="lang lang-en">Battery Storage (BESS)</span>
-                  </p>
-                  <table class="spec-table">
-                    <tr><td><span class="lang lang-zh">电池型号</span><span class="lang lang-en">Battery model</span></td><td>BYD Battery Box Premium HVS 12.8<br/><small style="opacity:0.6">（PVsyst Generic 数据库）</small></td></tr>
-                    <tr><td><span class="lang lang-zh">单体参数</span><span class="lang lang-en">Per unit</span></td><td class="num">512 V / 25 Ah / 12.8 kWh</td></tr>
-                    <tr><td><span class="lang lang-zh">并联数量</span><span class="lang lang-en">Parallel units</span></td><td class="num">91 只并联（1 串 × 91 并）</td></tr>
-                    <tr><td><span class="lang lang-zh">理想总容量</span><span class="lang lang-en">Ideal total capacity</span></td><td class="num">91 × 512 V × 25 Ah = 1164.8 kWh</td></tr>
-                    <tr><td><span class="lang lang-zh">PVsyst 有效容量</span><span class="lang lang-en">PVsyst stored energy</span></td><td class="num">931.8 kWh（最小 SOC 20%）</td></tr>
-                    <tr><td><span class="lang lang-zh">总安时容量</span><span class="lang lang-en">Total capacity (Ah)</span></td><td class="num">2275 Ah（C10）</td></tr>
-                    <tr><td>Min. SOC / DoD</td><td class="num">20% SOC / 80% DoD</td></tr>
-                    <tr><td><span class="lang lang-zh">电池充电器</span><span class="lang lang-en">Battery charger</span></td><td class="num">Generic，最大充电功率 500 kWdc<br/>效率：Max 97% / Euro 95%</td></tr>
-                    <tr><td><span class="lang lang-zh">电池放电逆变</span><span class="lang lang-en">Battery inverter</span></td><td class="num">Generic，最大放电功率 400 kWac<br/>效率：Max 97% / Euro 95%</td></tr>
-                    <tr><td><span class="lang lang-zh">充放电策略</span><span class="lang lang-en">Strategy</span></td><td><span class="lang lang-zh">自消费优先：光伏余量时充电，负荷需求时放电</span><span class="lang lang-en">Self-consumption: charge on PV excess, discharge on demand</span></td></tr>
-                    <tr><td><span class="lang lang-zh">电池寿命（仿真）</span><span class="lang lang-en">Battery lifetime</span></td><td class="num">10 年（循环 SOW 95.1%，静态 SOW 90%）</td></tr>
-                    <tr><td><span class="lang lang-zh">生命周期总能量</span><span class="lang lang-en">Lifetime energy</span></td><td class="num">~5534.7 MWh（80% DoD × 10 年）</td></tr>
-                  </table>
-                </div>
-              </div>
-
-              <div class="two-col" style="margin-top:1.5rem;">
-                <div>
-                  <p style="font-weight:600; font-size:0.85rem; opacity:0.6; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:0.5rem;">
-                    <span class="lang lang-zh">地点与气象</span><span class="lang lang-en">Site &amp; Weather</span>
-                  </p>
-                  <table class="spec-table">
-                    <tr><td><span class="lang lang-zh">地点</span><span class="lang lang-en">Site</span></td><td>Fremantle, Western Australia</td></tr>
-                    <tr><td><span class="lang lang-zh">坐标</span><span class="lang lang-en">Coordinates</span></td><td class="num">32°02'54"S，115°44'50"E（停车场屋顶）</td></tr>
-                    <tr><td><span class="lang lang-zh">海拔 / 时区</span><span class="lang lang-en">Altitude / TZ</span></td><td class="num">6 m / UTC+8</td></tr>
-                    <tr><td><span class="lang lang-zh">地表反照率</span><span class="lang lang-en">Albedo</span></td><td class="num">0.20</td></tr>
-                    <tr><td><span class="lang lang-zh">气象数据</span><span class="lang lang-en">Weather data</span></td><td>Meteonorm 8.2（1996–2015，卫星 100%）</td></tr>
-                    <tr><td><span class="lang lang-zh">日均日照时数</span><span class="lang lang-en">Avg. sunshine hours</span></td><td class="num">8–9 h/day（Perth 年均）</td></tr>
-                    <tr><td><span class="lang lang-zh">年均 GHI</span><span class="lang lang-en">Annual GHI</span></td><td class="num">5.4–6.2 kWh/m²/day</td></tr>
-                    <tr><td><span class="lang lang-zh">仿真年份</span><span class="lang lang-en">Simulation year</span></td><td><span class="lang lang-zh">第 10 年（含衰减累计 ~4%）</span><span class="lang lang-en">Year 10 (cumulative degradation ~4%)</span></td></tr>
-                  </table>
-                </div>
-
-                <div>
-                  <p style="font-weight:600; font-size:0.85rem; opacity:0.6; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:0.5rem;">
-                    <span class="lang lang-zh">负荷与系统输出</span><span class="lang lang-en">Load &amp; System Output</span>
-                  </p>
-                  <table class="spec-table">
-                    <tr><td><span class="lang lang-zh">负荷类型</span><span class="lang lang-en">Load type</span></td><td><span class="lang lang-zh">固定恒定负荷（港口用电）</span><span class="lang lang-en">Fixed constant load (port electricity)</span></td></tr>
-                    <tr><td><span class="lang lang-zh">设计负荷</span><span class="lang lang-en">Design load</span></td><td class="num">48.3 kW = 423 MWh/year</td></tr>
-                    <tr><td><span class="lang lang-zh">年总发电量</span><span class="lang lang-en">Annual production</span></td><td class="num">1263.2 MWh/year</td></tr>
-                    <tr><td><span class="lang lang-zh">自用电量</span><span class="lang lang-en">Energy used</span></td><td class="num">423 MWh/year（覆盖全部设计负荷）</td></tr>
-                    <tr><td><span class="lang lang-zh">上网电量</span><span class="lang lang-en">Sold to grid</span></td><td class="num">850 MWh/year</td></tr>
-                    <tr><td><span class="lang lang-zh">比发电量</span><span class="lang lang-en">Specific production</span></td><td class="num">1345 kWh/kWp/year</td></tr>
-                    <tr><td>Performance Ratio (PR)</td><td class="num">67.29%</td></tr>
-                    <tr><td>Solar Fraction (SF)</td><td class="num">97.78%</td></tr>
-                    <tr><td><span class="lang lang-zh">年 P50 / P90</span><span class="lang lang-en">P50 / P90</span></td><td><span class="lang lang-zh">仿真含 P50/P90 评估（PVsyst 内置）</span><span class="lang lang-en">P50/P90 evaluated in PVsyst report</span></td></tr>
-                  </table>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <!-- ═══ Design Logic ═══ -->
-          <div class="case-grid" id="section-design-logic">
             <section class="case-panel section-anchor">
-              <h4>
-                <span class="lang lang-zh">设计逻辑与选型依据</span>
-                <span class="lang lang-en">Design Logic and Selection Rationale</span>
-              </h4>
+              <h4><span class="lang lang-zh">项目边界</span><span class="lang lang-en">Project Boundary</span></h4>
               <ul class="detail-list">
-                <li>
-                  <span class="lang lang-zh"><strong>目标推算：</strong>Fremantle Ports 2022 年报提及已有 1,100 块光伏板（500 kW）年发电 836 MWh，可满足 Victoria Quay 约 15% 用电。本项目目标设定为覆盖 50%，倒推需 836 ÷ 15% × 50% = 2786.67 MWh/year。</span>
-                  <span class="lang lang-en"><strong>Target derivation:</strong> Fremantle Ports' 2022 report noted an existing 500 kW, 1,100-module installation generating 836 MWh/year covering about 15% of Victoria Quay demand. Setting a 50% target back-calculates to 836 ÷ 15% × 50% = 2,786.67 MWh/year.</span>
-                </li>
-                <li>
-                  <span class="lang lang-zh"><strong>最小阵列功率：</strong>按澳大利亚年均日照 8–9 h/day：Array_min = 2786.67 MWh ÷ (9 h × 365 d) ≈ 848.3 kW。最终设计 939 kWp 预留了余量以应对遮挡、衰减等损失。</span>
-                  <span class="lang lang-en"><strong>Minimum array power:</strong> Using Australia's average 8–9 h/day sunshine: Array_min = 2,786.67 MWh ÷ (9 h × 365 d) ≈ 848.3 kW. The final 939 kWp design includes margin for shading, degradation and other losses.</span>
-                </li>
-                <li>
-                  <span class="lang lang-zh"><strong>组件选型逻辑：</strong>选择 Mono 550 Wp 双面半片组件而非普通单面组件，因 Perth 屋顶反射率约 0.20，双面可额外获取地面反射辐照（bifacial gain），提升每块组件发电量。尺寸约 1.134 m × 2.278 m，阵列面积 4412 m²，适配停车场屋顶空间。</span>
-                  <span class="lang lang-en"><strong>Module selection rationale:</strong> Mono 550 Wp bifacial half-cell modules were chosen over standard monofacial because Perth rooftop albedo of ~0.20 enables bifacial gain from reflected irradiance, increasing output per module. Dimensions of ~1.134 m × 2.278 m give an array area of 4,412 m², fitting the available car-park roof.</span>
-                </li>
-                <li>
-                  <span class="lang lang-zh"><strong>DC/AC = 1.20 的选择：</strong>Perth 全年日照充足且稳定，大多数时段辐照强度高。稍微超配 DC（939 kWp vs 780 kWac）可在强日照时段让逆变器满负荷运行，代价是极少量削峰损耗（inverter clipping），综合看有助于提高年发电量和 IRR。若 DC/AC = 1.0 则会在高辐照时浪费潜在发电量。</span>
-                  <span class="lang lang-en"><strong>Why DC/AC = 1.20:</strong> Perth has abundant and stable year-round sunshine, so irradiance is frequently high. Slightly oversizing DC (939 kWp vs 780 kWac) allows the inverters to run at full output for more hours, at the cost of minimal clipping loss. This boosts annual yield and IRR. A DC/AC of 1.0 would waste generation potential during high-irradiance hours.</span>
-                </li>
-                <li>
-                  <span class="lang lang-zh"><strong>East-West Dome 布局：</strong>因停车场屋顶面积大、坡度近乎为零，采用 Rows as domes east-west 布局（前面 -39°，后面 +141°，倾角均为 10°）。该布局相比纯朝南设置可额外捕捉约 30% 的早晚侧向辐照；低倾角减少迎风面积，也有利于屋面承重；双面结构还简化了安装脚手架和压重。</span>
-                  <span class="lang lang-en"><strong>East-West Dome layout:</strong> Given the large, nearly flat car-park roof, the rows-as-domes east-west layout (front -39°, back +141°, both at 10° tilt) was selected. This captures approximately 30% more irradiance from morning and afternoon compared to pure south-facing, while the low tilt reduces wind load and structural ballast requirements. The back-to-back design also simplifies installation.</span>
-                </li>
-                <li>
-                  <span class="lang lang-zh"><strong>BESS 容量设计：</strong>91 × 512 V × 25 Ah = 1164.8 kWh（理想值），考虑 20% 最低 SOC 后可用 931.8 kWh。该容量约可支持 48.3 kW 的设计负荷连续供电约 19 小时（无光照时），也可在上网收益最高时间段存储过剩电力以供后续使用。</span>
-                  <span class="lang lang-en"><strong>BESS capacity rationale:</strong> 91 × 512 V × 25 Ah = 1,164.8 kWh ideal; 931.8 kWh usable after 20% min SOC. This can support the 48.3 kW design load for about 19 hours without solar, and allows storing surplus generation for dispatch during high-tariff periods.</span>
-                </li>
-              </ul>
-            </section>
-
-            <section class="case-panel">
-              <h4>
-                <span class="lang lang-zh">Perth 住宅方案（Case 2）技术规格</span>
-                <span class="lang lang-en">Perth Residential System — Case 2 Specs</span>
-              </h4>
-              <table class="spec-table">
-                <tr><td><span class="lang lang-zh">组件型号</span><span class="lang lang-en">Module</span></td><td>Generic Mono 440 Wp Twin 144 half-cells bifacial</td></tr>
-                <tr><td><span class="lang lang-zh">总块数 / 装机</span><span class="lang lang-en">Modules / Capacity</span></td><td class="num">30 块（5 串 × 6 并）/ 13.2 kWp</td></tr>
-                <tr><td><span class="lang lang-zh">阵列面积</span><span class="lang lang-en">Array area</span></td><td class="num">67.3 m²（1.052 m × 2.131 m × 30）</td></tr>
-                <tr><td><span class="lang lang-zh">逆变器</span><span class="lang lang-en">Inverter</span></td><td>JH 3500U，3.5 kWac × 4 台 = 14 kWac，DC/AC = 0.94</td></tr>
-                <tr><td><span class="lang lang-zh">电池型号</span><span class="lang lang-en">Battery</span></td><td>BYD Battery Box Premium HVS 12.8（同上）</td></tr>
-                <tr><td><span class="lang lang-zh">电池配置</span><span class="lang lang-en">Battery config</span></td><td class="num">23 只并联，有效容量 235.5 kWh（575 Ah）</td></tr>
-                <tr><td><span class="lang lang-zh">坐标</span><span class="lang lang-en">Coordinates</span></td><td class="num">31°58'37"S，115°52'07"E（South Perth）</td></tr>
-                <tr><td><span class="lang lang-zh">倾角 / 方位</span><span class="lang lang-en">Tilt / Azimuth</span></td><td class="num">双面 30.5°；101.8° 和 -78.1°</td></tr>
-                <tr><td><span class="lang lang-zh">设计负荷</span><span class="lang lang-en">Design load</span></td><td class="num">12.5 kW = 110 MWh/year</td></tr>
-                <tr><td><span class="lang lang-zh">年发电量</span><span class="lang lang-en">Annual production</span></td><td class="num">17,601 kWh/year</td></tr>
-                <tr><td>PR / Solar Fraction</td><td class="num">70.31% / 16.07%</td></tr>
-                <tr><td>LCOE</td><td class="num">£0.5632/kWh（贷款融资，4% 利率）</td></tr>
-                <tr><td><span class="lang lang-zh">回收期 / IRR</span><span class="lang lang-en">Payback / IRR</span></td><td class="num">16 年 / 10.85%</td></tr>
-                <tr><td><span class="lang lang-zh">年节省电费</span><span class="lang lang-en">Annual savings</span></td><td class="num">£0.34 × 17,600 kWh = £5,984/year</td></tr>
-              </table>
-            </section>
-          </div>
-
-          <!-- ═══ PVsyst Modelling ═══ -->
-          <div class="case-grid" id="section-pvsyst">
-            <section class="case-panel section-anchor" style="grid-column: 1 / -1;">
-              <h4>
-                <span class="lang lang-zh">PVsyst 建模与全链路损失分析</span>
-                <span class="lang lang-en">PVsyst Modelling and Full Loss Chain Analysis</span>
-              </h4>
-
-              <div class="two-col">
-                <div>
-                  <p style="font-size:0.85rem; opacity:0.75; margin-bottom:0.8rem;">
-                    <span class="lang lang-zh">使用 PVsyst V8.0.7（爱丁堡大学课堂许可），以 Meteonorm 8.2 (1996–2015) 气象数据为基础，在第 10 年降效状态下进行仿真，充分考虑了以下各类损失：</span>
-                    <span class="lang lang-en">Using PVsyst V8.0.7 (University of Edinburgh classroom licence) with Meteonorm 8.2 (1996–2015) weather data, simulated at Year 10 degradation state, accounting for the following loss categories:</span>
-                  </p>
-
-                  <div class="loss-bar-wrap">
-                    <div class="loss-row">
-                      <span class="loss-label"><span class="lang lang-zh">灰尘/污积损失</span><span class="lang lang-en">Soiling loss</span></span>
-                      <div class="loss-bar-outer"><div class="loss-bar-inner" style="width:60%"></div></div>
-                      <span class="loss-pct">3.0%</span>
-                    </div>
-                    <div class="loss-row">
-                      <span class="loss-label"><span class="lang lang-zh">组件质量损失</span><span class="lang lang-en">Module quality loss</span></span>
-                      <div class="loss-bar-outer"><div class="loss-bar-inner" style="width:40%"></div></div>
-                      <span class="loss-pct">2.0%</span>
-                    </div>
-                    <div class="loss-row">
-                      <span class="loss-label"><span class="lang lang-zh">光致衰减（LID，双面补偿）</span><span class="lang lang-en">LID (bifacial offset)</span></span>
-                      <div class="loss-bar-outer"><div class="loss-bar-inner" style="width:8%; background:rgba(255,200,100,0.5)"></div></div>
-                      <span class="loss-pct">-0.4%</span>
-                    </div>
-                    <div class="loss-row">
-                      <span class="loss-label"><span class="lang lang-zh">DC 线路损失</span><span class="lang lang-en">DC wiring loss</span></span>
-                      <div class="loss-bar-outer"><div class="loss-bar-inner" style="width:54%"></div></div>
-                      <span class="loss-pct">2.7%</span>
-                    </div>
-                    <div class="loss-row">
-                      <span class="loss-label"><span class="lang lang-zh">失配损失（MPP）</span><span class="lang lang-en">Mismatch loss (MPP)</span></span>
-                      <div class="loss-bar-outer"><div class="loss-bar-inner" style="width:40%"></div></div>
-                      <span class="loss-pct">2.0%</span>
-                    </div>
-                    <div class="loss-row">
-                      <span class="loss-label"><span class="lang lang-zh">串间失配</span><span class="lang lang-en">Strings mismatch</span></span>
-                      <div class="loss-bar-outer"><div class="loss-bar-inner" style="width:2%"></div></div>
-                      <span class="loss-pct">0.1%</span>
-                    </div>
-                    <div class="loss-row">
-                      <span class="loss-label"><span class="lang lang-zh">系统停机损失</span><span class="lang lang-en">Unavailability</span></span>
-                      <div class="loss-bar-outer"><div class="loss-bar-inner" style="width:40%"></div></div>
-                      <span class="loss-pct">2.0%</span>
-                    </div>
-                    <div class="loss-row">
-                      <span class="loss-label"><span class="lang lang-zh">组件衰减（年 10）</span><span class="lang lang-en">Degradation (yr 10)</span></span>
-                      <div class="loss-bar-outer"><div class="loss-bar-inner" style="width:8%"></div></div>
-                      <span class="loss-pct">~4%累计</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <table class="spec-table">
-                    <tr>
-                      <th colspan="2"><span class="lang lang-zh">热损失模型参数</span><span class="lang lang-en">Thermal Loss Model</span></th>
-                    </tr>
-                    <tr><td>Uc（常数）</td><td class="num">20.0 W/m²K（自然对流）</td></tr>
-                    <tr><td>Uv（风速）</td><td class="num">0.0 W/m²K / (m/s)（屋顶封闭环境）</td></tr>
-                    <tr>
-                      <th colspan="2" style="padding-top:0.8rem;"><span class="lang lang-zh">近端遮挡（Iso-shading 分析）</span><span class="lang lang-en">Near-Shading Analysis</span></th>
-                    </tr>
-                    <tr><td><span class="lang lang-zh">主遮挡时段</span><span class="lang lang-en">Main shading hours</span></td><td>06:00–08:00 &amp; 16:00–18:00</td></tr>
-                    <tr><td><span class="lang lang-zh">遮挡损失范围</span><span class="lang lang-en">Shading loss range</span></td><td class="num">1%–10%（常规时段）；峰值 20%–40%（早晚极短）</td></tr>
-                    <tr><td><span class="lang lang-zh">Beam 衰减因子</span><span class="lang lang-en">Beam attenuation</span></td><td class="num">~0.436（全年平均）</td></tr>
-                    <tr>
-                      <th colspan="2" style="padding-top:0.8rem;"><span class="lang lang-zh">IAM 损失（入射角修正）</span><span class="lang lang-en">IAM Loss (Incidence Angle)</span></th>
-                    </tr>
-                    <tr><td>30°</td><td class="num">0.999（几乎无损）</td></tr>
-                    <tr><td>50°</td><td class="num">0.987</td></tr>
-                    <tr><td>60°</td><td class="num">0.963</td></tr>
-                    <tr><td>70°</td><td class="num">0.892</td></tr>
-                    <tr><td>85°</td><td class="num">0.438</td></tr>
-                    <tr>
-                      <th colspan="2" style="padding-top:0.8rem;"><span class="lang lang-zh">光谱修正（FirstSolar 模型）</span><span class="lang lang-en">Spectral Correction (FirstSolar Model)</span></th>
-                    </tr>
-                    <tr><td>Cell type</td><td>Monocrystalline Si，C0 = 0.859</td></tr>
-                  </table>
-
-                  <div class="callout" style="margin-top:1rem;">
-                    <span class="lang lang-zh"><strong>归一化发电数据：</strong>有用输出约 3.83 kWh/kWp/day；Collection loss（阵列损失）约 1.25 kWh/kWp/day；System operation loss（逆变等）约 0.39 kWh/kWp/day。发电高峰为 12 月和 1 月（南半球夏季），低谷为 6–7 月（南半球冬季，多阴雨）。</span>
-                    <span class="lang lang-en"><strong>Normalised production:</strong> Useful output ~3.83 kWh/kWp/day; collection loss ~1.25 kWh/kWp/day; system operation loss ~0.39 kWh/kWp/day. Peak production months are December and January (Southern Hemisphere summer); lowest in June–July (winter, more cloud).</span>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <!-- ═══ Economics ═══ -->
-          <div class="case-grid" id="section-economics">
-            <section class="case-panel section-anchor">
-              <h4>
-                <span class="lang lang-zh">经济分析详解</span>
-                <span class="lang lang-en">Economic Analysis in Detail</span>
-              </h4>
-
-              <p style="font-weight:600; font-size:0.82rem; opacity:0.6; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.5rem;">
-                <span class="lang lang-zh">初始投资（CAPEX）明细</span><span class="lang lang-en">CAPEX Breakdown</span>
-              </p>
-              <table class="spec-table">
-                <tr><th><span class="lang lang-zh">项目</span><span class="lang lang-en">Item</span></th><th><span class="lang lang-zh">数量</span><span class="lang lang-en">Qty</span></th><th><span class="lang lang-zh">单价</span><span class="lang lang-en">Unit cost</span></th><th><span class="lang lang-zh">小计</span><span class="lang lang-en">Subtotal</span></th></tr>
-                <tr><td><span class="lang lang-zh">光伏组件 Mono 550 Wp bifacial</span><span class="lang lang-en">PV modules Mono 550 Wp</span></td><td class="num">1708</td><td class="num">£40.77</td><td class="num">£69,628</td></tr>
-                <tr><td><span class="lang lang-zh">逆变器 30 kWac</span><span class="lang lang-en">Inverters 30 kWac</span></td><td class="num">26</td><td class="num">£881.15</td><td class="num">£22,910</td></tr>
-                <tr style="font-weight:600;"><td><span class="lang lang-zh">电池 BYD HVS 12.8</span><span class="lang lang-en">Batteries BYD HVS 12.8</span></td><td class="num">91</td><td class="num">£3,912</td><td class="num">£355,990 ⚡最大项</td></tr>
-                <tr><td><span class="lang lang-zh">配件 / 紧固件</span><span class="lang lang-en">Accessories / fasteners</span></td><td class="num">—</td><td class="num">—</td><td class="num">£56,666</td></tr>
-                <tr><td><span class="lang lang-zh">工程与研究</span><span class="lang lang-en">Engineering &amp; studies</span></td><td class="num">—</td><td class="num">—</td><td class="num">£28,333</td></tr>
-                <tr><td><span class="lang lang-zh">安装（每块均摊）</span><span class="lang lang-en">Installation per module</span></td><td class="num">1708</td><td class="num">£46.45</td><td class="num">£79,332</td></tr>
-                <tr><td><span class="lang lang-zh">保险</span><span class="lang lang-en">Insurance</span></td><td class="num">—</td><td class="num">—</td><td class="num">£9,207</td></tr>
-                <tr style="font-weight:700; border-top:1px solid rgba(255,255,255,0.2);"><td colspan="3"><span class="lang lang-zh">总投资（含税）</span><span class="lang lang-en">Total CAPEX</span></td><td class="num">£678,037（£0.72/Wp）</td></tr>
-              </table>
-
-              <p style="font-weight:600; font-size:0.82rem; opacity:0.6; text-transform:uppercase; letter-spacing:0.05em; margin: 1.2rem 0 0.5rem;">
-                <span class="lang lang-zh">年运营成本（OPEX）明细</span><span class="lang lang-en">Annual OPEX Breakdown</span>
-              </p>
-              <table class="spec-table">
-                <tr><td><span class="lang lang-zh">逆变器维护/置换拨备</span><span class="lang lang-en">Inverter maintenance provision</span></td><td class="num">£22,910/year</td></tr>
-                <tr><td><span class="lang lang-zh">维修</span><span class="lang lang-en">Repairs</span></td><td class="num">£1,000/year</td></tr>
-                <tr><td><span class="lang lang-zh">清洗（Perth 沙尘环境）</span><span class="lang lang-en">Cleaning (dusty Perth environment)</span></td><td class="num">£500/year</td></tr>
-                <tr style="font-weight:600;"><td><span class="lang lang-zh">电池置换拨备</span><span class="lang lang-en">Battery replacement provision</span></td><td class="num">£71,198/year ⚡最大项</td></tr>
-                <tr><td><span class="lang lang-zh">保险（厂房 + 设施）</span><span class="lang lang-en">Insurance</span></td><td class="num">£17,850/year</td></tr>
-                <tr style="font-weight:700; border-top:1px solid rgba(255,255,255,0.2);"><td><span class="lang lang-zh">合计 OPEX</span><span class="lang lang-en">Total OPEX</span></td><td class="num">£113,458/year</td></tr>
-              </table>
-            </section>
-
-            <section class="case-panel">
-              <h4>
-                <span class="lang lang-zh">LCOE 与财务参数</span>
-                <span class="lang lang-en">LCOE and Financial Parameters</span>
-              </h4>
-              <table class="spec-table">
-                <tr>
-                  <th colspan="2"><span class="lang lang-zh">电价假设（澳大利亚 Perth）</span><span class="lang lang-en">Electricity tariff assumptions — Perth, AU</span></th>
-                </tr>
-                <tr><td><span class="lang lang-zh">峰时上网电价</span><span class="lang lang-en">Peak feed-in tariff</span></td><td class="num">£0.34/kWh（20:00 前）</td></tr>
-                <tr><td><span class="lang lang-zh">谷时电价</span><span class="lang lang-en">Off-peak tariff</span></td><td class="num">£0.06/kWh（20:00–07:00）</td></tr>
-                <tr><td><span class="lang lang-zh">自消费电价（初始）</span><span class="lang lang-en">Self-consumption tariff</span></td><td class="num">£0.06/kWh，+5%/year 递增</td></tr>
-                <tr><td><span class="lang lang-zh">年上网电价变化</span><span class="lang lang-en">Feed-in tariff variation</span></td><td class="num">+0.5%/year</td></tr>
-                <tr>
-                  <th colspan="2" style="padding-top:0.8rem;"><span class="lang lang-zh">财务模型假设</span><span class="lang lang-en">Financial Model Assumptions</span></th>
-                </tr>
-                <tr><td><span class="lang lang-zh">项目生命周期</span><span class="lang lang-en">Project lifetime</span></td><td class="num">20 年（起始 2026）</td></tr>
-                <tr><td><span class="lang lang-zh">融资方式</span><span class="lang lang-en">Financing</span></td><td class="num">自有资金（£678,037 一次性投入）</td></tr>
-                <tr><td><span class="lang lang-zh">折现率</span><span class="lang lang-en">Discount rate</span></td><td class="num">0%（保守基准）</td></tr>
-                <tr><td><span class="lang lang-zh">通胀率</span><span class="lang lang-en">Inflation</span></td><td class="num">0%/year</td></tr>
-                <tr><td><span class="lang lang-zh">产量衰减</span><span class="lang lang-en">Production aging</span></td><td class="num">0.5%/year</td></tr>
-                <tr>
-                  <th colspan="2" style="padding-top:0.8rem;"><span class="lang lang-zh">LCOE 计算</span><span class="lang lang-en">LCOE Calculation</span></th>
-                </tr>
-                <tr><td>LCOE</td><td class="num"><strong>£0.1112/kWh</strong></td></tr>
-                <tr><td><span class="lang lang-zh">有用能量（年）</span><span class="lang lang-en">Useful energy (annual)</span></td><td class="num">~414 MWh/year（自用）</td></tr>
-                <tr>
-                  <th colspan="2" style="padding-top:0.8rem;"><span class="lang lang-zh">投资回报指标</span><span class="lang lang-en">Return on Investment Metrics</span></th>
-                </tr>
-                <tr><td><span class="lang lang-zh">回收期</span><span class="lang lang-en">Payback period</span></td><td class="num"><strong>3.3 年</strong></td></tr>
-                <tr><td>NPV（20 年）</td><td class="num"><strong>£3,980,509</strong></td></tr>
-                <tr><td>IRR</td><td class="num"><strong>30.83%</strong></td></tr>
-                <tr><td>ROI</td><td class="num"><strong>587.1%</strong></td></tr>
-                <tr><td><span class="lang lang-zh">第 1 年售电收入</span><span class="lang lang-en">Year 1 electricity sale</span></td><td class="num">~£288,861（含上网 + 自用）</td></tr>
-                <tr><td><span class="lang lang-zh">第 1 年自消费节省</span><span class="lang lang-en">Year 1 self-consumption saving</span></td><td class="num">~£24,817</td></tr>
-                <tr><td><span class="lang lang-zh">20 年总售电收入</span><span class="lang lang-en">20-yr total electricity income</span></td><td class="num">£6,060,059</td></tr>
-                <tr><td><span class="lang lang-zh">20 年折旧</span><span class="lang lang-en">20-yr depreciation</span></td><td class="num">£505,193（直线折旧）</td></tr>
-              </table>
-
-              <div class="callout">
-                <span class="lang lang-zh">
-                  <strong>与 Southampton Harbour（Case 3）对比：</strong>Case 3 LCOE 仅 £0.0436/kWh（更低），因其 2241 kWp 容量远大。但 Case 3 回收期 9.4 年、IRR 12.06%，明显劣于 Case 4（3.3 年，30.83%）。两者适用场景不同——Case 4 适合强调短期回报和减排目标，Case 3 更适合长期低成本供电导向的项目。
-                </span>
-                <span class="lang lang-en">
-                  <strong>vs Southampton Harbour (Case 3):</strong> Case 3 has a lower LCOE of £0.0436/kWh (larger 2,241 kWp array), but payback is 9.4 years with IRR 12.06% — much weaker than Case 4 (3.3 yr, 30.83%). The difference reflects the contexts: Case 4 suits short-return commercial scenarios; Case 3 suits long-term low-cost supply priorities.
-                </span>
-              </div>
-            </section>
-          </div>
-
-          <!-- ═══ HR FAQ ═══ -->
-          <div class="case-grid" id="section-faq">
-            <section class="case-panel section-anchor" style="grid-column: 1 / -1;">
-              <h4>
-                <span class="lang lang-zh">HR 深度追问：技术细节 Q&amp;A</span>
-                <span class="lang lang-en">HR Deep Dive: Technical Q&amp;A</span>
-              </h4>
-              <p style="font-size:0.85rem; opacity:0.7; margin-bottom:1.2rem;">
-                <span class="lang lang-zh">以下为 HR 和技术面试官可能就本项目提出的细节问题及详细解答。</span>
-                <span class="lang lang-en">Detailed answers to the specific technical questions that HR and engineering interviewers are likely to ask about this project.</span>
-              </p>
-
-              <ul class="faq-list">
-                <li>
-                  <p class="faq-q">Q: 你们用的什么电池型号？具体参数是什么？</p>
-                  <p class="faq-a lang lang-zh">
-                    A: 两个 Perth 方案都使用了 <strong>BYD Battery Box Premium HVS 12.8</strong>（PVsyst 通用数据库中的 Generic 版本）。该电池单体参数为 <strong>512 V / 25 Ah，即 12.8 kWh</strong>，采用 LFP（磷酸铁锂）技术路线，支持高电压串联组网。
-                    港口方案（Case 4）配置 91 只并联：理想容量 91 × 512 V × 25 Ah = <strong>1164.8 kWh</strong>，设定最低 SOC 为 20%（即 80% DoD），PVsyst 报告中的有效储能 <strong>931.8 kWh</strong>，总安时容量 2275 Ah (C10)。
-                    住宅方案（Case 2）配置 23 只并联：有效容量 <strong>235.5 kWh</strong>，总安时 575 Ah。电池额定工作温度为固定 20°C（PVsyst 仿真假设）。仿真预估电池寿命约 <strong>10 年</strong>（循环 SOW 95.1%，静态 SOW 90%），故 OPEX 中计提了 £71,198/year 的电池置换费用。
-                  </p>
-                </li>
-                <li>
-                  <p class="faq-q">Q: LCOE 是怎么计算的？</p>
-                  <p class="faq-a lang lang-zh">
-                    A: LCOE（平准化度电成本）= 系统全生命周期总成本 ÷ 系统全生命周期有效发电量。港口方案由 PVsyst 计算得 <strong>LCOE = £0.1112/kWh</strong>。
-                    具体逻辑：总安装成本 £678,037 + 20 年 OPEX £113,458 × 20 年 = 约 £2,947,000 总成本；分摊到生命周期年均有效用能（~414 MWh/year 自用电量，考虑 0.5% 年衰减）。
-                    LCOE 不含上网售电收入，仅反映"生产每度电的成本"。由于本项目大量电力上网出售（850 MWh/year 售电 vs 414 MWh 自用），IRR 和 NPV 等回报指标更能体现项目商业价值。
-                  </p>
-                </li>
-                <li>
-                  <p class="faq-q">Q: 澳大利亚电价是多少？怎么设定的？</p>
-                  <p class="faq-a lang lang-zh">
-                    A: 项目中澳大利亚 Perth 的电价设定为：<strong>峰时上网电价 £0.34/kWh</strong>（20:00 前），<strong>谷时 £0.06/kWh</strong>（20:00–07:00），<strong>自消费电价初始 £0.06/kWh 并每年上涨 5%</strong>。这参考了西澳大利亚州 DEBS（Distributed Energy Buyback Scheme）和 Synergy 的上网电价体系，并考虑汇率换算（澳元→英镑）。项目假设电价保障期为 20 年。第 1 年预计售电总收益约 £288,861，含峰时上网和自消费两部分。
-                  </p>
-                </li>
-                <li>
-                  <p class="faq-q">Q: DC/AC 比为什么选 1.20？会不会有削峰损失？</p>
-                  <p class="faq-a lang lang-zh">
-                    A: DC/AC = 939 kWp ÷ 780 kWac = <strong>1.20</strong>，这是为了充分利用 Perth 高日照环境的发电潜力。逆变器额定功率 780 kW 在一年中大多数时段可被全部利用，适度超配 DC 侧可使逆变器更多时间处于满功率运行状态，提升年发电量和 IRR。虽然在极端高辐照时段会出现少量 inverter clipping（逆变器限功），但结合 Perth 的辐照分布（大量时间在 500–2000 kW 范围），削峰损失占年发电量的比例可控。PVsyst 逆变器输出分布图也验证了该配置的合理性。
-                  </p>
-                </li>
-                <li>
-                  <p class="faq-q">Q: 光伏组件是什么型号？为什么选双面半片？</p>
-                  <p class="faq-a lang lang-zh">
-                    A: 两个港口方案均选用 <strong>Generic Mono 550 Wp Twin half-cells bifacial</strong>（PVsyst 原生数据库组件），尺寸约 <strong>1.134 m × 2.278 m</strong>，STC 功率 550 Wp。住宅方案使用 <strong>Mono 440 Wp Twin 144 half-cells bifacial</strong>，适配较小的屋顶安装面积。
-                    选双面原因：①Perth 屋顶地表反照率约 0.20，双面组件可获取地面反射辐照以提升发电量（bifacial gain）；②半片（twin half-cell）结构降低了内部电流，减少热损，提升高温环境下的功率保持率；③对于 Perth 的高温夏季场景更具优势。
-                  </p>
-                </li>
-                <li>
-                  <p class="faq-q">Q: 气象数据来源是什么？是实测数据还是模拟数据？</p>
-                  <p class="faq-a lang lang-zh">
-                    A: 使用 <strong>Meteonorm 8.2（1996–2015，卫星数据占比 100%）</strong>，这是 PVsyst 内置的权威气候数据库，基于全球卫星实测数据合成典型气象年（TMY）。数据覆盖 GHI、DNI、散射辐射、环境温度、风速等关键参数。对于 Fremantle 站点（-32.05°S，115.75°E，海拔 6 m，UTC+8），该数据集能较好代表当地 20 年的长期平均太阳辐照水平，适合工程仿真的基准估算。
-                  </p>
-                </li>
-                <li>
-                  <p class="faq-q">Q: 污积损失为什么设 3%？Perth 沙尘怎么处理？</p>
-                  <p class="faq-a lang lang-zh">
-                    A: 3% 的污积损失（Soiling loss）是工程设计中对 Perth 地区的合理估算。Perth 靠近西澳大利亚内陆，夏季干燥、沙尘天气频发，加上港口环境（盐雾、车尾气等），组件污积速度相对较快。3% 是 PVsyst 推荐的适合澳大利亚沿海工业地区的默认保守值。OPEX 中专门计提了 <strong>£500/year 的清洗费用</strong>，对应定期水洗或人工擦拭维护，确保实际运行中污积损失不超过仿真设定值。
-                  </p>
-                </li>
-                <li>
-                  <p class="faq-q">Q: Solar Fraction 97.78% 意味着什么？能完全自给吗？</p>
-                  <p class="faq-a lang lang-zh">
-                    A: Solar Fraction（太阳能保障率）97.78% 表示港口 <strong>48.3 kW 固定负荷（423 MWh/year）中，有 97.78% 由光伏+储能系统直接覆盖</strong>，仅约 2.22% 需从电网购电。这得益于 939 kWp 的超大装机容量（远超负荷需求）和 931.8 kWh 的储能系统在日间充电、夜间放电的调节作用。高 SF 意味着对电网的依赖极低，但也意味着大量电力（850 MWh/year）被上网出售，实际收益模式以售电为主而非节省购电费。
-                  </p>
-                </li>
-                <li>
-                  <p class="faq-q">Q: 系统是并网的还是离网的？储能的作用是什么？</p>
-                  <p class="faq-a lang lang-zh">
-                    A: <strong>并网系统（Grid-Connected System）</strong>，既可从电网买电，也可向电网售电。储能（BESS）的作用是"自消费策略"（Self-consumption strategy）：当光伏发电量超过负荷时充电，当负荷需求超过光伏出力（如阴天、夜间）时放电，减少从电网购电并提升自消费比例。对于港口商业用电，BESS 还能起到峰值削减（peak shaving）和平滑出力波动的作用，降低尖峰时段从电网购电的成本。但本项目的 931.8 kWh BESS 容量相对于 1263.2 MWh/year 的年发电量仍然较小，大部分过剩电力仍直接上网出售。
-                  </p>
-                </li>
-                <li>
-                  <p class="faq-q">Q: 为什么 Perth 住宅系统（Case 2）回收期反而比 Southampton（Case 1）长？</p>
-                  <p class="faq-a lang lang-zh">
-                    A: 这是一个有趣的反常。尽管 Perth 日照资源更好（年发电 17,601 kWh vs Southampton 12,494 kWh），但 Case 2 回收期 16 年 vs Case 1 仅 9.1 年。主要原因：①Case 2 采用贷款融资（4% 利率，20 年期），而 Case 1 为自有资金，贷款利息增加了总成本；②Case 2 的自消费份额（Solar Fraction 仅 16.07%）很低——大部分发电量用于家庭消费而非高价上网，而澳大利亚住宅上网电价虽然峰时高但整体电价结构使得回收期延长；③OPEX 中电池置换拨备占比较高（£6,425/year，占总 OPEX £7,797/year 的 82%）。这一发现在讨论部分作为两国住宅系统对比的核心结论之一。
-                  </p>
-                </li>
-                <li>
-                  <p class="faq-q lang lang-zh">Q: 选址依据是什么？为什么选停车场屋顶？</p>
-                  <p class="faq-a lang lang-zh">
-                    A: 选址为 Fremantle 港口 passenger station 前大型停车场屋顶（32°02'54"S，115°44'50"E），依据是：①停车场屋顶面积大（可用约 4412 m²+），空间利用率高；②不占用港口作业区和码头面积，对港口运营影响最小；③屋顶水平，便于采用 east-west dome 低倾角布局；④距港口主要用电负荷（客运站、行政楼）距离近，线路损失小；⑤参照了 Fremantle Ports 2022 年报中已有的 1100 块组件项目的选址逻辑，在已有基础上进行扩容设计。
-                  </p>
-                </li>
-                <li>
-                  <p class="faq-q">Q: 倾角为什么只选 10°？Perth 这么靠南不应该倾角更大？</p>
-                  <p class="faq-a lang lang-zh">
-                    A: 通常纬度 ~32°S 的最佳倾角约为 30–35°，但本项目选择 10° 倾角是多重权衡的结果：①停车场屋顶近乎水平，安装高倾角支架需要大量额外钢结构和配重，增加成本和屋面承载；②east-west dome 双面布局（前面 -39°，后面 +141°）已通过双向捕光补偿了部分低倾角的能量损失（可比纯朝南多约 30% 辐照）；③低倾角减少迎风面积，在 Perth 海港环境中降低了风载荷设计要求；④PVsyst 仿真验证了 10° 倾角在近端遮挡损失（1%–10%）和发电量之间取得了较好的平衡。
-                  </p>
-                </li>
+                <li><span class="lang lang-zh">地点：澳大利亚西澳州弗里曼特尔港客运站前停车场屋顶，报告坐标约为 32°02'54"S, 115°44'50"E。</span><span class="lang lang-en">Location: car-park roof in front of the Fremantle passenger station, Western Australia, with report coordinates around 32°02'54"S, 115°44'50"E.</span></li>
+                <li><span class="lang lang-zh">目标：围绕港口商业负荷设计并网光伏与储能方案，而不是完整港口微电网控制系统。</span><span class="lang lang-en">Goal: design a grid-connected PV and storage solution for a commercial harbour load, not a full port microgrid control system.</span></li>
+                <li><span class="lang lang-zh">仿真：使用光伏仿真软件（PVsyst）和气象数据库（Meteonorm 8.2）数据，重点评估发电量、损失链、性能比和财务可行性。</span><span class="lang lang-en">Simulation: PVsyst with Meteonorm 8.2 weather data, focused on energy yield, loss chain, performance ratio and financial feasibility.</span></li>
+                <li><span class="lang lang-zh">公开展示：本页展示工程逻辑和图示证据，不上传成绩单、奖状或完整报告原件。</span><span class="lang lang-en">Public presentation: this page shows engineering logic and visual evidence, without publishing transcripts, certificates or full report PDFs.</span></li>
               </ul>
             </section>
           </div>
 
-          <!-- ═══ Four-Case Comparison ═══ -->
-          <div class="case-grid" id="section-compare">
-            <section class="case-panel section-anchor" style="grid-column: 1 / -1;">
-              <h4>
-                <span class="lang lang-zh">四方案完整对比（Southampton vs Perth，住宅 vs 商业）</span>
-                <span class="lang lang-en">Full Four-Case Comparison — Southampton vs Perth, Residential vs Commercial</span>
-              </h4>
-              <div class="compare-wrap">
-                <table class="compare-table">
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th>Case 1<br/><small>Southampton<br/>Residential</small></th>
-                      <th>Case 2<br/><small>Perth<br/>Residential</small></th>
-                      <th>Case 3<br/><small>Southampton<br/>Harbour</small></th>
-                      <th class="highlight">Case 4 ★<br/><small>Fremantle<br/>Harbour</small></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td>Module</td><td>Mono 440 Wp bifacial</td><td>Mono 440 Wp bifacial</td><td>Mono 550 Wp bifacial</td><td class="highlight">Mono 550 Wp bifacial</td></tr>
-                    <tr><td><span class="lang lang-zh">总装机</span><span class="lang lang-en">Total capacity</span></td><td>17.6 kWp</td><td>13.2 kWp</td><td>2241 kWp</td><td class="highlight">939 kWp</td></tr>
-                    <tr><td><span class="lang lang-zh">组件数</span><span class="lang lang-en">No. modules</span></td><td>40</td><td>30</td><td>4074</td><td class="highlight">1708</td></tr>
-                    <tr><td><span class="lang lang-zh">逆变器</span><span class="lang lang-en">Inverter</span></td><td>Sharp 3.5 kW ×4</td><td>JH 3500U ×4</td><td>30 kW ×64</td><td class="highlight">30 kW ×26</td></tr>
-                    <tr><td>DC/AC</td><td>1.26</td><td>0.94</td><td>~1.0</td><td class="highlight best">1.20</td></tr>
-                    <tr><td>BESS (usable)</td><td>192 kWh (BYD 512V×15)</td><td>235.5 kWh (HVS×23)</td><td>—</td><td class="highlight best">931.8 kWh (HVS×91)</td></tr>
-                    <tr><td><span class="lang lang-zh">年发电量</span><span class="lang lang-en">Annual output</span></td><td>12,494 kWh</td><td>17,601 kWh</td><td>~GWh scale</td><td class="highlight best">1263.2 MWh</td></tr>
-                    <tr><td>PR</td><td>65.5%</td><td class="best">70.31%</td><td>64.3%</td><td class="highlight">67.29%</td></tr>
-                    <tr><td>LCOE</td><td>£0.307/kWh</td><td>£0.563/kWh</td><td class="best">£0.044/kWh</td><td class="highlight">£0.111/kWh</td></tr>
-                    <tr><td><span class="lang lang-zh">总投资</span><span class="lang lang-en">Total CAPEX</span></td><td>£—</td><td>£33,982</td><td>£—</td><td class="highlight">£678,037</td></tr>
-                    <tr><td><span class="lang lang-zh">回收期</span><span class="lang lang-en">Payback</span></td><td>9.1 yr</td><td>16.0 yr</td><td>9.4 yr</td><td class="highlight best">3.3 yr</td></tr>
-                    <tr><td>NPV (20 yr)</td><td>£111,866</td><td>£40,173</td><td>£2,285,509</td><td class="highlight best">£3,980,509</td></tr>
-                    <tr><td>IRR</td><td>13.09%</td><td>10.85%</td><td>12.06%</td><td class="highlight best">30.83%</td></tr>
-                    <tr><td>ROI</td><td>249%</td><td>118.2%</td><td>184.1%</td><td class="highlight best">587.1%</td></tr>
-                    <tr><td><span class="lang lang-zh">CO₂ 减排 (30 yr)</span><span class="lang lang-en">CO₂ saved (30 yr)</span></td><td>176.3 t</td><td>358.9 t</td><td>~17,000 t</td><td class="highlight best">27,257 t</td></tr>
-                    <tr><td><span class="lang lang-zh">峰时电价</span><span class="lang lang-en">Peak tariff</span></td><td>£0.20/kWh (UK FiT)</td><td>£0.34/kWh (AU)</td><td>£0.20/kWh</td><td class="highlight">£0.34/kWh</td></tr>
-                    <tr><td><span class="lang lang-zh">融资方式</span><span class="lang lang-en">Financing</span></td><td>Own funds</td><td>Loan 4%/20 yr</td><td>Own funds</td><td class="highlight">Own funds</td></tr>
-                  </tbody>
-                </table>
-              </div>
-              <p style="font-size:0.78rem; opacity:0.55; margin-top:0.7rem;">
-                ★ <span class="lang lang-zh">Case 4 为我主要负责的方案。Case 1–2 为住宅屋顶，Case 3–4 为商业港口。</span>
-                <span class="lang lang-en">Case 4 was my primary responsibility. Cases 1–2 are residential rooftops; Cases 3–4 are commercial port systems.</span>
-              </p>
-            </section>
-          </div>
+          <section class="case-panel case-wide section-anchor" id="section-sizing">
+            <h4><span class="lang lang-zh">容量配置与设计逻辑</span><span class="lang lang-en">Sizing and Design Logic</span></h4>
+            <div class="brief-table-wrap">
+              <table class="brief-table">
+                <tbody>
+                  <tr>
+                    <th><span class="lang lang-zh">需求推算</span><span class="lang lang-en">Demand Estimate</span></th>
+                    <td><span class="lang lang-zh">根据报告使用的港口能耗数据，836 MWh/year 约对应 Victoria Quay 15% 用电；若覆盖 50%，目标电量约为 2786.67 MWh/year。</span><span class="lang lang-en">Using the port energy data adopted in the report, 836 MWh/year corresponds to about 15% of Victoria Quay demand; a 50% target implies about 2786.67 MWh/year.</span></td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">光伏阵列</span><span class="lang lang-en">PV Array</span></th>
+                    <td><span class="lang lang-zh">1708 块 550 Wp 双面半片组件，总容量约 939 kWp，阵列面积约 4412 m²。</span><span class="lang lang-en">1708 x 550 Wp bifacial half-cell modules, giving about 939 kWp and roughly 4412 m² array area.</span></td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">逆变器</span><span class="lang lang-en">Inverters</span></th>
+                    <td><span class="lang lang-zh">26 台 30 kWac 串型逆变器，总交流侧容量 780 kWac；直流/交流容量比约 1.20，用于提高逆变器利用率，并接受少量高辐照时段削峰风险。</span><span class="lang lang-en">26 x 30 kWac string inverters, giving 780 kWac. The DC/AC ratio is about 1.20, increasing inverter utilisation while accepting limited clipping risk during high-irradiance periods.</span></td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">储能</span><span class="lang lang-en">Battery Storage</span></th>
+                    <td><span class="lang lang-zh">采用 BYD Battery Box Premium HVS 12.8 参数：512 V、25 Ah，91 个单元并联，理想容量 1164.8 kWh；按最低荷电状态（State of Charge, SOC）20% 计算，可用容量约 931.8 kWh。</span><span class="lang lang-en">Based on BYD Battery Box Premium HVS 12.8 parameters: 512 V, 25 Ah and 91 units in parallel. Ideal capacity is 1164.8 kWh; with 20% minimum SOC, usable energy is about 931.8 kWh.</span></td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">布局</span><span class="lang lang-en">Layout</span></th>
+                    <td><span class="lang lang-zh">采用东西双拱（East-West Dome）低倾角行排，两个方位角约为 -39° 和 +141°，目的是提升早晚发电、降低行间遮挡并适配大面积平屋顶。</span><span class="lang lang-en">An east-west dome low-tilt row layout was used, with azimuths around -39° and +141°, to improve morning/evening generation, reduce row-to-row shading and suit a large flat roof.</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
 
-          <!-- ═══ Visuals ═══ -->
-          <section class="case-visuals" aria-labelledby="pv-bess-visuals" id="section-visuals">
+          <section class="case-visuals section-anchor" aria-labelledby="section-simulation-title" id="section-simulation">
             <div class="case-visuals-heading">
-              <p class="section-kicker">Visual Evidence</p>
-              <h3 id="pv-bess-visuals">
-                <span class="lang lang-zh">工程图示与仿真结果</span>
-                <span class="lang lang-en">Engineering Visuals and Simulation Evidence</span>
+              <p class="section-kicker"><span class="lang lang-zh">仿真证据</span><span class="lang lang-en">Simulation Evidence</span></p>
+              <h3 id="section-simulation-title">
+                <span class="lang lang-zh">场地、建模与损失结果</span>
+                <span class="lang lang-en">Site, Model and Loss Evidence</span>
               </h3>
               <p>
-                <span class="lang lang-zh">以下图示来自课程项目报告，用于说明场地选择、PVsyst 3D 建模、组件/逆变器配置以及关键损失分析。</span>
-                <span class="lang lang-en">The following visuals are extracted from the course project report to illustrate site selection, PVsyst 3D modelling, component and inverter configuration, and key loss analysis.</span>
+                <span class="lang lang-zh">以下图示用于支撑项目叙述：从港口场地、三维建模、单线配置到遮挡和发电性能，均对应报告中的关键工程判断。</span>
+                <span class="lang lang-en">These visuals support the case narrative: site selection, 3D modelling, single-line configuration, shading and production performance all correspond to key engineering decisions in the report.</span>
               </p>
             </div>
 
@@ -690,93 +202,71 @@
               <figure class="project-visual-card project-visual-card-wide">
                 <img src="../assets/projects/perth-harbour-aerial-model.png" alt="Perth Harbour aerial view and PVsyst 3D reconstruction" />
                 <figcaption>
-                  <strong>
-                    <span class="lang lang-zh">港口场地与 3D 建模</span>
-                    <span class="lang lang-en">Port Site and 3D Model</span>
-                  </strong>
-                  <span class="lang lang-zh">将 passenger station 前方大型停车场屋顶转化为 PVsyst 可仿真的港口光伏场景（纬度 32°02'54"S，经度 115°44'50"E），明确建筑遮挡、屋顶可用空间和阵列布置边界。East-West dome 布局清晰可见。</span>
-                  <span class="lang lang-en">The large car-park roof in front of the passenger station was modelled in PVsyst (lat 32°02'54"S, lon 115°44'50"E), making building shading, available roof space and array layout boundaries explicit. The east-west dome row structure is clearly visible.</span>
+                  <strong><span class="lang lang-zh">港口场地与三维模型</span><span class="lang lang-en">Port Site and 3D Model</span></strong>
+                  <span class="lang lang-zh">将客运站前大型停车场屋顶转化为光伏仿真软件（PVsyst）的三维场景，明确建筑遮挡、可用屋顶面积和东西双拱阵列布置边界。</span>
+                  <span class="lang lang-en">The car-park roof was converted into a PVsyst 3D scene, making building shading, usable roof area and east-west dome array boundaries explicit.</span>
                 </figcaption>
               </figure>
 
               <figure class="project-visual-card">
                 <img src="../assets/projects/perth-array-arrangement.png" alt="Solar array arrangement diagram for 550 Wp bifacial modules and inverter groups" />
                 <figcaption>
-                  <strong>
-                    <span class="lang lang-zh">阵列接线与并网结构</span>
-                    <span class="lang lang-en">Array and Grid Connection</span>
-                  </strong>
-                  <span class="lang lang-zh">采用 550 Wp 双面半片组件，122 串 × 14 只接入 combiner 和 26 台 30 kW 逆变器，形成 939 kWp DC / 780 kWac 并网输出。DC/AC 比 1.20 在单线图中得以体现。</span>
-                  <span class="lang lang-en">The 550 Wp bifacial modules in 122 strings of 14 connect through combiners and 26 × 30 kW inverters to give 939 kWp DC / 780 kWac grid output. The 1.20 DC/AC ratio is explicit in the single-line diagram.</span>
+                  <strong><span class="lang lang-zh">阵列与并网结构</span><span class="lang lang-en">Array and Grid Connection</span></strong>
+                  <span class="lang lang-zh">组件经汇线箱（Combiner）接入 26 台逆变器，并形成 939 kWp 直流侧与 780 kWac 交流侧输出。</span>
+                  <span class="lang lang-en">Modules connect through combiners to 26 inverters, producing a 939 kWp DC side and 780 kWac AC output.</span>
                 </figcaption>
               </figure>
 
               <figure class="project-visual-card">
                 <img src="../assets/projects/perth-iv-inverter.png" alt="PVsyst array voltage sizing and inverter output distribution charts" />
                 <figcaption>
-                  <strong>
-                    <span class="lang lang-zh">I-V 曲线与逆变器输出分布</span>
-                    <span class="lang lang-en">I-V Curve and Inverter Output Distribution</span>
-                  </strong>
-                  <span class="lang lang-zh">阵列 I-V 曲线验证 20°C 时最大输出约 4000 A × 600 V = 2400 kW DC，工作电压范围在逆变器 450–700 V 窗口内。输出分布图显示大部分能量集中在 500–2000 kW 区间，仅在极少数极端辐照时触及限功。</span>
-                  <span class="lang lang-en">The array I-V curve confirms max output at 20°C of approximately 4000 A × 600 V = 2400 kW DC, within the 450–700 V inverter window. The distribution chart shows most energy concentrated in the 500–2000 kW range, with clipping only at rare extreme irradiance moments.</span>
+                  <strong><span class="lang lang-zh">电压窗口与逆变器利用率</span><span class="lang lang-en">Voltage Window and Inverter Utilisation</span></strong>
+                  <span class="lang lang-zh">阵列电压图用于核查最大功率点（Maximum Power Point, MPP）是否落在逆变器工作电压范围内；输出分布图说明直流侧略超配后逆变器在多数时段具有较高利用率。</span>
+                  <span class="lang lang-en">The voltage-sizing plot checks whether the maximum power point sits inside the inverter operating window; the output distribution shows stronger inverter utilisation after modest DC oversizing.</span>
                 </figcaption>
               </figure>
 
               <figure class="project-visual-card">
                 <img src="../assets/projects/perth-shading-curves.png" alt="PVsyst near shading curves for east-west dome PV layout" />
                 <figcaption>
-                  <strong>
-                    <span class="lang lang-zh">近端遮挡分析（Iso-shading 曲线）</span>
-                    <span class="lang lang-en">Near-Shading Analysis (Iso-shading Diagram)</span>
-                  </strong>
-                  <span class="lang lang-zh">East-West dome 布局下遮挡主要集中在 06:00–08:00 和 16:00–18:00 低太阳高度时段（损失 20%–40%），全天大部分运行时间遮挡损失控制在 1%–10% 以内。Beam 衰减因子约 0.436。</span>
-                  <span class="lang lang-en">Under the east-west dome layout, shading is concentrated in the 06:00–08:00 and 16:00–18:00 low-sun periods (20%–40% loss), with most operating hours within the 1%–10% loss range. Beam attenuation factor is approximately 0.436.</span>
+                  <strong><span class="lang lang-zh">近端遮挡分析</span><span class="lang lang-en">Near-Shading Analysis</span></strong>
+                  <span class="lang lang-zh">遮挡主要集中在早晚低太阳高度角时段；大部分日间运行时间的遮挡损失保持在较低区间，因此该布局适合大面积平屋顶。</span>
+                  <span class="lang lang-en">Shading is concentrated in low-sun morning and evening periods; most daytime operation stays in a lower-loss range, making the layout suitable for a large flat roof.</span>
                 </figcaption>
               </figure>
 
               <figure class="project-visual-card">
-                <img src="../assets/projects/perth-production-pr.png" alt="PVsyst normalized production, losses and performance ratio charts" />
+                <img src="../assets/projects/perth-production-pr.png" alt="PVsyst normalised production, losses and performance ratio charts" />
                 <figcaption>
-                  <strong>
-                    <span class="lang lang-zh">归一化发电、损失与 PR 月度分布</span>
-                    <span class="lang lang-en">Normalised Production, Losses and Monthly PR</span>
-                  </strong>
-                  <span class="lang lang-zh">有用输出约 3.83 kWh/kWp/day；Collection loss 1.25 kWh/kWp/day（最大损失项）；system operation loss 0.39 kWh/kWp/day。PR 月度均值在 0.65–0.90 之间，年均约 67.29%。发电高峰为 12–1 月（夏季），低谷为 6–7 月（冬季）。</span>
-                  <span class="lang lang-en">Useful output ~3.83 kWh/kWp/day; collection loss 1.25 kWh/kWp/day (dominant loss); system operation loss 0.39 kWh/kWp/day. Monthly PR ranges 0.65–0.90, annual average ~67.29%. Peak production in Dec–Jan (summer); lowest in Jun–Jul (winter).</span>
+                  <strong><span class="lang lang-zh">归一化发电与性能比</span><span class="lang lang-en">Normalised Production and PR</span></strong>
+                  <span class="lang lang-zh">有用输出约 3.83 kWh/kWp/day，阵列集电损失约 1.25 kWh/kWp/day，系统运行损失约 0.39 kWh/kWp/day；月度性能比大致在 0.62-0.70 区间，年均约 67.29%。</span>
+                  <span class="lang lang-en">Useful output is about 3.83 kWh/kWp/day, with array collection loss about 1.25 kWh/kWp/day and system operation loss about 0.39 kWh/kWp/day; monthly PR is roughly 0.62-0.70, averaging about 67.29% annually.</span>
                 </figcaption>
               </figure>
             </div>
           </section>
 
-          <!-- ═══ Reflection ═══ -->
-          <div class="case-grid">
-            <section class="case-panel" style="grid-column: 1 / -1;">
-              <h4>
-                <span class="lang lang-zh">项目反思与延伸思考</span>
-                <span class="lang lang-en">Project Reflection and Further Considerations</span>
-              </h4>
+          <div class="case-grid" id="section-results">
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">经济与环境结果</span><span class="lang lang-en">Economic and Environmental Results</span></h4>
               <ul class="detail-list">
-                <li>
-                  <span class="lang lang-zh"><strong>储能不足的问题：</strong>当前 931.8 kWh BESS 相对于 1263.2 MWh/year 年发电量而言覆盖比例有限，大量光伏电力直接上网而非储存使用。若储能规模扩大 3–5 倍，可显著提升自消费比例、减少弃光、并为港口提供更强的离网应急能力。</span>
-                  <span class="lang lang-en"><strong>Storage under-sizing:</strong> The 931.8 kWh BESS provides limited coverage relative to 1,263.2 MWh/year production, so large volumes of PV energy are exported rather than stored. Scaling storage by 3–5× would substantially increase self-consumption, reduce curtailment and provide stronger backup capability for the port.</span>
-                </li>
-                <li>
-                  <span class="lang lang-zh"><strong>Generic 组件的局限性：</strong>PVsyst 仿真使用 Generic 数据库组件，各项参数（如 Mono 550 Wp bifacial 的背面增益系数、BYD HVS 12.8 的循环寿命曲线等）为通用估算值而非厂家实测数据，实际采购时需重新以具体品牌型号（如 LONGi Hi-MO 系列、BYD 官方数据表）进行验证。</span>
-                  <span class="lang lang-en"><strong>Generic component limitations:</strong> Simulation used PVsyst's Generic database, so parameters such as bifacial gain factor for the Mono 550 Wp module and the cycle-life curve for the BYD HVS 12.8 are generic estimates rather than manufacturer-verified data. Real procurement would require re-simulation with actual brand datasheets (e.g., LONGi Hi-MO series, BYD official data).</span>
-                </li>
-                <li>
-                  <span class="lang lang-zh"><strong>气候变化影响：</strong>Meteonorm 8.2 数据基于 1996–2015 历史数据，未来气候变暖可能导致 Perth 平均气温升高，进一步降低高温下 PV 效率（Pmpp 随温升下降）。后续设计可结合 IPCC 气候情景进行敏感性分析。</span>
-                  <span class="lang lang-en"><strong>Climate change impact:</strong> Meteonorm 8.2 data is based on the 1996–2015 historical period. Future warming may increase average temperatures in Perth, further reducing PV efficiency at elevated temperatures (Pmpp decreases with temperature rise). Future designs could include sensitivity analysis with IPCC climate scenarios.</span>
-                </li>
-                <li>
-                  <span class="lang lang-zh"><strong>调度策略优化空间：</strong>本项目使用"自消费优先"静态策略，实际商业运营中可引入动态电价预测 + 滚动优化（MPC 模型预测控制）算法，在峰时电价最高时段优先放电上网，进一步提升经济效益和 IRR。</span>
-                  <span class="lang lang-en"><strong>Dispatch optimisation potential:</strong> This project used a static self-consumption strategy. In real commercial operation, dynamic tariff forecasting combined with rolling optimisation (MPC, model predictive control) could prioritise grid export during the highest-price periods, further improving economics and IRR.</span>
-                </li>
+                <li><span class="lang lang-zh">年发电量：1263.2 MWh/year；比发电量约 1345 kWh/kWp/year。</span><span class="lang lang-en">Annual production: 1263.2 MWh/year; specific production about 1345 kWh/kWp/year.</span></li>
+                <li><span class="lang lang-zh">港口模拟负荷覆盖率：太阳能保障率（Solar Fraction, SF）97.78%。该指标针对模型中的设计负荷，不代表完整港口全站所有用电。</span><span class="lang lang-en">Simulated load coverage: 97.78% solar fraction. This refers to the modelled design load, not every electrical load across the entire port.</span></li>
+                <li><span class="lang lang-zh">财务结果：投资回收期 3.3 年，20 年净现值（Net Present Value, NPV）£3,980,509，内部收益率（Internal Rate of Return, IRR）30.83%，投资回报率（Return on Investment, ROI）587.1%。</span><span class="lang lang-en">Financial results: 3.3-year payback, £3,980,509 20-year NPV, 30.83% IRR and 587.1% ROI.</span></li>
+                <li><span class="lang lang-zh">度电成本：平准化度电成本（Levelized Cost of Energy, LCOE）£0.1112/kWh；30 年累计二氧化碳（Carbon Dioxide, CO2）减排约 27,257.7 吨。</span><span class="lang lang-en">Energy cost and carbon: £0.1112/kWh LCOE and about 27,257.7 tonnes of CO2 savings over 30 years.</span></li>
+              </ul>
+            </section>
+
+            <section class="case-panel section-anchor" id="section-review">
+              <h4><span class="lang lang-zh">专业复核与局限</span><span class="lang lang-en">Engineering Review and Limitations</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">储能规模偏小：931.8 kWh 可用容量可支持日内移峰，但相对于 1263.2 MWh 年发电量仍有限，难以完全吸收所有富余光伏电量。</span><span class="lang lang-en">Storage remains modest: 931.8 kWh usable capacity supports intraday shifting but is limited relative to 1263.2 MWh/year generation, so it cannot absorb all surplus PV energy.</span></li>
+                <li><span class="lang lang-zh">组件参数为通用模型：报告采用光伏仿真软件（PVsyst）数据库中的通用组件和电池参数，真实采购前应使用厂家数据表重新校核。</span><span class="lang lang-en">Generic component data: the report used PVsyst generic module and battery parameters; real procurement would require re-checking with manufacturer datasheets.</span></li>
+                <li><span class="lang lang-zh">屋顶结构未详细验算：本项目聚焦电气与经济仿真，实际落地前还需开展屋面承载、风荷载、防火间距、运维通道和并网审批评估。</span><span class="lang lang-en">Roof structure was not fully engineered: the project focused on electrical and economic simulation; real deployment would also require roof loading, wind loading, fire spacing, maintenance access and grid-connection studies.</span></li>
+                <li><span class="lang lang-zh">电价与收益敏感：内部收益率对上网电价、运营成本和电池更换周期敏感，因此应在后续版本中增加敏感性分析。</span><span class="lang lang-en">Revenue is tariff-sensitive: IRR depends on export tariff, operating cost and battery replacement assumptions, so future work should add sensitivity analysis.</span></li>
               </ul>
             </section>
           </div>
-
         </article>
       </section>
     </main>
