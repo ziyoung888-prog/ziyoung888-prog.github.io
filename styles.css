@@ -891,14 +891,15 @@ h3 {
 .project-visual-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 7;
-  object-fit: cover;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  padding: 8px;
   border-bottom: 1px solid rgba(126, 247, 215, 0.18);
-  background: #eef3ef;
+  background: #f3f6f3;
 }
 
-.project-visual-card:not(.project-visual-card-wide) img {
-  aspect-ratio: 16 / 6;
+.project-visual-card-wide img {
+  aspect-ratio: 16 / 8;
 }
 
 .project-visual-card figcaption {
