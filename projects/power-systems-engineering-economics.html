@@ -253,6 +253,130 @@
               </ul>
             </section>
           </div>
+
+          <section class="case-panel case-wide section-anchor" id="section-evidence">
+            <h4><span class="lang lang-zh">证据边界：哪些可以写，哪些不能夸大</span><span class="lang lang-en">Evidence Boundary: What Can and Cannot Be Claimed</span></h4>
+            <div class="brief-table-wrap">
+              <table class="brief-table">
+                <tbody>
+                  <tr>
+                    <th><span class="lang lang-zh">可以写入简历</span><span class="lang lang-en">Safe to Claim</span></th>
+                    <td><span class="lang lang-zh">四份提交报告明确体现了 PowerWorld 建模、MATLAB 计算、Ybus 矩阵、潮流、故障水平、电压稳定、OLTC、经济调度、OPF/ED 对比、DG 并网与保护影响分析。</span><span class="lang lang-en">The four submitted reports explicitly show PowerWorld modelling, MATLAB calculation, Ybus matrices, load flow, fault level, voltage stability, OLTC, economic dispatch, OPF/ED comparison, and DG/protection impact analysis.</span></td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">需要谨慎表达</span><span class="lang lang-en">Use Cautiously</span></th>
+                    <td><span class="lang lang-zh">这是课程仿真项目，不应写成企业真实电网项目、真实调度系统、真实设备测试或工程投运成果。可以说“coursework simulation”、“PowerWorld case study”、“academic engineering analysis”。</span><span class="lang lang-en">This is coursework simulation, not a live utility project, real dispatch system, hardware test or commissioned engineering scheme. Safer wording: coursework simulation, PowerWorld case study, academic engineering analysis.</span></td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">材料中未体现</span><span class="lang lang-en">Not Evidenced</span></th>
+                    <td><span class="lang lang-zh">材料中未体现真实客户、企业导师、实地测试、保护定值整定、N-1 自动校验、商业软件二次开发、团队分工细节。除非你能补充证据，否则不能直接写入简历。</span><span class="lang lang-en">The materials do not evidence a real client, company mentor, field test, protection-setting coordination, automated N-1 study, commercial software extension, or detailed team allocation. Do not put these in CV materials unless you provide evidence.</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="case-panel case-wide section-anchor" id="section-visual-cards">
+            <h4><span class="lang lang-zh">四个可视化项目经历卡片</span><span class="lang lang-en">Four Visual Project Experience Cards</span></h4>
+            <div class="portfolio-card-grid">
+              <article class="portfolio-card">
+                <span class="tag">Assignment 1 / Load Flow</span>
+                <h5><span class="lang lang-zh">三母线潮流计算与 PowerWorld 校验</span><span class="lang lang-en">Three-Bus Load Flow and PowerWorld Verification</span></h5>
+                <p><span class="lang lang-zh">一句话价值：证明我能把线路参数、节点类型和功率平衡转化为可复核的潮流模型。</span><span class="lang lang-en">Value: demonstrates the ability to turn line data, bus types and power balance into a verifiable load-flow model.</span></p>
+                <ul class="detail-list">
+                  <li><span class="lang lang-zh">技术路线：线路 R/X 和长度 → 标幺阻抗 → Slack/PV/PQ 节点 → 手算潮流 → PowerWorld 对比。</span><span class="lang lang-en">Route: line R/X and length -> per-unit impedance -> Slack/PV/PQ buses -> manual line flow -> PowerWorld comparison.</span></li>
+                  <li><span class="lang lang-zh">关键结果：Bus 1 作为 Slack bus 供给系统缺额；报告对 Bus 3 发电增减 50 MW、Bus 2 负荷变化后的相角和潮流变化进行解释。</span><span class="lang lang-en">Result: Bus 1 acts as the slack bus; the report explains angle and flow changes after +/-50 MW generation changes at Bus 3 and load changes at Bus 2.</span></li>
+                  <li><span class="lang lang-zh">简历一句话：完成三母线电网潮流建模，使用 PowerWorld 验证手算线路潮流与节点功率平衡。</span><span class="lang lang-en">CV line: Modelled a three-bus network and used PowerWorld to validate manual line-flow and nodal power-balance calculations.</span></li>
+                </ul>
+              </article>
+
+              <article class="portfolio-card">
+                <span class="tag">Assignment 2 / Fault & Stability</span>
+                <h5><span class="lang lang-zh">导纳矩阵、故障水平与电压稳定分析</span><span class="lang lang-en">Admittance Matrix, Fault Level and Voltage Stability</span></h5>
+                <p><span class="lang lang-zh">一句话价值：证明我能用 MATLAB 和 PowerWorld 交叉分析电网稳态、故障和无功不足风险。</span><span class="lang lang-en">Value: demonstrates cross-checking of steady-state, fault and reactive-power risk using MATLAB and PowerWorld.</span></p>
+                <ul class="detail-list">
+                  <li><span class="lang lang-zh">技术路线：Ybus 矩阵 → 节点电压求解 → 线路电流/复功率 → PowerWorld 故障分析 → Q-V 曲线解释。</span><span class="lang lang-en">Route: Ybus matrix -> bus-voltage solving -> line current/complex power -> PowerWorld fault analysis -> Q-V curve interpretation.</span></li>
+                  <li><span class="lang lang-zh">关键结果：MATLAB 得到 V1=0.9744∠-17.7638°、V4=0.9527∠-20.1599° 等电压结果；高无功负荷下 Bus 13 电压可跌至 0.6 pu 以下，报告解释为电压崩溃风险。</span><span class="lang lang-en">Result: MATLAB produced bus voltages such as V1=0.9744∠-17.7638° and V4=0.9527∠-20.1599°; under high reactive loading, Bus 13 voltage falls below 0.6 pu, interpreted as voltage-collapse risk.</span></li>
+                  <li><span class="lang lang-zh">简历一句话：使用 MATLAB 求解 Ybus 节点方程，并在 PowerWorld 中评估三相故障水平与电压稳定裕度。</span><span class="lang lang-en">CV line: Solved Ybus nodal equations in MATLAB and evaluated three-phase fault level and voltage-stability margins in PowerWorld.</span></li>
+                </ul>
+              </article>
+
+              <article class="portfolio-card">
+                <span class="tag">Assignment 3 / Time-Series Operation</span>
+                <h5><span class="lang lang-zh">24 小时时序负荷、电压薄弱点与 OLTC 调压</span><span class="lang lang-en">24-Hour Loading, Weak Voltage Points and OLTC Control</span></h5>
+                <p><span class="lang lang-zh">一句话价值：证明我能把静态潮流扩展到日内运行分析，识别高负荷时段的设备风险。</span><span class="lang lang-en">Value: demonstrates extension from static load flow to daily operation analysis and equipment-risk identification.</span></p>
+                <ul class="detail-list">
+                  <li><span class="lang lang-zh">技术路线：标幺负荷曲线 → MW/MVAr 转换 → 平均/最大负荷仿真 → T3/L67 负载曲线 → 11:00 最严重工况 → OLTC 调压。</span><span class="lang lang-en">Route: per-unit load curve -> MW/MVAr conversion -> average/maximum load simulation -> T3/L67 loading curves -> 11:00 worst case -> OLTC voltage control.</span></li>
+                  <li><span class="lang lang-zh">关键结果：11:00 被识别为最严重工况；9-10 线路负载率达到 110.79%；Bus 10 电压约 0.87 pu；OLTC 后 Bus 8/9/10 电压改善到约 0.99793/0.97571/0.95339 pu。</span><span class="lang lang-en">Result: 11:00 was identified as the worst condition; line 9-10 reached 110.79% loading; Bus 10 voltage was about 0.87 pu; after OLTC, Bus 8/9/10 improved to about 0.99793/0.97571/0.95339 pu.</span></li>
+                  <li><span class="lang lang-zh">简历一句话：完成 24 小时时序负荷仿真，识别低电压和线路过载风险，并评估 OLTC 对远端母线电压的改善作用。</span><span class="lang lang-en">CV line: Ran 24-hour load simulations, identified undervoltage and overload risks, and evaluated OLTC impact on downstream bus voltages.</span></li>
+                </ul>
+              </article>
+
+              <article class="portfolio-card">
+                <span class="tag">Assignment 4 / Dispatch & DG</span>
+                <h5><span class="lang lang-zh">经济调度、网络约束重调度与 DG 并网影响</span><span class="lang lang-en">Economic Dispatch, Network-Constrained Redispatch and DG Impact</span></h5>
+                <p><span class="lang lang-zh">一句话价值：证明我理解最低成本调度并不等于物理安全运行。</span><span class="lang lang-en">Value: demonstrates understanding that least-cost dispatch is not automatically secure network operation.</span></p>
+                <ul class="detail-list">
+                  <li><span class="lang lang-zh">技术路线：拉格朗日经济调度 → B7FLAT 高负荷仿真 → ED/OPF 对比 → 手动重调度 → 可再生激励机制与 DG 保护影响讨论。</span><span class="lang lang-en">Route: Lagrange economic dispatch -> B7FLAT high-load simulation -> ED/OPF comparison -> manual redispatch -> renewable incentives and DG protection-impact discussion.</span></li>
+                  <li><span class="lang lang-zh">关键结果：通过降低 G1/G2、提高 G6 输出，所有线路恢复至 100% MVA 限值以内；小时成本从 26,465 £/h 增至 28,817 £/h。</span><span class="lang lang-en">Result: reducing G1/G2 and increasing G6 restored all lines within the 100% MVA limit; hourly cost increased from 26,465 GBP/h to 28,817 GBP/h.</span></li>
+                  <li><span class="lang lang-zh">简历一句话：比较 ED 与网络约束调度，解释线路拥塞、边际成本、无功支撑和 DG 接入对保护策略的影响。</span><span class="lang lang-en">CV line: Compared ED with network-constrained dispatch and explained line congestion, marginal cost, reactive support and DG impacts on protection strategy.</span></li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="case-panel case-wide section-anchor" id="section-career-output">
+            <h4><span class="lang lang-zh">简历、LinkedIn 与岗位匹配输出</span><span class="lang lang-en">CV, LinkedIn and Role-Matching Output</span></h4>
+            <p class="case-note">
+              <span class="lang lang-zh">完整成果包已整理为 Markdown 文件，便于复制到简历、LinkedIn 和面试准备文档：</span>
+              <span class="lang lang-en">The full career package is also available as a Markdown file for CV, LinkedIn and interview preparation reuse:</span>
+              <a class="case-link inline-case-link" href="./power-systems-career-package.md">Power Systems Career Package</a>
+            </p>
+            <div class="brief-table-wrap">
+              <table class="brief-table">
+                <tbody>
+                  <tr>
+                    <th><span class="lang lang-zh">中文简历版</span><span class="lang lang-en">Chinese CV</span></th>
+                    <td><span class="lang lang-zh">电力系统工程与经济课程项目：使用 PowerWorld 与 MATLAB 完成电网潮流、故障水平、电压稳定、时序负荷和经济调度分析；构建 Ybus 节点方程并验证线路潮流；识别高负荷场景下 T3 变压器、L67 线路和远端母线低电压风险；通过发电出力重分配将超载线路恢复到 100% MVA 限值以内。</span><span class="lang lang-en">Power Systems Engineering and Economics coursework project using PowerWorld and MATLAB for load flow, fault level, voltage stability, time-series loading and economic dispatch analysis.</span></td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">English CV</span><span class="lang lang-en">English CV</span></th>
+                    <td><span class="lang lang-zh">英文可写：Modelled power-system cases in PowerWorld and MATLAB, solving Ybus-based load-flow problems, evaluating fault level and voltage-stability risks, and comparing economic dispatch with network-constrained operation. Identified overload and undervoltage risks under high loading and demonstrated secure redispatch within 100% MVA line limits.</span><span class="lang lang-en">Modelled power-system cases in PowerWorld and MATLAB, solving Ybus-based load-flow problems, evaluating fault level and voltage-stability risks, and comparing economic dispatch with network-constrained operation. Identified overload and undervoltage risks under high loading and demonstrated secure redispatch within 100% MVA line limits.</span></td>
+                  </tr>
+                  <tr>
+                    <th>LinkedIn</th>
+                    <td><span class="lang lang-zh">I converted four MSc coursework reports into a structured power-system analysis portfolio, covering load-flow modelling, fault-level assessment, voltage stability, OLTC control, economic dispatch and DG integration impacts. The project helped me connect equations, simulation results and engineering judgement into a recruiter-readable case study.</span><span class="lang lang-en">I converted four MSc coursework reports into a structured power-system analysis portfolio, covering load-flow modelling, fault-level assessment, voltage stability, OLTC control, economic dispatch and DG integration impacts. The project helped me connect equations, simulation results and engineering judgement into a recruiter-readable case study.</span></td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">岗位匹配</span><span class="lang lang-en">Role Fit</span></th>
+                    <td><span class="lang lang-zh">最适合支撑：电气工程师、电力系统分析、技术支持工程师、海外技术服务、售前技术支持、新能源并网/储能/光伏系统工程师。面试时应重点讲“我能建模、能解释、能识别风险、能把结果写成英文工程报告”，避免说成真实企业调度项目。</span><span class="lang lang-en">Best supports applications for electrical engineer, power-system analyst, technical support, overseas technical service, pre-sales technical support, renewable integration, storage and PV system roles. Emphasise modelling, explanation, risk identification and English reporting; avoid presenting it as a live utility dispatch project.</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="case-panel case-wide section-anchor" id="section-interview-bank">
+            <h4><span class="lang lang-zh">可检索面试问答库</span><span class="lang lang-en">Searchable Interview Q&A Bank</span></h4>
+            <div class="qa-grid">
+              <details>
+                <summary><span class="lang lang-zh">HR：这个项目最能证明你什么能力？</span><span class="lang lang-en">HR: What does this project prove about you?</span></summary>
+                <p><span class="lang lang-zh">推荐回答：它证明我不是只会套公式，而是能把电力系统问题拆成参数、模型、仿真和结论。四份报告覆盖潮流、故障、电压、调度和新能源并网影响，我能用 PowerWorld/MATLAB 得到结果，也能解释为什么电压会跌落、为什么经济调度可能导致线路超载。不能说：我做过真实电网调度。可补证据：四份英文报告、MATLAB 代码附录、PowerWorld 截图。</span><span class="lang lang-en">Recommended answer: It shows I can break a power-system problem into parameters, model, simulation and interpretation. The reports cover load flow, fault, voltage, dispatch and DG impact. I can get results using PowerWorld/MATLAB and explain why voltage drops or why economic dispatch may overload lines. Do not claim real utility dispatch experience. Evidence: four English reports, MATLAB appendix and PowerWorld screenshots.</span></p>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">技术：你如何验证潮流结果可靠？</span><span class="lang lang-en">Technical: How did you verify the load-flow results?</span></summary>
+                <p><span class="lang lang-zh">推荐回答：Assignment 1 里我先把线路阻抗换算成标幺值，识别 Slack/PV/PQ 节点，然后用功率平衡和线路潮流公式手算，再与 PowerWorld 的线路潮流和 Ybus 输出对比。回答逻辑是“参数一致 - 方程一致 - 软件交叉验证 - 解释误差来源”。不能说：完全无误差。若追问，说明误差来自数值精度、模型简化和截图读数。</span><span class="lang lang-en">Recommended answer: In Assignment 1 I converted line impedance into per-unit values, identified Slack/PV/PQ buses, calculated power balance and line flow manually, then compared the results with PowerWorld line-flow and Ybus outputs. Logic: consistent parameters, consistent equations, software cross-check, explain error sources. Do not say the result is error-free; cite numerical precision, modelling simplification and screenshot reading.</span></p>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">压力追问：这不就是普通课程作业吗？</span><span class="lang lang-en">Pressure: Is this just normal coursework?</span></summary>
+                <p><span class="lang lang-zh">推荐回答：是课程项目，我不会把它包装成企业项目。但它的价值在于方法完整：从建模、计算、仿真到解释和英文报告都有证据。对初级工程岗位来说，这能证明我具备上手电力系统分析工具、理解运行约束并清楚表达技术结果的基础。不能说：项目已经落地或服务客户。可补充：我也把课程材料转化成网站案例，说明我能把学习成果沉淀成可沟通资产。</span><span class="lang lang-en">Recommended answer: Yes, it is coursework, and I would not present it as an industry project. Its value is the complete workflow: modelling, calculation, simulation, interpretation and English reporting. For junior engineering roles, it demonstrates a foundation in power-system analysis tools, operating constraints and technical communication. Do not claim deployment or client work. Add that the coursework was converted into a website case study.</span></p>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">英文面试：Explain one technical challenge in this project.</span><span class="lang lang-en">English Interview: Explain one technical challenge in this project.</span></summary>
+                <p><span class="lang lang-zh">参考回答：One challenge was understanding why the cheapest economic dispatch was not always acceptable from a network-security point of view. In Assignment 4, the ED result concentrated generation in a way that overloaded several lines. I adjusted generator outputs by reducing northern generation and increasing southern generation, which brought all line loading back within the 100% MVA limit. The cost increased from 26,465 to 28,817 pounds per hour, so the case clearly showed the trade-off between cost and security. 不能说：I optimised a real grid.</span><span class="lang lang-en">Sample answer: One challenge was understanding why the cheapest economic dispatch was not always acceptable from a network-security point of view. In Assignment 4, the ED result concentrated generation in a way that overloaded several lines. I adjusted generator outputs by reducing northern generation and increasing southern generation, which brought all line loading back within the 100% MVA limit. The cost increased from 26,465 to 28,817 pounds per hour, so the case clearly showed the trade-off between cost and security. Do not say: I optimised a real grid.</span></p>
+              </details>
+            </div>
+          </section>
         </article>
       </section>
     </main>

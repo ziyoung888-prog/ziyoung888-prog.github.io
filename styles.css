@@ -286,6 +286,13 @@ h3 {
   margin-top: 24px;
 }
 
+.inline-case-link {
+  min-height: 0;
+  margin: 0 0 0 8px;
+  padding: 6px 10px;
+  vertical-align: middle;
+}
+
 .back-link {
   display: inline-flex;
   margin-bottom: 30px;
@@ -1075,6 +1082,32 @@ h3 {
   line-height: 1.75;
 }
 
+.portfolio-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.portfolio-card {
+  min-width: 0;
+  border: 1px solid rgba(126, 247, 215, 0.18);
+  background: rgba(7, 16, 21, 0.46);
+  padding: 18px;
+}
+
+.portfolio-card h5 {
+  margin: 0 0 10px;
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.42;
+}
+
+.portfolio-card p {
+  color: #b8c9cb;
+  font-size: 15px;
+  line-height: 1.72;
+}
+
 .timeline {
   border-top: 1px solid var(--line-strong);
 }
@@ -1307,6 +1340,7 @@ h3 {
 
   .signal-strip,
   .project-grid,
+  .portfolio-card-grid,
   .project-visual-grid,
   .case-grid,
   .case-map,
