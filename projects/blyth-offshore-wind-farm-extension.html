@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Blyth Offshore Wind Farm extension design by Ziyang Wu, including wind resource assessment, MCP analysis, P90 wind speed, turbine selection, layout constraints, Gaussian wake modelling and environmental review."
+      content="Blyth Offshore Wind Farm extension and 12MW turbine modelling project by Ziyang Wu, covering wind resource assessment, MCP, site selection, Gaussian wake modelling and ASHE aero-servo-hydro-elastic turbine design."
     />
-    <title>Blyth Offshore Wind Farm Extension | 吴子洋</title>
+    <title>Blyth Offshore Wind Farm Extension and ASHE Turbine Modelling | 吴子洋</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body data-lang="zh">
@@ -60,30 +60,31 @@
             <span class="lang lang-en">Project Detail · Principles of Wind Energy MSc Course</span>
           </p>
           <h1>
-            <span class="lang lang-zh">Blyth 近海风电场扩建方案设计与尾流评估</span>
-            <span class="lang lang-en">Blyth Offshore Wind Farm Extension Design and Wake Assessment</span>
+            <span class="lang lang-zh">Blyth 近海风电场扩建与 12MW 风机 ASHE 建模</span>
+            <span class="lang lang-en">Blyth Offshore Wind Farm Extension and 12MW ASHE Turbine Modelling</span>
           </h1>
           <p class="hero-lead">
             <span class="lang lang-zh">
-              该项目以英国 Northumberland 海岸附近的 Blyth Offshore Demonstrator Wind Farm 为对象，目标是在既有 5 台 8.3MW Vestas V164 风机基础上，提出新增超过 75MW 的近海风电扩建方案。我完成了风资源特性分析、测量-相关-预测法（Measure-Correlate-Predict, MCP）长期风速估计、P90 风速评估、12MW 级风机选型、风机坐标布置、遮影/噪声约束、以及高斯尾流模型（Gaussian Wake Model）分析。
+              该项目由两个连续部分组成：Project 1 先完成 Blyth 近海风电场扩建的风资源评估、长期风速修正、风电场选址和尾流损失分析；Project 2 在此基础上使用 ASHE（Aero-Servo-Hydro-Elastic，气动-伺服-水弹性耦合软件）建立 12MW 近海风机模型，验证气动性能、控制响应、结构模态和直驱永磁发电机参数。
             </span>
             <span class="lang lang-en">
-              This project designed an extension for the Blyth Offshore Demonstrator Wind Farm near the Northumberland coast. Starting from the existing five 8.3MW Vestas V164 turbines, I developed an additional >75MW offshore layout, covering wind characterisation, Measure-Correlate-Predict analysis, P90 wind-speed estimation, 12MW turbine selection, layout constraints, noise and shadow screening, and Gaussian wake modelling.
+              This two-part project first assessed the wind resource, long-term wind speed, site constraints and wake loss for an extension of the Blyth Offshore Demonstrator Wind Farm. It then used ASHE, an Aero-Servo-Hydro-Elastic software package, to model a bespoke 12MW offshore turbine, covering aerodynamic performance, controller response, structural modes and direct-drive PMG parameters.
             </span>
           </p>
           <div class="tag-row">
-            <span class="tag-chip"><span class="lang lang-zh">近海风电场选址</span><span class="lang lang-en">Offshore Layout</span></span>
-            <span class="tag-chip"><span class="lang lang-zh">测量-相关-预测法（MCP）</span><span class="lang lang-en">MCP Analysis</span></span>
-            <span class="tag-chip"><span class="lang lang-zh">P90 风速评估</span><span class="lang lang-en">P90 Wind Speed</span></span>
-            <span class="tag-chip"><span class="lang lang-zh">高斯尾流模型</span><span class="lang lang-en">Gaussian Wake Model</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">风资源评估</span><span class="lang lang-en">Wind Resource</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">风电场选址</span><span class="lang lang-en">Site Selection</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">尾流分析</span><span class="lang lang-en">Wake Modelling</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">ASHE 建模</span><span class="lang lang-en">ASHE Modelling</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">12MW 风机</span><span class="lang lang-en">12MW Turbine</span></span>
           </div>
         </div>
 
         <figure class="brief-hero-media">
           <img src="../assets/projects/wind-blyth-layout-map.png" alt="Blyth offshore wind farm extension layout map" />
           <figcaption>
-            <span class="lang lang-zh">推荐扩建布置：黑色三角标记为新增 N1-N7 风机，黄色点为既有 T1-T5 风机，背景为 Blyth 近海航海图。</span>
-            <span class="lang lang-en">Recommended extension layout: black triangles mark new N1-N7 turbines, yellow points show existing T1-T5 turbines, overlaid on the Blyth offshore chart.</span>
+            <span class="lang lang-zh">Project 1 推荐扩建布置：黑色三角标记新增 N1-N7 风机，黄色点为既有 T1-T5 风机。</span>
+            <span class="lang lang-en">Project 1 recommended extension layout: black triangles mark new N1-N7 turbines and yellow points show existing T1-T5 turbines.</span>
           </figcaption>
         </figure>
       </section>
@@ -91,100 +92,101 @@
       <section class="section project-detail-section">
         <article class="case-study" id="wind-case">
           <div class="case-metrics case-metrics-compact">
-            <div><strong>84 MW</strong><span><span class="lang lang-zh">新增装机容量</span><span class="lang lang-en">new capacity</span></span></div>
-            <div><strong>7 x 12 MW</strong><span><span class="lang lang-zh">新增风机方案</span><span class="lang lang-en">new turbine scheme</span></span></div>
-            <div><strong>220 m</strong><span><span class="lang lang-zh">转子直径</span><span class="lang lang-en">rotor diameter</span></span></div>
-            <div><strong>8.69 m/s</strong><span><span class="lang lang-zh">长期平均风速</span><span class="lang lang-en">long-term mean wind speed</span></span></div>
-            <div><strong>8.21 m/s</strong><span><span class="lang lang-zh">P90 年平均风速</span><span class="lang lang-en">P90 annual wind speed</span></span></div>
-            <div><strong>225° SSW</strong><span><span class="lang lang-zh">主导风向</span><span class="lang lang-en">prevailing direction</span></span></div>
-            <div><strong>R² 0.874</strong><span><span class="lang lang-zh">MCP 最优参考站</span><span class="lang lang-en">best MCP reference</span></span></div>
-            <div><strong>8.94%</strong><span><span class="lang lang-zh">代表性尾流损失</span><span class="lang lang-en">representative wake loss</span></span></div>
+            <div><strong>84 MW</strong><span><span class="lang lang-zh">新增风电容量</span><span class="lang lang-en">new wind capacity</span></span></div>
+            <div><strong>7 x 12 MW</strong><span><span class="lang lang-zh">扩建布置方案</span><span class="lang lang-en">extension layout</span></span></div>
+            <div><strong>8.69 m/s</strong><span><span class="lang lang-zh">长期平均风速</span><span class="lang lang-en">long-term mean wind</span></span></div>
+            <div><strong>8.21 m/s</strong><span><span class="lang lang-zh">P90 年平均风速</span><span class="lang lang-en">P90 annual wind</span></span></div>
+            <div><strong>Cp 0.498</strong><span><span class="lang lang-zh">ASHE 峰值功率系数</span><span class="lang lang-en">ASHE peak coefficient</span></span></div>
+            <div><strong>TSR 9.6</strong><span><span class="lang lang-zh">设计叶尖速比</span><span class="lang lang-en">design tip-speed ratio</span></span></div>
+            <div><strong>0.227 Hz</strong><span><span class="lang lang-zh">一阶塔架模态</span><span class="lang lang-en">first tower mode</span></span></div>
+            <div><strong>33.22 kV</strong><span><span class="lang lang-zh">发电机开路电压</span><span class="lang lang-en">generator open-circuit EMF</span></span></div>
           </div>
 
           <nav class="case-map" aria-label="Project section navigation">
             <a href="#section-overview"><span class="lang lang-zh">项目概览</span><span class="lang lang-en">Overview</span></a>
             <a href="#section-resource"><span class="lang lang-zh">风资源</span><span class="lang lang-en">Wind Resource</span></a>
-            <a href="#section-layout"><span class="lang lang-zh">选型与布置</span><span class="lang lang-en">Layout</span></a>
-            <a href="#section-wake"><span class="lang lang-zh">尾流模型</span><span class="lang lang-en">Wake Model</span></a>
+            <a href="#section-layout"><span class="lang lang-zh">选址与尾流</span><span class="lang lang-en">Layout & Wake</span></a>
+            <a href="#section-ashe"><span class="lang lang-zh">ASHE 模型</span><span class="lang lang-en">ASHE Model</span></a>
+            <a href="#section-dynamics"><span class="lang lang-zh">动力学与电机</span><span class="lang lang-en">Dynamics & Electrical</span></a>
             <a href="#section-evidence"><span class="lang lang-zh">图表证据</span><span class="lang lang-en">Evidence</span></a>
             <a href="#section-review"><span class="lang lang-zh">工程复核</span><span class="lang lang-en">Review</span></a>
           </nav>
 
           <div class="case-grid" id="section-overview">
             <section class="case-panel section-anchor">
-              <h4><span class="lang lang-zh">项目概览（Situation, Task, Action, Result, STAR）</span><span class="lang lang-en">Project Overview (STAR)</span></h4>
+              <h4><span class="lang lang-zh">项目概览（STAR）</span><span class="lang lang-en">Project Overview (STAR)</span></h4>
               <dl class="star-list">
                 <div>
                   <dt>Situation</dt>
                   <dd>
-                    <span class="lang lang-zh">既有 Blyth Offshore Demonstrator Wind Farm 已建成 5 台 Vestas V164 风机，业主希望扩建一个高收益的近海风电项目，并要求新增容量超过 75MW、候选风机单机容量 11-14MW、转子直径小于 230m。</span>
-                    <span class="lang lang-en">The existing Blyth Offshore Demonstrator Wind Farm has five Vestas V164 turbines. The owner wanted a profitable extension with more than 75MW of new capacity, using 11-14MW turbines with rotor diameter below 230m.</span>
+                    <span class="lang lang-zh">既有 Blyth Offshore Demonstrator Wind Farm 已建成 5 台 8.3MW 风机，课程任务要求在近海场址提出新增 75MW 以上的扩建方案，并进一步设计一台适用于该场址的 12MW 级近海风机。</span>
+                    <span class="lang lang-en">The existing Blyth Offshore Demonstrator Wind Farm has five 8.3MW turbines. The coursework required a >75MW offshore extension and a 12MW-class turbine design suitable for the site.</span>
                   </dd>
                 </div>
                 <div>
                   <dt>Task</dt>
                   <dd>
-                    <span class="lang lang-zh">需要提交可复核的计算表、带注释的风机布置图和 5 分钟展示材料，覆盖风资源评估、长期风速估计、年发电量估算、尾流损失、遮影、噪声和环境影响。</span>
-                    <span class="lang lang-en">The deliverables required an auditable workbook, annotated turbine-layout map and short presentation covering wind resource, long-term wind speed, energy capture, wake loss, shadow flicker, noise and environmental considerations.</span>
+                    <span class="lang lang-zh">Project 1 需要提交可复核的风资源、测量-相关-预测法（Measure-Correlate-Predict, MCP）、选址、噪声、遮影和尾流计算；Project 2 需要提交 ASHE 项目文件、带注释 Excel 工作簿和展示材料，证明风机气动、控制、结构和电气设计的完整性。</span>
+                    <span class="lang lang-en">Project 1 required auditable wind-resource, MCP, siting, noise, shadow and wake calculations. Project 2 required an ASHE model, annotated workbook and presentation proving the turbine's aerodynamic, control, structural and electrical design logic.</span>
                   </dd>
                 </div>
                 <div>
                   <dt>Action</dt>
                   <dd>
-                    <span class="lang lang-zh">我基于 10 分钟风速数据完成风切变、湍流强度和风向统计；用 Boulmer 气象站建立 MCP 相关关系；用十年数据估计 120m 高度长期风速与 P90 风速；选取 7 台 GE Vernova GE Haliade-X 12MW 风机，并用主导风向 225° 的高斯尾流模型评估有效风速下降。</span>
-                    <span class="lang lang-en">I processed 10-minute wind data for shear, turbulence and directionality; selected Boulmer as the MCP reference station; estimated long-term and P90 wind speed at 120m height using decade-scale data; selected seven GE Vernova GE Haliade-X 12MW turbines; and evaluated effective wind-speed reduction with a Gaussian wake model under the 225 degree prevailing wind direction.</span>
+                    <span class="lang lang-zh">我先用多站点气象数据完成长期风速修正和 P90 风资源评估，提出 7 台 12MW 风机的 84MW 扩建布局，并用高斯尾流模型量化代表性尾流损失；随后在 ASHE 中将参考风机缩放到 12MW，建立叶片、塔架、单桩基础、变速变桨控制和直驱永磁发电机模型。</span>
+                    <span class="lang lang-en">I first used multi-station meteorological data to estimate long-term and P90 wind speed, proposed a seven-turbine 84MW extension, and quantified representative wake loss with a Gaussian wake model. I then scaled a reference turbine to 12MW in ASHE and modelled the blade, tower, monopile foundation, variable-speed pitch controller and direct-drive PMG.</span>
                   </dd>
                 </div>
                 <div>
                   <dt>Result</dt>
                   <dd>
-                    <span class="lang lang-zh">最终方案新增 84MW 容量，满足课程 brief 的容量和转子直径约束；Boulmer 与 Blyth 的相关性最高（R²=0.874）；估计长期平均风速约 8.69m/s，P90 年平均风速约 8.21m/s；代表性尾流分析显示总功率从 61.19MW 降至 55.72MW，尾流损失约 8.94%。</span>
-                    <span class="lang lang-en">The final scheme added 84MW and met the capacity and rotor-diameter constraints. Boulmer had the strongest correlation with Blyth (R²=0.874), long-term mean wind speed was about 8.69m/s, P90 annual wind speed was about 8.21m/s, and the representative wake case reduced total power from 61.19MW to 55.72MW, giving about 8.94% wake loss.</span>
+                    <span class="lang lang-zh">最终方案将场址层面的风资源、布局和尾流判断，与设备层面的 12MW 风机模型连接起来：长期平均风速约 8.69m/s，P90 年平均风速约 8.21m/s，代表性尾流损失约 8.94%；ASHE 模型获得 Cpmax 0.498、设计叶尖速比 9.6、一阶塔架模态约 0.227Hz，并完成 154 极对、33.22kV 开路电压的直驱永磁发电机估算。</span>
+                    <span class="lang lang-en">The final work connected site-level wind resource, layout and wake judgement with equipment-level 12MW turbine modelling: long-term mean wind speed about 8.69m/s, P90 annual wind speed about 8.21m/s, representative wake loss about 8.94%, ASHE Cpmax 0.498, design TSR 9.6, first tower mode about 0.227Hz, and a direct-drive PMG estimate with 154 pole pairs and 33.22kV open-circuit EMF.</span>
                   </dd>
                 </div>
               </dl>
             </section>
 
             <section class="case-panel section-anchor" id="section-resource">
-              <h4><span class="lang lang-zh">风资源与 MCP 逻辑</span><span class="lang lang-en">Wind Resource and MCP Logic</span></h4>
+              <h4><span class="lang lang-zh">Project 1：风资源评估逻辑</span><span class="lang lang-en">Project 1: Wind Resource Logic</span></h4>
               <ul class="detail-list">
-                <li><span class="lang lang-zh">测量期平均风速为 8.70m/s，平均湍流强度约 7.8%；在 8.26m/s 风速区间内，湍流强度约 7.0%，可归入国际电工委员会 IEC 61400-1 的 I.C 类风况判断。</span><span class="lang lang-en">The measurement-period mean wind speed was 8.70m/s and average turbulence intensity was about 7.8%; around the 8.26m/s bin, turbulence intensity was about 7.0%, supporting an IEC 61400-1 Class I.C assessment.</span></li>
-                <li><span class="lang lang-zh">风切变计算同时比较对数律和幂律。对数律得到 120m 高度风速约 9.98m/s，幂律得到约 8.85m/s；项目后续采用较保守的长期平均风速和 P90 风速进行产能与风险判断。</span><span class="lang lang-en">Wind shear was checked with both logarithmic and power-law methods. The log-law estimate at 120m was about 9.98m/s, while the power-law estimate was about 8.85m/s; later energy and risk checks used more conservative long-term and P90 values.</span></li>
-                <li><span class="lang lang-zh">在多个周边气象站中，Boulmer 与 Blyth 的日均风速相关性最好，线性相关 R²=0.874，高于 0.8 的常用筛选门槛，因此被选为 MCP 参考站。</span><span class="lang lang-en">Among nearby weather stations, Boulmer had the strongest daily-average wind-speed correlation with Blyth, with R²=0.874, above the common 0.8 screening threshold, so it was selected as the MCP reference station.</span></li>
-                <li><span class="lang lang-zh">十年尺度估算得到 120m 高度十年平均风速约 8.55m/s，Blyth 长期平均风速约 8.69m/s，P90 年平均风速约 8.21m/s。P90 用于表达保守年景下仍可能达到的风资源水平。</span><span class="lang lang-en">The decade-scale estimate gave about 8.55m/s at 120m, the Blyth long-term mean wind speed was about 8.69m/s, and the P90 annual wind speed was about 8.21m/s. P90 expresses the wind resource expected to be exceeded in conservative years.</span></li>
+                <li><span class="lang lang-zh">Blyth 测量期平均风速约 8.70m/s，平均湍流强度约 7.8%；在 8.26m/s 风速区间，湍流强度约 7.0%，可作为 IEC 61400-1 Class I.C 风况判断的课程级依据。</span><span class="lang lang-en">The Blyth measurement-period mean wind speed was about 8.70m/s and average turbulence intensity about 7.8%; around the 8.26m/s bin, turbulence intensity was about 7.0%, supporting a coursework-level IEC 61400-1 Class I.C judgement.</span></li>
+                <li><span class="lang lang-zh">MCP 部分比较 Albemarle、Boulmer、Charterhall、Gogarbank、Leuchars 和 Redesdale Camp 等参考气象站。Boulmer 与 Blyth 的日均风速相关性最高，线性相关系数 R²=0.874，因此被选为长期修正参考站。</span><span class="lang lang-en">The MCP step compared Albemarle, Boulmer, Charterhall, Gogarbank, Leuchars and Redesdale Camp. Boulmer had the strongest daily-average wind-speed correlation with Blyth, with R²=0.874, so it was selected as the long-term reference station.</span></li>
+                <li><span class="lang lang-zh">风切变同时采用对数律和幂律交叉检查。项目后续采用更保守的长期平均风速和 P90 风速，而不是只用测量期高值直接推导收益，以降低短期样本带来的乐观偏差。</span><span class="lang lang-en">Wind shear was checked with both logarithmic-law and power-law methods. Later calculations used conservative long-term and P90 wind speeds instead of directly monetising short-term high measurements, reducing optimistic bias from limited samples.</span></li>
+                <li><span class="lang lang-zh">概率分布部分使用瑞利分布（Rayleigh Distribution）和威布尔分布（Weibull Distribution）拟合风速频率，得到 P90 年平均风速约 8.21m/s，用于表达保守年景下仍可达到的风资源水平。</span><span class="lang lang-en">The probability-distribution step fitted Rayleigh and Weibull distributions to wind-speed frequency, giving a P90 annual wind speed of about 8.21m/s to express a conservative-year resource level.</span></li>
               </ul>
             </section>
           </div>
 
           <div class="case-grid" id="section-layout">
             <section class="case-panel section-anchor">
-              <h4><span class="lang lang-zh">风机选型与容量配置</span><span class="lang lang-en">Turbine Selection and Sizing</span></h4>
+              <h4><span class="lang lang-zh">Project 1：选址、机型和尾流</span><span class="lang lang-en">Project 1: Siting, Turbine and Wake</span></h4>
               <ul class="detail-list">
-                <li><span class="lang lang-zh">候选机型为 GE Vernova GE Haliade-X 12MW，单机额定功率 12MW，7 台合计 84MW，超过 75MW 扩建目标，同时减少海上运维对象数量。</span><span class="lang lang-en">The selected model was the GE Vernova GE Haliade-X 12MW. Seven turbines provide 84MW, exceeding the 75MW extension target while limiting the number of offshore assets to maintain.</span></li>
-                <li><span class="lang lang-zh">关键参数包括 220m 转子直径、110m 叶片半径、138m 轮毂高度、248m 叶尖高度、38,000m2 扫掠面积、3m/s 切入风速、10.103m/s 额定风速、34m/s 切出风速和最大功率系数 Cp=0.50。</span><span class="lang lang-en">Key parameters include 220m rotor diameter, 110m blade radius, 138m hub height, 248m tip height, 38,000m2 swept area, 3m/s cut-in speed, 10.103m/s rated speed, 34m/s cut-out speed and maximum power coefficient Cp=0.50.</span></li>
-                <li><span class="lang lang-zh">风机功率曲线采用分段逻辑：低于切入风速或高于切出风速输出为 0；低于额定风速时按 0.5ρAv3Cp 估算并限制不超过额定功率；高于额定风速后按 12MW 限幅。</span><span class="lang lang-en">The power curve used a piecewise model: zero output below cut-in or above cut-out, 0.5ρAv3Cp under rated speed capped at rated power, and a 12MW limit above rated speed.</span></li>
-                <li><span class="lang lang-zh">布置方案给出 N1-N7 坐标，并结合原有 T1-T5 位置检查 5D-7D 间距、主导风向上的前后排遮挡、海岸居民点距离和航海图可用水域。</span><span class="lang lang-en">The layout defined N1-N7 coordinates and checked them against existing T1-T5 turbines for 5D-7D spacing, upstream-downstream overlap under prevailing wind, nearby coastal receptors and available offshore chart area.</span></li>
+                <li><span class="lang lang-zh">扩建目标超过 75MW，候选机型为 12MW 级近海风机。7 台风机合计 84MW，可以满足容量要求，同时减少海上基础、阵列电缆和运维对象数量。</span><span class="lang lang-en">The extension target was above 75MW and the candidate turbine was a 12MW-class offshore unit. Seven turbines give 84MW, meeting the capacity target while limiting the number of foundations, array-cable connections and offshore maintenance assets.</span></li>
+                <li><span class="lang lang-zh">场址筛选同时检查既有 T1-T5 与新增 N1-N7 的相对位置、5D-7D 间距、主导风向 225°（SSW）下的前后排遮挡、沿岸居民点距离、海图可用水域、噪声和遮影风险。</span><span class="lang lang-en">Site screening checked the relative positions of existing T1-T5 and proposed N1-N7 turbines, 5D-7D spacing, upstream-downstream overlap under the 225 degree SSW prevailing wind direction, coastal receptors, available chart area, noise and shadow-flicker risk.</span></li>
+                <li><span class="lang lang-zh">代表性尾流工况采用自由来流风速 U0=8.21m/s、尾流扩张系数 k=0.05、推力系数 CT=0.80。经纬度先转换为平面坐标，再旋转坐标系，使来流方向与下游方向一致。</span><span class="lang lang-en">The representative wake case used free-stream speed U0=8.21m/s, wake expansion coefficient k=0.05 and thrust coefficient CT=0.80. Latitude and longitude were converted to planar coordinates, then rotated so the inflow direction aligned with the downstream axis.</span></li>
+                <li><span class="lang lang-zh">该工况下无尾流总功率约 61.19MW，有尾流总功率约 55.72MW，损失约 5.47MW，即 8.94%。该数值适合用于布局筛选；正式年发电量仍需要多风向、多风速频率加权模型。</span><span class="lang lang-en">Under this case, no-wake total power was about 61.19MW and wake-adjusted total power about 55.72MW, giving a 5.47MW or 8.94% loss. This is useful for layout screening; bankable annual energy would still need multi-direction, multi-speed frequency weighting.</span></li>
               </ul>
             </section>
 
-            <section class="case-panel section-anchor">
-              <h4><span class="lang lang-zh">约束条件与场址判断</span><span class="lang lang-en">Constraints and Site Judgement</span></h4>
+            <section class="case-panel section-anchor" id="section-ashe">
+              <h4><span class="lang lang-zh">Project 2：ASHE 12MW 风机模型</span><span class="lang lang-en">Project 2: ASHE 12MW Turbine Model</span></h4>
               <ul class="detail-list">
-                <li><span class="lang lang-zh">遮影距离按 10 倍转子直径筛选，新风机 220m 转子对应 2200m 最大遮影检查半径。由于方案位于近海，主要居民点不在关键遮影影响范围内。</span><span class="lang lang-en">Shadow flicker was screened using 10 rotor diameters, giving a 2200m check radius for the 220m rotor. Since the layout is offshore, main residential receptors fall outside the critical shadow-flicker area.</span></li>
-                <li><span class="lang lang-zh">安全退距采用 1.1 倍最大叶尖高度，248m 叶尖高度对应 272.8m 退距。近海方案基本不受道路和架空线路退距限制，但该数值用于说明工程筛选口径。</span><span class="lang lang-en">Set-back distance used 1.1 times maximum tip height, so 248m tip height gives 272.8m. Offshore siting avoids most road and overhead-line constraints, but the value documents the engineering screening basis.</span></li>
-                <li><span class="lang lang-zh">噪声按声功率级、距离衰减和大气吸收计算，对 Blyth Beach、Port of Blyth、Car Park、Light House 和 Shanti Art 等受体进行对比。新增风机后各点总声压级仍低于 35dB(A) 判断线。</span><span class="lang lang-en">Noise was calculated from sound power level, distance attenuation and atmospheric absorption for receptors including Blyth Beach, Port of Blyth, Car Park, Light House and Shanti Art. Total sound pressure levels after adding turbines remained below the 35dB(A) screening line.</span></li>
-                <li><span class="lang lang-zh">环境复核覆盖打桩水下噪声、海鸟觅食和迁徙风险、以及施工碳排放和材料污染等议题。网页展示这些内容作为前期场址筛查，而不是替代正式环境影响评价。</span><span class="lang lang-en">Environmental review covered piling underwater noise, seabird foraging and migration risk, construction carbon and material-pollution topics. The page presents these as early site-screening considerations, not as a substitute for a formal environmental impact assessment.</span></li>
+                <li><span class="lang lang-zh">ASHE 模型将参考 15MW 和 5MW 风机缩放到 12MW：转子半径 110m，叶片长度约 106.64m，轮毂高度 170.74m，3 叶片，单桩基础桩尖至 LAT（Lowest Astronomical Tide，最低天文潮位）以下约 20m。</span><span class="lang lang-en">The ASHE model scaled reference 15MW and 5MW turbines to 12MW: rotor radius 110m, blade length about 106.64m, hub height 170.74m, three blades, and a monopile foundation with pile tip about 20m below LAT.</span></li>
+                <li><span class="lang lang-zh">气动部分使用叶素动量理论（Blade Element Momentum, BEM）计算 Cp-λ 与 Ct-λ 曲线。模型在叶尖速比（Tip-Speed Ratio, TSR）9.6 附近达到 Cpmax=0.498，推力系数 CT 约 0.853，作为额定前控制和功率曲线设计的关键点。</span><span class="lang lang-en">The aerodynamic section used Blade Element Momentum theory to calculate Cp-lambda and Ct-lambda curves. The model reached Cpmax=0.498 around TSR 9.6, with CT about 0.853, forming the key design point for below-rated control and power-curve definition.</span></li>
+                <li><span class="lang lang-zh">变桨研究覆盖 -6°、-4°、-2°、0°、+2°、+4°、+6°。正向顺桨会降低 Cp 和 CT，用于额定风速以上削减气动功率和载荷；负向变桨能提升低风速捕能，但会增加载荷风险。</span><span class="lang lang-en">The pitch study covered -6, -4, -2, 0, +2, +4 and +6 degrees. Positive feathering reduces Cp and CT for above-rated power and load shedding; negative pitch can improve low-speed capture but increases load risk.</span></li>
+                <li><span class="lang lang-zh">控制器采用变速变桨思路。课程计算给出 Ku=3.3s、Tu=10.1s，初始比例增益 Kp=1.485、积分增益 Ki=0.176、调度角 θk=25°，用于在额定附近稳定功率、转速和桨距响应。</span><span class="lang lang-en">The controller followed a variable-speed pitch-control logic. Coursework tuning gave Ku=3.3s, Tu=10.1s, initial proportional gain Kp=1.485, integral gain Ki=0.176 and scheduling angle theta_k=25 degrees to regulate power, speed and pitch around rated operation.</span></li>
               </ul>
             </section>
           </div>
 
-          <section class="case-panel section-anchor" id="section-wake">
-            <h4><span class="lang lang-zh">高斯尾流模型与结果解释</span><span class="lang lang-en">Gaussian Wake Model and Result Interpretation</span></h4>
+          <section class="case-panel section-anchor" id="section-dynamics">
+            <h4><span class="lang lang-zh">Project 2：结构动力学、载荷与发电机</span><span class="lang lang-en">Project 2: Structural Dynamics, Loads and Generator</span></h4>
             <ul class="detail-list">
-              <li><span class="lang lang-zh">尾流模型以主导风向 225°（SSW）为代表工况，自由来流风速 U0=8.21m/s，尾流扩张系数 k=0.05，推力系数 CT=0.80。先将经纬度转换为平面坐标，再旋转坐标系，使风向与下游方向一致。</span><span class="lang lang-en">The representative wake case used prevailing wind direction 225 degrees (SSW), free-stream speed U0=8.21m/s, wake expansion coefficient k=0.05 and thrust coefficient CT=0.80. Latitude and longitude were first converted to planar coordinates, then rotated so the wind direction aligned with the downstream axis.</span></li>
-              <li><span class="lang lang-zh">对每一对上游/下游风机计算轴向距离和横向偏移，再用高斯速度亏损模型估计单个尾流影响；多个上游尾流采用平方和叠加，得到每台风机的有效风速。</span><span class="lang lang-en">For each upstream-downstream turbine pair, downstream distance and lateral offset were calculated, then a Gaussian velocity-deficit model estimated the single-wake impact. Multiple upstream wakes were combined with a square-root-sum-of-squares approach to obtain each turbine's effective wind speed.</span></li>
-              <li><span class="lang lang-zh">代表性结果显示，N2、N3、N4、N5、N7 基本保持 8.21m/s 来流；N6 受尾流影响降至约 7.48m/s；既有 T1-T5 多处位于下游，部分有效风速约 7.18-8.03m/s。</span><span class="lang lang-en">The representative result shows N2, N3, N4, N5 and N7 largely retained the 8.21m/s free-stream speed; N6 fell to about 7.48m/s; several existing T1-T5 turbines were downstream and had effective wind speeds around 7.18-8.03m/s.</span></li>
-              <li><span class="lang lang-zh">该工况下无尾流总功率约 61.19MW，有尾流总功率约 55.72MW，损失约 5.47MW，即 8.94%。该数值适合作为布局筛选和工程讨论依据，正式年发电量仍应使用多风向、多风速和全年频率加权模型。</span><span class="lang lang-en">For this case, total no-wake power was about 61.19MW and wake-adjusted power was about 55.72MW, a 5.47MW or 8.94% loss. This is suitable for layout screening and engineering discussion; a bankable annual-energy result would require multi-direction, multi-speed and full-year frequency weighting.</span></li>
+              <li><span class="lang lang-zh">结构模态分析得到 13 个主要模态。一阶和二阶塔架相关模态约 0.2266Hz 与 0.2276Hz。在 10rpm 左右运行时，1P 频率约 0.167Hz，3P 频率约 0.500Hz，因此一阶塔架频率位于 1P 与 3P 之间，属于软-刚（soft-stiff）塔架设计思路，目标是避开主要转频激励。</span><span class="lang lang-en">Structural eigenmode analysis identified 13 main modes. The first two tower-related modes were about 0.2266Hz and 0.2276Hz. At around 10rpm operation, 1P is about 0.167Hz and 3P about 0.500Hz, so the first tower frequency sits between 1P and 3P, following a soft-stiff tower concept to avoid major rotational excitation.</span></li>
+              <li><span class="lang lang-zh">叶片气动载荷按 50 个叶片站点展开，叶片长度约 106.64m。额定附近算例采用约 10.5m/s 风速和约 7.813rpm 转速，用于检查功率、转矩、推力和桨距响应是否与理论计算一致。</span><span class="lang lang-en">Blade aerodynamic loads were resolved across 50 blade stations along the 106.64m blade. The rated-region case used about 10.5m/s wind speed and 7.813rpm rotor speed to check power, torque, thrust and pitch response against theoretical calculations.</span></li>
+              <li><span class="lang lang-zh">基础模型采用近海单桩，约 20m 水深适合课程级单桩方案。水动力部分基于 Morison 方程、浮力、附加质量和 p-y 曲线思想建立边界条件，但真实工程仍需地勘、疲劳、极限海况和安装可行性复核。</span><span class="lang lang-en">The foundation model used an offshore monopile, appropriate for a coursework-level case at about 20m water depth. Hydrodynamic boundaries were based on Morison-equation, buoyancy, added-mass and p-y curve logic, while real engineering would need geotechnical, fatigue, extreme-sea-state and installation checks.</span></li>
+              <li><span class="lang lang-zh">电气部分采用直驱永磁发电机（Permanent Magnet Generator, PMG）：半径 4.89m、长度 2.44m、体积约 183.33m³、估算质量约 96 吨、最大转矩约 15.7MN·m、154 极对、开路电动势约 33.22kV。</span><span class="lang lang-en">The electrical section used a direct-drive Permanent Magnet Generator: radius 4.89m, length 2.44m, volume about 183.33m3, estimated mass about 96 tonnes, maximum torque about 15.7MN m, 154 pole pairs and open-circuit EMF about 33.22kV.</span></li>
             </ul>
           </section>
 
@@ -192,12 +194,12 @@
             <div class="case-visuals-heading">
               <p class="section-kicker"><span class="lang lang-zh">图表证据</span><span class="lang lang-en">Visual Evidence</span></p>
               <h3 id="section-evidence-title">
-                <span class="lang lang-zh">从风资源到布置与尾流的计算链</span>
-                <span class="lang lang-en">Calculation Chain from Wind Resource to Layout and Wake</span>
+                <span class="lang lang-zh">从风资源、布局尾流到 ASHE 风机模型的证据链</span>
+                <span class="lang lang-en">Evidence Chain from Wind Resource and Layout to ASHE Turbine Model</span>
               </h3>
               <p>
-                <span class="lang lang-zh">以下图表来自课程交付物和计算表，展示项目不是简单“放置风机”，而是从风况统计、长期修正、风机选型、场址约束到尾流损失逐步收敛。</span>
-                <span class="lang lang-en">These visuals come from the coursework deliverables and calculation workbook, showing a step-by-step convergence from wind statistics, long-term correction and turbine sizing to site constraints and wake loss.</span>
+                <span class="lang lang-zh">以下图表来自课程报告、计算工作簿和 ASHE 仿真输出。网页保留能支撑工程判断的关键图，不直接堆放完整参数表。</span>
+                <span class="lang lang-en">The following visuals come from the coursework report, calculation workbook and ASHE simulation outputs. The page keeps evidence that supports engineering judgement instead of dumping full parameter tables.</span>
               </p>
             </div>
 
@@ -205,9 +207,9 @@
               <figure class="project-visual-card project-visual-card-wide">
                 <img src="../assets/projects/wind-blyth-satellite-constraints.png" alt="Satellite constraint map for Blyth offshore wind farm extension" />
                 <figcaption>
-                  <strong><span class="lang lang-zh">卫星约束图</span><span class="lang lang-en">Satellite Constraint Map</span></strong>
-                  <span class="lang lang-zh">黄色圆用于既有风机遮影/间距检查，红色圆用于新增风机约束检查。该图把居民点、原有风机和新增风机候选位置放在同一个空间语境中。</span>
-                  <span class="lang lang-en">Yellow circles support existing-turbine checks and red circles support new-turbine checks. The map places receptors, existing turbines and proposed locations in one spatial context.</span>
+                  <strong><span class="lang lang-zh">场址约束图</span><span class="lang lang-en">Site Constraint Map</span></strong>
+                  <span class="lang lang-zh">该图把既有风机、新增风机、岸线受体和距离约束放在同一空间语境中，说明选址不是单纯追求海域面积，而是要同时考虑尾流、噪声、遮影和许可风险。</span>
+                  <span class="lang lang-en">This map places existing turbines, proposed turbines, coastal receptors and distance checks in one spatial context, showing that siting must consider wake, noise, shadow and permitting risk, not only available sea area.</span>
                 </figcaption>
               </figure>
 
@@ -215,44 +217,62 @@
                 <img src="../assets/projects/wind-resource-summary.png" alt="Wind resource summary with wind rose and SSW prevailing direction" />
                 <figcaption>
                   <strong><span class="lang lang-zh">风资源摘要</span><span class="lang lang-en">Wind Resource Summary</span></strong>
-                  <span class="lang lang-zh">测量期平均风速约 8.70m/s，平均湍流强度约 7.8%，主导风向为 SSW 225°。该结果直接影响风机排布方向和尾流模型的代表性工况。</span>
-                  <span class="lang lang-en">The measured mean wind speed was about 8.70m/s, mean turbulence intensity about 7.8%, and prevailing direction SSW 225 degrees. These values drive layout orientation and the representative wake case.</span>
+                  <span class="lang lang-zh">测量期平均风速约 8.70m/s，主导风向为 SSW 225°。该结果直接决定新增风机排布方向和代表性尾流工况。</span>
+                  <span class="lang lang-en">Measurement-period mean wind speed was about 8.70m/s and the prevailing direction was SSW 225 degrees, directly shaping layout orientation and the representative wake case.</span>
                 </figcaption>
               </figure>
 
               <figure class="project-visual-card project-visual-card-compact">
-                <img src="../assets/projects/wind-speed-histogram.jpg" alt="Annual wind speed histogram for Blyth wind resource analysis" />
-                <figcaption>
-                  <strong><span class="lang lang-zh">年风速直方图</span><span class="lang lang-en">Annual Wind-Speed Histogram</span></strong>
-                  <span class="lang lang-zh">风速频率集中在 7-11m/s 区间，接近 12MW 风机从部分负载进入额定功率区的关键范围，因此机型额定风速和功率曲线选择会显著影响发电量估计。</span>
-                  <span class="lang lang-en">The wind-speed frequency concentrates around 7-11m/s, near the transition from partial-load operation to rated output for the 12MW turbine, making rated speed and power-curve assumptions important.</span>
-                </figcaption>
-              </figure>
-
-              <figure class="project-visual-card">
-                <img src="../assets/projects/wind-p90-fit.jpg" alt="P90 Rayleigh and Weibull fit for wind speed probability" />
-                <figcaption>
-                  <strong><span class="lang lang-zh">P90 与分布拟合</span><span class="lang lang-en">P90 and Distribution Fit</span></strong>
-                  <span class="lang lang-zh">对测量风速直方图叠加瑞利分布（Rayleigh Distribution）和威布尔分布（Weibull Distribution），其中威布尔参数约为 C=9.08m/s、k=2.07，并得到 P90 年平均风速约 8.21m/s。</span>
-                  <span class="lang lang-en">The measured histogram is compared with Rayleigh and Weibull distributions. The Weibull parameters are about C=9.08m/s and k=2.07, and the P90 annual wind speed is about 8.21m/s.</span>
-                </figcaption>
-              </figure>
-
-              <figure class="project-visual-card">
                 <img src="../assets/projects/wind-wake-visualization.png" alt="Gaussian wake model visualization of effective wind speed" />
                 <figcaption>
                   <strong><span class="lang lang-zh">高斯尾流有效风速图</span><span class="lang lang-en">Gaussian Wake Effective-Speed Plot</span></strong>
-                  <span class="lang lang-zh">颜色表示每台风机的有效风速。红色点说明尾流影响较小，蓝色点说明处于下游尾流区。该图用于解释为什么不能只按海域面积均匀摆放风机。</span>
-                  <span class="lang lang-en">Colour indicates effective wind speed at each turbine. Red points have lower wake impact and blue points sit in stronger downstream wake regions, explaining why a simple evenly spaced layout is not enough.</span>
+                  <span class="lang lang-zh">颜色表示每台风机的有效风速。该图用于说明为什么 N6 和部分既有机组会在主导风向下受到更明显尾流影响。</span>
+                  <span class="lang lang-en">Colour indicates effective wind speed at each turbine and explains why N6 and several existing turbines receive stronger wake impact under the prevailing direction.</span>
                 </figcaption>
               </figure>
 
               <figure class="project-visual-card">
-                <img src="../assets/projects/wind-bird-migration.png" alt="Bird migration route considered in environmental review" />
+                <img src="../assets/projects/wind-ashe-controller-response.png" alt="ASHE controller response for pitch, power, rotor speed and wind speed" />
                 <figcaption>
-                  <strong><span class="lang lang-zh">环境影响复核</span><span class="lang lang-en">Environmental Review</span></strong>
-                  <span class="lang lang-zh">项目复核了海鸟迁徙、觅食和飞行高度风险，并结合既有研究说明选址仍需避开关键迁徙通道和高敏感栖息地。</span>
-                  <span class="lang lang-en">The project reviewed seabird migration, foraging and flight-height risks, using literature evidence to highlight the need to avoid key migration corridors and sensitive habitats.</span>
+                  <strong><span class="lang lang-zh">ASHE 控制响应</span><span class="lang lang-en">ASHE Controller Response</span></strong>
+                  <span class="lang lang-zh">该截图展示桨距角、气动功率、转速和参考风速的时间响应，用于检查变速变桨控制是否能在额定附近稳定风机输出。</span>
+                  <span class="lang lang-en">This screenshot shows pitch angle, aerodynamic power, rotor speed and reference wind-speed time response, supporting the check of variable-speed pitch control near rated operation.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/wind-ashe-rotor-speed.png" alt="Calculated and simulated rotor speed comparison" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">转速计算与仿真对比</span><span class="lang lang-en">Rotor-Speed Validation</span></strong>
+                  <span class="lang lang-zh">低风速区存在控制启动和缩放误差，额定附近计算值与 ASHE 仿真值逐渐贴合，说明转速设定与控制逻辑基本一致。</span>
+                  <span class="lang lang-en">Low-speed operation shows start-up and scaling deviation, while rated-region calculated and ASHE-simulated speed converge, supporting the rotor-speed and control assumptions.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/wind-ashe-torque.png" alt="Calculated and simulated torque comparison" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">转矩计算与仿真对比</span><span class="lang lang-en">Torque Validation</span></strong>
+                  <span class="lang lang-zh">转矩在额定前快速上升，并在额定区附近进入平台。仿真转矩略低于理论计算值，提示控制限幅、气动损失和模型假设会影响真实输出。</span>
+                  <span class="lang lang-en">Torque rises rapidly below rated and then approaches a plateau. Simulated torque is slightly below the theoretical estimate, indicating the effect of control limits, aerodynamic loss and modelling assumptions.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/wind-ashe-campbell.png" alt="Campbell diagram for ASHE turbine model" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">Campbell 图</span><span class="lang lang-en">Campbell Diagram</span></strong>
+                  <span class="lang lang-zh">一阶塔架模态约 0.227Hz 位于 1P 与 3P 之间，用于说明结构频率与主要转频激励之间保持间隔。</span>
+                  <span class="lang lang-en">The first tower mode around 0.227Hz sits between 1P and 3P, showing separation between structural frequency and major rotational excitation.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/wind-ashe-eigenmodes.png" alt="ASHE turbine model and eigenmode results" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">ASHE 模态结果</span><span class="lang lang-en">ASHE Eigenmode Results</span></strong>
+                  <span class="lang lang-zh">ASHE 中的三维风机模型和模态结果表明，Project 2 不只是参数计算，还包含结构动力学求解与模型检查。</span>
+                  <span class="lang lang-en">The ASHE 3D model and eigenmode result table show that Project 2 includes structural dynamics solving and model checking, not only parameter calculation.</span>
                 </figcaption>
               </figure>
             </div>
@@ -260,22 +280,22 @@
 
           <div class="case-grid" id="section-review">
             <section class="case-panel section-anchor">
-              <h4><span class="lang lang-zh">工程复核与不确定性</span><span class="lang lang-en">Engineering Review and Uncertainty</span></h4>
+              <h4><span class="lang lang-zh">工程复核与局限性</span><span class="lang lang-en">Engineering Review and Limitations</span></h4>
               <ul class="detail-list">
-                <li><span class="lang lang-zh">MCP 数据窗口有限：目标测量数据主要覆盖 2013-2014 年，虽然 Boulmer 相关性最高，但长期风资源最好用更长时间序列、再分析数据或现场测风补充。</span><span class="lang lang-en">MCP data window is limited: the target measurement dataset mainly covers 2013-2014. Although Boulmer had the best correlation, long-term resource assessment should be supplemented with longer records, reanalysis data or additional site measurement.</span></li>
-                <li><span class="lang lang-zh">尾流模型为筛选级：高斯模型可以解释相对位置和有效风速下降，但正式融资级评估应使用多风向概率、风速分箱、湍流相关推力系数和完整年发电量模型。</span><span class="lang lang-en">Wake modelling is screening-level: the Gaussian model explains relative placement and effective-speed reduction, but bankable assessment should include directional probabilities, speed bins, turbulence-dependent thrust coefficients and full annual-energy modelling.</span></li>
-                <li><span class="lang lang-zh">噪声与遮影为初步筛查：项目用 35dB(A) 和 10D 遮影半径作为前期判断，真实开发还要结合当地许可标准、累积噪声、夜间工况和居民敏感点。</span><span class="lang lang-en">Noise and shadow checks are preliminary: the project used 35dB(A) and 10D shadow radius as screening criteria. Real development would need local permitting standards, cumulative noise, night-time operation and receptor-specific assessment.</span></li>
-                <li><span class="lang lang-zh">环境影响需要正式调查：网页中的海鸟、水下噪声和施工碳排放内容用于体现工程意识，不能替代正式的生态调查、海洋许可和环境影响评价。</span><span class="lang lang-en">Environmental impact needs formal survey: seabird, underwater-noise and construction-carbon content demonstrates engineering awareness, but does not replace ecological survey, marine consent and environmental impact assessment.</span></li>
+                <li><span class="lang lang-zh">Project 1 的风资源结论依赖有限测量窗口和 MCP 相关关系。虽然 Boulmer 的 R²=0.874 支撑长期修正，但真实开发仍应补充更长现场测风、再分析数据和不确定性传播。</span><span class="lang lang-en">Project 1 wind-resource conclusions rely on a limited measurement window and MCP correlation. Although Boulmer's R²=0.874 supports long-term correction, real development should add longer on-site measurement, reanalysis data and uncertainty propagation.</span></li>
+                <li><span class="lang lang-zh">Project 1 的高斯尾流模型适合课程级布局筛选。融资级年发电量评估需要多风向玫瑰图、风速分箱、湍流相关 CT 曲线、可利用率、阵列电缆损耗和完整年频率加权。</span><span class="lang lang-en">The Project 1 Gaussian wake model is suitable for coursework-level layout screening. Bankable AEP assessment requires wind-rose weighting, speed bins, turbulence-dependent CT curves, availability, array-cable loss and full-year frequency weighting.</span></li>
+                <li><span class="lang lang-zh">Project 2 的 ASHE 模型属于初步课程设计，不等同于通过认证的风机产品。真实机型还需要 IEC 设计载荷工况（Design Load Cases, DLCs）、疲劳和极限载荷、叶片结构有限元、控制保护逻辑和电网规范验证。</span><span class="lang lang-en">The Project 2 ASHE model is a preliminary coursework design, not a certified turbine product. A real turbine would require IEC Design Load Cases, fatigue and ultimate loads, blade structural FEA, protection logic and grid-code verification.</span></li>
+                <li><span class="lang lang-zh">发电机和基础参数为概念级估算。96 吨直驱永磁发电机、33.22kV 开路电压和单桩水动力边界可以解释设计思路，但真实工程仍需热管理、绝缘、变流器接口、地勘和施工安装复核。</span><span class="lang lang-en">Generator and foundation parameters are conceptual estimates. The 96-tonne direct-drive PMG, 33.22kV open-circuit EMF and monopile hydrodynamic boundary explain design logic, but real engineering still needs thermal management, insulation, converter interface, geotechnical and installation review.</span></li>
               </ul>
             </section>
 
             <section class="case-panel section-anchor">
               <h4><span class="lang lang-zh">我的工作产出</span><span class="lang lang-en">My Deliverables</span></h4>
               <ul class="detail-list">
-                <li><span class="lang lang-zh">建立可追溯 Excel 计算表，包含风切变、风向频率、MCP 相关性、P90、概率分布、功率曲线、坐标布置、噪声计算和尾流模型步骤。</span><span class="lang lang-en">Built an auditable Excel workbook covering wind shear, direction frequency, MCP correlation, P90, probability distribution, power curve, coordinate layout, noise calculation and wake-model steps.</span></li>
-                <li><span class="lang lang-zh">制作带注释的风电场布置 PDF，说明新增风机 N1-N7 的位置、与既有 T1-T5 的关系，以及遮影、尾流、噪声和环境约束。</span><span class="lang lang-en">Produced an annotated wind-farm layout PDF explaining N1-N7 positions, their relationship to existing T1-T5 turbines, and shadow, wake, noise and environmental constraints.</span></li>
-                <li><span class="lang lang-zh">完成 5 分钟项目展示材料，将计算链压缩为风资源、长期风速、能量捕获、场址评估和环境影响五个部分。</span><span class="lang lang-en">Created a five-minute project presentation that condensed the calculation chain into wind resource, long-term speed, energy capture, site assessment and environmental impact sections.</span></li>
-                <li><span class="lang lang-zh">把新增风机容量、风况数据、风险边界和尾流损失转化为可以向工程团队解释的设计依据。</span><span class="lang lang-en">Translated new capacity, wind-resource evidence, risk boundaries and wake loss into design rationale that can be explained to an engineering team.</span></li>
+                <li><span class="lang lang-zh">完成 Project 1 风电场扩建报告和计算链：风切变、湍流强度、风玫瑰、MCP、P90、功率曲线、风机坐标、噪声、遮影、环境约束和高斯尾流模型。</span><span class="lang lang-en">Completed the Project 1 extension report and calculation chain: wind shear, turbulence intensity, wind rose, MCP, P90, power curve, turbine coordinates, noise, shadow, environmental constraints and Gaussian wake model.</span></li>
+                <li><span class="lang lang-zh">完成 Project 2 ASHE 风机模型：12MW 缩放设计、Cp/Ct 曲线、变桨控制、功率和转矩运行曲线、Campbell 图、叶片载荷、直驱永磁发电机和经济性初算。</span><span class="lang lang-en">Completed the Project 2 ASHE turbine model: 12MW scaling, Cp/Ct curves, pitch control, power and torque operation curves, Campbell diagram, blade loads, direct-drive PMG and preliminary economics.</span></li>
+                <li><span class="lang lang-zh">形成可用于面试解释的工程叙事：先证明场址“有风、可建、能排布”，再证明候选 12MW 风机“能捕能、能控、避开主要共振、发电机参数可计算”。</span><span class="lang lang-en">Built an interview-ready engineering narrative: first prove the site has resource, feasible siting and workable layout; then prove the candidate 12MW turbine can capture energy, be controlled, avoid major resonance and support calculable generator parameters.</span></li>
+                <li><span class="lang lang-zh">交付物包括课程报告、Excel 工作簿、ASHE 项目文件和展示材料。网页只呈现可公开展示的核心内容，保留工程细节但避免把原始表格全部堆给 HR。</span><span class="lang lang-en">Deliverables included the coursework report, Excel workbook, ASHE project file and presentation materials. This page presents public-facing core content while retaining engineering detail without dumping all raw tables for HR readers.</span></li>
               </ul>
             </section>
           </div>
