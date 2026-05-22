@@ -104,6 +104,8 @@
           <nav class="case-map" aria-label="Project section navigation">
             <a href="#section-overview"><span class="lang lang-zh">项目概览</span><span class="lang lang-en">Overview</span></a>
             <a href="#section-sizing"><span class="lang lang-zh">容量配置</span><span class="lang lang-en">Sizing</span></a>
+            <a href="#section-cost"><span class="lang lang-zh">成本与电价</span><span class="lang lang-en">Cost Model</span></a>
+            <a href="#section-deep-dive"><span class="lang lang-zh">技术细节</span><span class="lang lang-en">Technical Notes</span></a>
             <a href="#section-simulation"><span class="lang lang-zh">仿真证据</span><span class="lang lang-en">Simulation</span></a>
             <a href="#section-results"><span class="lang lang-zh">经济结果</span><span class="lang lang-en">Results</span></a>
             <a href="#section-review"><span class="lang lang-zh">专业复核</span><span class="lang lang-en">Engineering Review</span></a>
@@ -182,6 +184,102 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </section>
+
+          <section class="case-panel case-wide section-anchor" id="section-cost">
+            <h4><span class="lang lang-zh">成本模型、电价假设与度电成本</span><span class="lang lang-en">Cost Model, Tariff Assumptions and LCOE</span></h4>
+            <div class="cost-layout">
+              <div>
+                <p class="case-note">
+                  <span class="lang lang-zh">报告中的成本来自光伏仿真软件（PVsyst）成本页和公开市场价格估算，适合课程级技术经济分析。真实工程报价仍需由组件、电池、逆变器、结构、施工和并网供应商重新询价。</span>
+                  <span class="lang lang-en">The cost model comes from the PVsyst cost page and public market price estimates. It is suitable for course-level techno-economic analysis; real deployment would still require supplier quotations for modules, batteries, inverters, structures, installation and grid connection.</span>
+                </p>
+                <div class="brief-table-wrap">
+                  <table class="brief-table cost-table">
+                    <tbody>
+                      <tr><th><span class="lang lang-zh">组件成本</span><span class="lang lang-en">PV Modules</span></th><td><span class="lang lang-zh">1708 块 Mono 550 Wp 双面半片组件，单价 £40.77，总计 £69,627.54。</span><span class="lang lang-en">1708 Mono 550 Wp bifacial half-cell modules at £40.77 each, total £69,627.54.</span></td></tr>
+                      <tr><th><span class="lang lang-zh">逆变器成本</span><span class="lang lang-en">Inverters</span></th><td><span class="lang lang-zh">26 台 30 kWac 逆变器，单价 £881.15，总计 £22,909.78。</span><span class="lang lang-en">26 x 30 kWac inverters at £881.15 each, total £22,909.78.</span></td></tr>
+                      <tr><th><span class="lang lang-zh">电池成本</span><span class="lang lang-en">Batteries</span></th><td><span class="lang lang-zh">91 个 BYD Battery Box Premium HVS 12.8 电池单元，单价 £3,911.98，总计 £355,990.11，是安装成本中最大单项。</span><span class="lang lang-en">91 BYD Battery Box Premium HVS 12.8 battery units at £3,911.98 each, total £355,990.11, the largest single installation-cost item.</span></td></tr>
+                      <tr><th><span class="lang lang-zh">工程与安装</span><span class="lang lang-en">Engineering and Installation</span></th><td><span class="lang lang-zh">附件与紧固件 £56,666.03；工程研究与分析 £28,333.02；全局安装成本 £79,332.45。</span><span class="lang lang-en">Accessories and fasteners £56,666.03; engineering studies and analysis £28,333.02; global installation cost £79,332.45.</span></td></tr>
+                      <tr><th><span class="lang lang-zh">保险与税费</span><span class="lang lang-en">Insurance and Tax</span></th><td><span class="lang lang-zh">建筑保险 £9,206.53；增值税/商品服务税项在模型中计入 £55,971.36。</span><span class="lang lang-en">Building insurance £9,206.53; VAT/GST-related tax item £55,971.36 in the model.</span></td></tr>
+                      <tr><th><span class="lang lang-zh">总安装投资</span><span class="lang lang-en">Total Installation Cost</span></th><td><span class="lang lang-zh">总安装成本 £678,036.83；其中可折旧资产 £505,193.47。</span><span class="lang lang-en">Total installation cost £678,036.83; depreciable asset £505,193.47.</span></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <aside class="cost-callout">
+                <p><strong><span class="lang lang-zh">电价假设</span><span class="lang lang-en">Tariff Assumption</span></strong></p>
+                <p><span class="lang lang-zh">澳大利亚峰时电价采用 £0.34/kWh，谷时电价采用 £0.06/kWh；英国对比案例采用 £0.20/kWh。该电价假设直接影响收益、回收期和内部收益率。</span><span class="lang lang-en">Australia peak tariff was assumed at £0.34/kWh and off-peak tariff at £0.06/kWh; the UK comparison case used £0.20/kWh. This tariff assumption directly affects revenue, payback and IRR.</span></p>
+                <p><strong><span class="lang lang-zh">运营成本</span><span class="lang lang-en">Operating Cost</span></strong></p>
+                <p><span class="lang lang-zh">年度运营成本（Operating Expenditure, OPEX）为 £113,457.60/year，包括逆变器更换准备金 £22,909.78、维修 £1,000、清洗 £500、电池更换准备金 £71,198.02、设施保险 £8,499.90 和联邦税 £9,349.90。</span><span class="lang lang-en">Annual OPEX is £113,457.60/year, including inverter replacement provision £22,909.78, repairs £1,000, cleaning £500, battery replacement provision £71,198.02, facility insurance £8,499.90 and federal tax £9,349.90.</span></p>
+                <p><strong><span class="lang lang-zh">度电成本怎么算</span><span class="lang lang-en">How LCOE Was Interpreted</span></strong></p>
+                <p><span class="lang lang-zh">平准化度电成本（Levelized Cost of Energy, LCOE）表示生命周期内“折现后的总成本 / 折现后的总发电量”。报告中光伏仿真软件输出的 Case 4 LCOE 为 £0.1112/kWh，不应简单用总投资除以第一年发电量，因为模型还包含运营成本、折旧、替换准备金和长期发电量。</span><span class="lang lang-en">LCOE means discounted lifetime cost divided by discounted lifetime electricity generation. The PVsyst output for Case 4 is £0.1112/kWh; it should not be calculated simply as total CAPEX divided by first-year output, because the model includes OPEX, depreciation, replacement provisions and long-term generation.</span></p>
+              </aside>
+            </div>
+          </section>
+
+          <section class="case-panel case-wide section-anchor technical-deep-dive" id="section-deep-dive">
+            <div class="deep-dive-head">
+              <div>
+                <p class="section-kicker"><span class="lang lang-zh">技术细节展开</span><span class="lang lang-en">Technical Notes</span></p>
+                <h4><span class="lang lang-zh">常见工程问题与回答依据</span><span class="lang lang-en">Common Engineering Questions and Evidence-Based Answers</span></h4>
+              </div>
+              <p>
+                <span class="lang lang-zh">这一部分默认折叠，适合在面试或项目讨论中快速查阅。它不是单独的“背诵稿”，而是把容易被追问的数据嵌入到工程解释里。</span>
+                <span class="lang lang-en">This section is collapsed by default and is intended for quick reference during interviews or project discussions. It embeds commonly challenged details into engineering explanations rather than presenting them as a script.</span>
+              </p>
+            </div>
+
+            <div class="faq-list-compact">
+              <details>
+                <summary><span class="lang lang-zh">电池具体用了什么型号？容量是怎么来的？</span><span class="lang lang-en">Which battery model was used, and how was capacity calculated?</span></summary>
+                <div class="faq-answer">
+                  <span class="lang lang-zh">报告采用 BYD Battery Box Premium HVS 12.8 的光伏仿真软件（PVsyst）数据库参数。单个电池单元按 512 V、25 Ah 计算，项目采用 1 串 91 并，因此理想容量为 1 × 91 × 512 V × 25 Ah = 1,164,800 Wh，即 1164.8 kWh。考虑 80% 放电深度（Depth of Discharge, DoD），可用容量约 931.8 kWh。报告还给出电池生命周期可储能量约 5534.7 MWh，用于说明该配置能够支持商业负荷削峰填谷，但仍不足以完全解决高光伏渗透率下的电网调节问题。</span>
+                  <span class="lang lang-en">The report used PVsyst database parameters for BYD Battery Box Premium HVS 12.8. Each battery unit is modelled as 512 V and 25 Ah. With 1 in series and 91 in parallel, ideal capacity is 1 x 91 x 512 V x 25 Ah = 1,164,800 Wh, or 1164.8 kWh. At 80% depth of discharge, usable energy is about 931.8 kWh. The report also gives about 5534.7 MWh lifetime stored energy, supporting peak trimming and valley filling but not enough to fully regulate a high-PV-penetration port system.</span>
+                </div>
+              </details>
+
+              <details>
+                <summary><span class="lang lang-zh">为什么电池成本这么高？它在总投资里占多少？</span><span class="lang lang-en">Why is the battery cost high, and how important is it in CAPEX?</span></summary>
+                <div class="faq-answer">
+                  <span class="lang lang-zh">成本页中电池为 91 个单元，单价 £3,911.98，总计 £355,990.11。相对于总安装成本 £678,036.83，电池约占 52.5%，是最大的单项成本。这也是为什么本项目虽然投资回收期短、内部收益率较高，但平准化度电成本（Levelized Cost of Energy, LCOE）仍高于英国港口 Case 3 的原因之一。</span>
+                  <span class="lang lang-en">The cost page lists 91 battery units at £3,911.98 each, totalling £355,990.11. Against total installation cost of £678,036.83, batteries account for about 52.5%, the largest single item. This is one reason why the project has short payback and high IRR but a higher LCOE than the UK harbour Case 3.</span>
+                </div>
+              </details>
+
+              <details>
+                <summary><span class="lang lang-zh">度电成本是怎么计算的？为什么不能直接用投资除以年发电量？</span><span class="lang lang-en">How was LCOE calculated, and why is it not just CAPEX divided by annual generation?</span></summary>
+                <div class="faq-answer">
+                  <span class="lang lang-zh">平准化度电成本（Levelized Cost of Energy, LCOE）的核心逻辑是生命周期总成本除以生命周期总发电量，并通常考虑折现、运营成本、维护、保险、税费、设备更换准备金和长期发电衰减。报告中 Case 4 的 LCOE 为 £0.1112/kWh，来自光伏仿真软件（PVsyst）经济模型输出。若只用 £678,036.83 除以第一年 1263.2 MWh，会忽略每年 £113,457.60 的运营成本、逆变器和电池更换准备金，因此会低估真实生命周期成本。</span>
+                  <span class="lang lang-en">LCOE is lifetime cost divided by lifetime generation, usually with discounting, OPEX, maintenance, insurance, taxes, replacement provisions and long-term degradation. Case 4 LCOE is £0.1112/kWh from the PVsyst economic model. Dividing £678,036.83 by first-year generation of 1263.2 MWh would ignore annual OPEX of £113,457.60 and replacement provisions for inverters and batteries, so it would underestimate lifetime cost.</span>
+                </div>
+              </details>
+
+              <details>
+                <summary><span class="lang lang-zh">项目使用了什么电价？收益是按什么逻辑来的？</span><span class="lang lang-en">Which tariffs were used, and how was revenue interpreted?</span></summary>
+                <div class="faq-answer">
+                  <span class="lang lang-zh">澳大利亚电价假设为峰时 £0.34/kWh、谷时 £0.06/kWh。英国对比案例采用 £0.20/kWh。对于港口光伏储能系统，收益不是只看“省下多少电费”，还要看自用电量、上网售电、储能移峰以及不同电价时段的价值。成本页给出有用太阳能电量约 414 MWh/year，上网售电量 850 MWh/year，说明项目有相当一部分收益来自富余电量上网。</span>
+                  <span class="lang lang-en">The Australian tariff assumptions were £0.34/kWh at peak and £0.06/kWh off-peak; the UK comparison case used £0.20/kWh. For the harbour PV-BESS system, revenue is not only avoided electricity purchase; it also depends on self-use, grid export, battery shifting and tariff timing. The cost page lists useful solar energy of about 414 MWh/year and energy sold to the grid of 850 MWh/year, so a large part of the value comes from exporting surplus energy.</span>
+                </div>
+              </details>
+
+              <details>
+                <summary><span class="lang lang-zh">为什么直流/交流容量比选 1.20？</span><span class="lang lang-en">Why was the DC/AC ratio set to 1.20?</span></summary>
+                <div class="faq-answer">
+                  <span class="lang lang-zh">光伏阵列直流侧容量约 939 kWp，逆变器交流侧容量为 26 × 30 kWac = 780 kWac，因此直流/交流容量比约 939/780 = 1.20。这样做的目的是在大多数非峰值辐照时段提高逆变器利用率，让逆变器更长时间运行在较高输出区间。代价是极少数强辐照时段可能出现限功率削峰，但项目认为该损失可接受，且有利于年发电量和经济性。</span>
+                  <span class="lang lang-en">The DC array is about 939 kWp and AC inverter capacity is 26 x 30 kWac = 780 kWac, so DC/AC is about 939/780 = 1.20. The aim is to improve inverter utilisation during most non-peak irradiance periods and keep the inverter operating at higher output for longer. The trade-off is possible clipping during rare high-irradiance periods, considered acceptable for annual yield and economics.</span>
+                </div>
+              </details>
+
+              <details>
+                <summary><span class="lang lang-zh">为什么采用东西双拱布局，而不是单一朝向？</span><span class="lang lang-en">Why use an east-west dome layout instead of one direction?</span></summary>
+                <div class="faq-answer">
+                  <span class="lang lang-zh">港口停车场屋顶面积大且接近平屋顶，适合低倾角东西双拱（East-West Dome）行排。两个朝向约为 -39° 和 +141°，可让早晨和下午都有较稳定输出，减少单一朝向在正午形成尖峰的问题，同时提高屋顶覆盖率。报告中的近端遮挡分析显示，大部分日间遮挡损失处于 1%-10% 范围，较高遮挡主要集中在 06:00-08:00 和 16:00-18:00 的低太阳高度角时段。</span>
+                  <span class="lang lang-en">The large, nearly flat car-park roof suits a low-tilt east-west dome layout. The two azimuths, around -39° and +141°, provide steadier morning and afternoon output, reduce a single midday peak and improve roof coverage. The report's near-shading analysis shows most daytime shading loss within 1%-10%, with higher shading concentrated around 06:00-08:00 and 16:00-18:00.</span>
+                </div>
+              </details>
             </div>
           </section>
 

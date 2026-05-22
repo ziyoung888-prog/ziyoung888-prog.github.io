@@ -379,7 +379,7 @@ h3 {
 
 .case-map {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1px;
   margin: 22px 0 24px;
   border: 1px solid var(--line);
@@ -444,6 +444,123 @@ h3 {
 
 .section-anchor {
   scroll-margin-top: 96px;
+}
+
+.case-note {
+  max-width: 900px;
+  margin: 0 0 16px;
+  color: #b8c9cb;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.cost-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(280px, 0.82fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.cost-table th {
+  width: 170px;
+}
+
+.cost-callout {
+  border: 1px solid rgba(255, 200, 87, 0.28);
+  background:
+    linear-gradient(160deg, rgba(255, 200, 87, 0.1), rgba(112, 245, 221, 0.04)),
+    rgba(7, 16, 21, 0.58);
+  padding: 18px;
+}
+
+.cost-callout p {
+  margin: 0 0 14px;
+  color: #c6dbdd;
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.cost-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.cost-callout strong {
+  color: var(--amber);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.technical-deep-dive {
+  background:
+    linear-gradient(135deg, rgba(112, 245, 221, 0.06), rgba(255, 200, 87, 0.05)),
+    rgba(12, 27, 34, 0.76);
+}
+
+.deep-dive-head {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(280px, 0.58fr);
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 18px;
+}
+
+.deep-dive-head h4 {
+  margin-bottom: 0;
+}
+
+.deep-dive-head p:last-child {
+  margin: 0;
+  color: #b8c9cb;
+  font-size: 15px;
+  line-height: 1.72;
+}
+
+.faq-list-compact {
+  display: grid;
+  gap: 10px;
+}
+
+.faq-list-compact details {
+  border: 1px solid rgba(126, 247, 215, 0.16);
+  background: rgba(7, 16, 21, 0.52);
+}
+
+.faq-list-compact summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 54px;
+  padding: 14px 16px;
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.faq-list-compact summary::after {
+  content: "+";
+  flex-shrink: 0;
+  color: var(--cyan);
+  font-family: var(--mono);
+}
+
+.faq-list-compact details[open] summary {
+  border-bottom: 1px solid rgba(126, 247, 215, 0.14);
+  color: var(--cyan);
+}
+
+.faq-list-compact details[open] summary::after {
+  content: "-";
+}
+
+.faq-answer {
+  padding: 16px;
+  color: #c6dbdd;
+  font-size: 15px;
+  line-height: 1.76;
 }
 
 .signal-strip {
@@ -1090,6 +1207,8 @@ h3 {
 @media (max-width: 1020px) {
   .hero,
   .project-brief-hero,
+  .cost-layout,
+  .deep-dive-head,
   .split-section,
   .contact-section,
   .project-feature {
