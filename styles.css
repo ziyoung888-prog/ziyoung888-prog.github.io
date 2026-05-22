@@ -902,6 +902,10 @@ h3 {
   aspect-ratio: 16 / 8;
 }
 
+.project-visual-card-compact img {
+  aspect-ratio: 16 / 7;
+}
+
 .project-visual-card figcaption {
   display: grid;
   gap: 9px;
