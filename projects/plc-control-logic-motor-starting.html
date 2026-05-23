@@ -193,9 +193,9 @@
             <h4><span class="lang lang-zh">选定输出</span><span class="lang lang-en">Selected Outputs</span></h4>
             <ul class="detail-list">
               <li><span class="lang lang-zh">PC 与 PLC 实验箱通信配置流程，包括通信按钮、CPU 搜索、IP 地址设置和程序下载完成界面。</span><span class="lang lang-en">PC-PLC communication workflow, including communication menu, CPU discovery, IP setup and program-download confirmation.</span></li>
-              <li><span class="lang lang-zh">PLC 实验箱输入输出回路图，展示 I0.1、I0.2、Q0.0、Q0.3 等地址与外部输入输出元件的对应关系。</span><span class="lang lang-en">PLC training-box I/O circuit diagram showing the relationship between I0.1, I0.2, Q0.0, Q0.3 and external input/output elements.</span></li>
+              <li><span class="lang lang-zh">PLC 实验箱输入输出回路图，展示输入端、输出端、按钮和指示灯之间的地址映射关系。</span><span class="lang lang-en">PLC training-box I/O circuit diagram showing address mapping between input terminals, output terminals, push buttons and indicator lamps.</span></li>
               <li><span class="lang lang-zh">基础梯形图练习页面，覆盖常开/常闭触点、线圈输出、串联、并联、置位和复位逻辑。</span><span class="lang lang-en">Basic ladder-logic examples covering normally open/closed contacts, coil outputs, series, parallel, set and reset logic.</span></li>
-              <li><span class="lang lang-zh">定时器与计数器指令示例，包括 TON、TOF、CTU、T33、T35、T37、T38 和 C10 的逻辑使用。</span><span class="lang lang-en">Timer and counter instruction examples, including TON, TOF, CTU, T33, T35, T37, T38 and C10 usage.</span></li>
+              <li><span class="lang lang-zh">定时器与计数器指令示例，覆盖接通延时、断开延时、计数触发和输出状态判断。</span><span class="lang lang-en">Timer and counter instruction examples covering on-delay timing, off-delay timing, count triggering and output-state evaluation.</span></li>
               <li><span class="lang lang-zh">星形-三角形启动案例：启动后星形启动，延时 5 秒后切换，再延时 2 秒进入三角形运行；停止按钮或热继电器动作后相关接触器失电。</span><span class="lang lang-en">Star-delta starting case: star starting after start command, transition after a 5-second delay, delta running after a further 2-second delay, and contactor de-energisation after stop or thermal relay action.</span></li>
             </ul>
           </section>
@@ -281,7 +281,7 @@
               </details>
               <details>
                 <summary><span class="lang lang-zh">定时器在控制逻辑中承担什么作用？</span><span class="lang lang-en">What role do timers play in the logic?</span></summary>
-                <p><span class="lang lang-zh">TON、TOF、T37、T38 等定时器用于把输入状态变化转换为延时后的输出动作，例如延时接通信号、瞬时接通延时断开信号和脉冲信号。对于星三角启动，延时逻辑决定从星形启动切换到三角形运行的时间顺序。</span><span class="lang lang-en">Timers such as TON, TOF, T37 and T38 convert input-state changes into delayed output actions, including delayed energisation, delayed release and pulse generation. In star-delta starting, timers define the transition from star starting to delta running.</span></p>
+                <p><span class="lang lang-zh">定时器用于把输入状态变化转换为延时后的输出动作，例如延时接通信号、瞬时接通延时断开信号和脉冲信号。对于星三角启动，延时逻辑决定从星形启动切换到三角形运行的时间顺序。</span><span class="lang lang-en">Timers convert input-state changes into delayed output actions, including delayed energisation, delayed release and pulse generation. In star-delta starting, timers define the transition from star starting to delta running.</span></p>
               </details>
               <details>
                 <summary><span class="lang lang-zh">进入真实工业场景还需要补充什么？</span><span class="lang lang-en">What would be added in an industrial setting?</span></summary>
