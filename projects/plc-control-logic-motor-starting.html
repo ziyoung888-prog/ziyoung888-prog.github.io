@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PLC control logic laboratory portfolio by Ziyang Wu, covering PC-PLC communication, S7-200 SMART I/O mapping, ladder logic, timer and counter instructions, and star-delta motor starting control."
+    />
+    <title>PLC Control Logic and Motor Starting Laboratory Analysis | 吴子洋</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body data-lang="zh">
+    <div class="page-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="../index.html#top" aria-label="返回首页">
+        <span class="brand-mark">WZY</span>
+        <span>
+          <strong>吴子洋</strong>
+          <small>Electrical Engineering Portfolio</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="nav" aria-label="项目页面导航">
+          <a href="../index.html#projects">
+            <span class="lang lang-zh">项目</span>
+            <span class="lang lang-en">Projects</span>
+          </a>
+          <a href="../index.html#education">
+            <span class="lang lang-zh">教育</span>
+            <span class="lang lang-en">Education</span>
+          </a>
+          <a href="../index.html#experience">
+            <span class="lang lang-zh">实习</span>
+            <span class="lang lang-en">Experience</span>
+          </a>
+          <a href="../index.html#contact">
+            <span class="lang lang-zh">联系</span>
+            <span class="lang lang-en">Contact</span>
+          </a>
+        </nav>
+        <button class="language-toggle" type="button" aria-label="Switch language">
+          <span data-lang-label="zh">EN</span>
+          <span data-lang-label="en">中文</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section project-detail-hero project-brief-hero">
+        <div class="brief-copy">
+          <a class="back-link" href="../index.html#projects">
+            <span class="lang lang-zh">返回项目经历</span>
+            <span class="lang lang-en">Back to Projects</span>
+          </a>
+          <p class="section-kicker">
+            <span class="lang lang-zh">项目详情 · 大学课程实验项目</span>
+            <span class="lang lang-en">Project Detail · University Laboratory Project</span>
+          </p>
+          <h1>
+            <span class="lang lang-zh">PLC 控制逻辑与电机启动实验分析</span>
+            <span class="lang lang-en">PLC Control Logic and Motor Starting Laboratory Analysis</span>
+          </h1>
+          <p class="hero-lead">
+            <span class="lang lang-zh">
+              本项目围绕 PLC 基础控制逻辑展开，结合实验指导书、梯形图指令练习和电机启动控制案例，梳理了从 PC 与 PLC 通信配置、输入输出地址映射，到基础梯形图、定时器、计数器和星形-三角形启动逻辑的完整学习流程。项目展示了控制电路与 PLC 程序之间的对应关系，并将按钮、继电器、接触器、热继电器和电机运行顺序转化为结构化控制逻辑。
+            </span>
+            <span class="lang lang-en">
+              This academic laboratory project covers PLC control fundamentals, linking PC-PLC communication, I/O address mapping, ladder-logic instructions, timers, counters and a star-delta motor starting case. It shows how electrical control elements such as push buttons, relays, contactors and thermal protection devices can be translated into structured programmable logic.
+            </span>
+          </p>
+          <div class="tag-row">
+            <span class="tag-chip">PLC</span>
+            <span class="tag-chip">S7-200 SMART</span>
+            <span class="tag-chip">STEP7-MicroWIN SMART</span>
+            <span class="tag-chip"><span class="lang lang-zh">梯形图</span><span class="lang lang-en">Ladder Logic</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">电机控制</span><span class="lang lang-en">Motor Control</span></span>
+          </div>
+        </div>
+
+        <figure class="brief-hero-media">
+          <img src="../assets/projects/plc-control-logic.svg" alt="PLC control logic workflow diagram" />
+          <figcaption>
+            <span class="lang lang-zh">重绘的项目流程图：通信配置、I/O 映射、梯形图指令和星形-三角形电机启动控制。</span>
+            <span class="lang lang-en">Redrawn workflow diagram covering communication setup, I/O mapping, ladder instructions and star-delta motor starting control.</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section project-detail-section">
+        <article class="case-study">
+          <div class="case-metrics case-metrics-compact">
+            <div><strong>4</strong><span><span class="lang lang-zh">阶段技术流程</span><span class="lang lang-en">workflow stages</span></span></div>
+            <div><strong>S7-200</strong><span><span class="lang lang-zh">PLC 平台</span><span class="lang lang-en">PLC platform</span></span></div>
+            <div><strong>I0.x / Q0.x</strong><span><span class="lang lang-zh">I/O 地址映射</span><span class="lang lang-en">I/O addressing</span></span></div>
+            <div><strong>TON / TOF / CTU</strong><span><span class="lang lang-zh">核心指令</span><span class="lang lang-en">key instructions</span></span></div>
+          </div>
+
+          <nav class="case-map" aria-label="Project section navigation">
+            <a href="#overview"><span class="lang lang-zh">项目概述</span><span class="lang lang-en">Overview</span></a>
+            <a href="#workflow"><span class="lang lang-zh">技术流程</span><span class="lang lang-en">Workflow</span></a>
+            <a href="#contribution"><span class="lang lang-zh">技术工作</span><span class="lang lang-en">Contribution</span></a>
+            <a href="#outputs"><span class="lang lang-zh">项目输出</span><span class="lang lang-en">Outputs</span></a>
+            <a href="#relevance"><span class="lang lang-zh">工程相关性</span><span class="lang lang-en">Relevance</span></a>
+            <a href="#faq"><span class="lang lang-zh">FAQ</span><span class="lang lang-en">FAQ</span></a>
+          </nav>
+
+          <div class="case-grid" id="overview">
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">问题背景</span><span class="lang lang-en">Problem Context</span></h4>
+              <p class="case-note">
+                <span class="lang lang-zh">
+                  PLC 是工业设备控制中常见的核心控制单元。一个自动化系统不仅需要硬件接线，还需要把现场输入信号、输出执行元件和设备运行顺序转化为可靠的程序逻辑。对于电机启动、报警、延时动作和互锁控制等场景，工程人员需要理解电气原理图、I/O 地址、梯形图指令和调试流程之间的关系。
+                </span>
+                <span class="lang lang-en">
+                  PLCs are common control units in industrial equipment. An automation system needs more than wiring; it must translate field inputs, output actuators and operating sequences into reliable control logic. Motor starting, alarms, delayed actions and interlocks all require a clear relationship between electrical diagrams, I/O addresses, ladder instructions and commissioning workflow.
+                </span>
+              </p>
+            </section>
+
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">项目类型</span><span class="lang lang-en">Project Type</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">大学课程实验项目，面向 PLC 基础控制逻辑、实验箱 I/O 回路和电机启动顺序控制。</span><span class="lang lang-en">University laboratory project focused on PLC control logic, training-box I/O circuits and motor starting sequence control.</span></li>
+                <li><span class="lang lang-zh">项目内容适合展示自动化、电气控制、设备技术支持和测试工程入门岗位中的基础分析能力。</span><span class="lang lang-en">Relevant to entry-level automation, electrical control, equipment support and testing roles.</span></li>
+                <li><span class="lang lang-zh">页面采用重绘示意图和结构化文字说明，避免直接依赖扫描页作为主要视觉素材。</span><span class="lang lang-en">The page uses a redrawn diagram and structured explanation rather than relying on scanned pages as primary visuals.</span></li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="case-panel case-wide section-anchor" id="workflow">
+            <h4><span class="lang lang-zh">技术流程</span><span class="lang lang-en">Technical Workflow</span></h4>
+            <div class="brief-table-wrap">
+              <table class="brief-table">
+                <tbody>
+                  <tr>
+                    <th><span class="lang lang-zh">阶段一</span><span class="lang lang-en">Stage 1</span></th>
+                    <td>
+                      <span class="lang lang-zh">实验平台与通信配置：使用 PC、S7-200 SMART CPU、PLC 实验箱和 STEP7-MicroWIN SMART，完成 CPU 型号选择、网络接口识别、IP 地址设置和程序下载流程。该阶段建立编程设备与控制器之间的连接。</span>
+                      <span class="lang lang-en">Platform and communication setup: PC, S7-200 SMART CPU, PLC training unit and STEP7-MicroWIN SMART were used for CPU selection, network-interface identification, IP setup and program download workflow.</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">阶段二</span><span class="lang lang-en">Stage 2</span></th>
+                    <td>
+                      <span class="lang lang-zh">I/O 映射与实验箱回路分析：识别输入端 I0.x、输出端 Q0.x 与按钮、指示灯、继电器和端子之间的对应关系，为梯形图编写和故障排查建立地址基础。</span>
+                      <span class="lang lang-en">I/O mapping and circuit analysis: I0.x inputs and Q0.x outputs were mapped to push buttons, lamps, relays and terminal connections to support ladder programming and troubleshooting.</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">阶段三</span><span class="lang lang-en">Stage 3</span></th>
+                    <td>
+                      <span class="lang lang-zh">基础梯形图与指令练习：分析触点、线圈、串并联逻辑、置位、复位、TON、TOF 和 CTU 指令，并对比梯形图与语句表表达方式。</span>
+                      <span class="lang lang-en">Basic ladder logic and instruction practice: contacts, coils, series/parallel logic, set/reset, TON, TOF and CTU instructions were analysed with ladder-diagram and statement-list representations.</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">阶段四</span><span class="lang lang-en">Stage 4</span></th>
+                    <td>
+                      <span class="lang lang-zh">电机星形-三角形启动控制分析：围绕启动按钮 SB2、停止按钮 SB1、热继电器 FR 和接触器 KM1/KM3/KM4，拆解星形启动、延时切换、三角形运行和停止保护流程。</span>
+                      <span class="lang lang-en">Star-delta motor starting analysis: start button SB2, stop button SB1, thermal relay FR and contactors KM1/KM3/KM4 were used to interpret star starting, timed transition, delta running and stop protection.</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <div class="case-grid" id="contribution">
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">技术工作</span><span class="lang lang-en">Technical Contribution</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">梳理 PLC 实验平台的通信建立流程，包括 CPU 型号选择、网络接口识别、IP 地址设置和程序下载步骤。</span><span class="lang lang-en">Structured the PLC communication workflow, including CPU selection, network-interface identification, IP setup and program download steps.</span></li>
+                <li><span class="lang lang-zh">分析实验箱输入输出回路，将按钮、指示灯、继电器和 PLC I/O 地址之间的关系整理为控制逻辑基础。</span><span class="lang lang-en">Analysed training-box I/O circuits and mapped buttons, lamps, relays and PLC addresses into a control-logic foundation.</span></li>
+                <li><span class="lang lang-zh">对比梯形图与语句表表达方式，整理触点、线圈、置位、复位、串并联电路块等基础指令的功能。</span><span class="lang lang-en">Compared ladder diagrams with statement-list expressions for contacts, coils, set/reset and series/parallel logic blocks.</span></li>
+                <li><span class="lang lang-zh">分析 TON、TOF 和 CTU 指令在延时、脉冲和计数逻辑中的作用，并结合波形示意理解状态变化。</span><span class="lang lang-en">Analysed TON, TOF and CTU instructions for delay, pulse and counting logic, using waveform diagrams to interpret state changes.</span></li>
+              </ul>
+            </section>
+
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">工具与方法</span><span class="lang lang-en">Tools and Methods</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">工具：PLC 实验箱、S7-200 SMART CPU、STEP7-MicroWIN SMART、以太网通信、I/O 接线图。</span><span class="lang lang-en">Tools: PLC training unit, S7-200 SMART CPU, STEP7-MicroWIN SMART, Ethernet communication and I/O wiring diagrams.</span></li>
+                <li><span class="lang lang-zh">方法：I/O 地址映射、梯形图编程、语句表对应分析、置位/复位逻辑、TON/TOF 定时器、CTU 计数器和顺序控制。</span><span class="lang lang-en">Methods: I/O address mapping, ladder programming, statement-list comparison, set/reset logic, TON/TOF timers, CTU counters and sequence control.</span></li>
+                <li><span class="lang lang-zh">应用案例：三相异步电动机星形-三角形启动控制，包括启动、延时切换、运行和停止保护。</span><span class="lang lang-en">Application case: three-phase induction motor star-delta starting, covering start, timed transition, running and stop protection.</span></li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="case-panel case-wide section-anchor" id="outputs">
+            <h4><span class="lang lang-zh">选定输出</span><span class="lang lang-en">Selected Outputs</span></h4>
+            <ul class="detail-list">
+              <li><span class="lang lang-zh">PC 与 PLC 实验箱通信配置流程，包括通信按钮、CPU 搜索、IP 地址设置和程序下载完成界面。</span><span class="lang lang-en">PC-PLC communication workflow, including communication menu, CPU discovery, IP setup and program-download confirmation.</span></li>
+              <li><span class="lang lang-zh">PLC 实验箱输入输出回路图，展示 I0.1、I0.2、Q0.0、Q0.3 等地址与外部输入输出元件的对应关系。</span><span class="lang lang-en">PLC training-box I/O circuit diagram showing the relationship between I0.1, I0.2, Q0.0, Q0.3 and external input/output elements.</span></li>
+              <li><span class="lang lang-zh">基础梯形图练习页面，覆盖常开/常闭触点、线圈输出、串联、并联、置位和复位逻辑。</span><span class="lang lang-en">Basic ladder-logic examples covering normally open/closed contacts, coil outputs, series, parallel, set and reset logic.</span></li>
+              <li><span class="lang lang-zh">定时器与计数器指令示例，包括 TON、TOF、CTU、T33、T35、T37、T38 和 C10 的逻辑使用。</span><span class="lang lang-en">Timer and counter instruction examples, including TON, TOF, CTU, T33, T35, T37, T38 and C10 usage.</span></li>
+              <li><span class="lang lang-zh">星形-三角形启动案例：启动后星形启动，延时 5 秒后切换，再延时 2 秒进入三角形运行；停止按钮或热继电器动作后相关接触器失电。</span><span class="lang lang-en">Star-delta starting case: star starting after start command, transition after a 5-second delay, delta running after a further 2-second delay, and contactor de-energisation after stop or thermal relay action.</span></li>
+            </ul>
+          </section>
+
+          <section class="case-visuals section-anchor" aria-labelledby="visual-title">
+            <div class="case-visuals-heading">
+              <p class="section-kicker"><span class="lang lang-zh">视觉素材建议</span><span class="lang lang-en">Visual Asset Plan</span></p>
+              <h3 id="visual-title">
+                <span class="lang lang-zh">用于网页展示的工程视觉证据</span>
+                <span class="lang lang-en">Engineering Visuals for Portfolio Display</span>
+              </h3>
+              <p>
+                <span class="lang lang-zh">网页主图采用重绘流程图。详情页可补充 I/O 回路图、基础梯形图示例和定时器/计数器示意图。软件通信截图若公开使用，应裁剪或隐藏网络地址和设备识别信息。</span>
+                <span class="lang lang-en">The hero image uses a redrawn workflow diagram. Detail sections can add the I/O circuit, ladder examples and timer/counter diagrams. Software communication screenshots should be cropped or masked before public use.</span>
+              </p>
+            </div>
+
+            <div class="project-visual-grid">
+              <figure class="project-visual-card project-visual-card-wide">
+                <img src="../assets/projects/plc-control-logic.svg" alt="Redrawn PLC control workflow diagram" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">PLC 控制逻辑流程图</span><span class="lang lang-en">PLC Control Workflow</span></strong>
+                  <span class="lang lang-zh">该图概括了项目从通信配置、I/O 映射、梯形图指令到电机启动控制的技术递进关系，适合作为详情页顶部和项目卡片缩略图。</span>
+                  <span class="lang lang-en">This diagram summarises the project progression from communication setup and I/O mapping to ladder instructions and motor starting control, making it suitable for both the hero image and project-card thumbnail.</span>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="case-panel case-wide section-anchor" id="relevance">
+            <h4><span class="lang lang-zh">工程相关性</span><span class="lang lang-en">Engineering Relevance</span></h4>
+            <p class="case-note">
+              <span class="lang lang-zh">
+                该项目与自动化、电气控制、设备维护和工业技术支持岗位中的基础工作场景相关。项目覆盖 PLC 通信配置、I/O 映射、梯形图逻辑、定时计数控制和电机启动顺序分析，可迁移到设备控制逻辑阅读、基础程序维护、控制柜调试配合和自动化系统故障排查等入门级工程任务中。
+              </span>
+              <span class="lang lang-en">
+                The project is relevant to entry-level automation, electrical control, equipment maintenance and industrial technical-support work. It covers PLC communication, I/O mapping, ladder logic, timer/counter control and motor starting sequence analysis, which translate into reading control logic, supporting basic program maintenance, assisting cabinet commissioning and troubleshooting automation systems.
+              </span>
+            </p>
+          </section>
+
+          <section class="case-panel case-wide section-anchor" id="faq">
+            <h4><span class="lang lang-zh">可折叠 FAQ</span><span class="lang lang-en">Collapsible FAQ</span></h4>
+            <div class="qa-grid">
+              <details>
+                <summary><span class="lang lang-zh">这个项目主要解决什么问题？</span><span class="lang lang-en">What was the purpose of this project?</span></summary>
+                <p><span class="lang lang-zh">项目关注 PLC 控制逻辑如何从电气元件和控制需求转化为程序表达。内容从 PC 与 PLC 通信配置开始，延伸到输入输出地址映射、基础梯形图指令、定时器、计数器和电机星形-三角形启动逻辑。整体内容围绕控制系统基础建模、逻辑分析和工程表达展开。</span><span class="lang lang-en">The project focused on how PLC control logic translates electrical elements and control requirements into programmable expressions. It starts with PC-PLC communication, then moves through I/O mapping, ladder instructions, timers, counters and star-delta motor starting logic.</span></p>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">I/O 映射为什么重要？</span><span class="lang lang-en">Why is I/O mapping important?</span></summary>
+                <p><span class="lang lang-zh">I/O 映射把现场输入输出元件转化为 PLC 程序中的地址。启动按钮、停止按钮、热继电器和接触器需要分别对应 PLC 输入或输出地址。没有清晰的 I/O 映射，梯形图逻辑无法可靠对应实际设备动作。</span><span class="lang lang-en">I/O mapping converts physical input and output devices into PLC program addresses. Start buttons, stop buttons, thermal relays and contactors must be represented by PLC input or output addresses; otherwise ladder logic cannot reliably correspond to equipment behaviour.</span></p>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">星形-三角形启动逻辑如何体现顺序控制？</span><span class="lang lang-en">How does the star-delta case show sequence control?</span></summary>
+                <p><span class="lang lang-zh">按下启动按钮后，KM1 和 KM4 得电，电机进入星形启动；延时 5 秒后 KM4 失电；再延时 2 秒后 KM3 得电，电机进入三角形运行。停止按钮或热继电器动作时，KM1、KM3 和 KM4 失电，电机停止运行。这个过程体现了基于时间和状态的顺序控制。</span><span class="lang lang-en">After the start button is pressed, KM1 and KM4 energise for star starting. After a 5-second delay KM4 releases, then after a further 2-second delay KM3 energises for delta running. Stop or thermal relay action de-energises the contactors and stops the motor.</span></p>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">定时器在控制逻辑中承担什么作用？</span><span class="lang lang-en">What role do timers play in the logic?</span></summary>
+                <p><span class="lang lang-zh">TON、TOF、T37、T38 等定时器用于把输入状态变化转换为延时后的输出动作，例如延时接通信号、瞬时接通延时断开信号和脉冲信号。对于星三角启动，延时逻辑决定从星形启动切换到三角形运行的时间顺序。</span><span class="lang lang-en">Timers such as TON, TOF, T37 and T38 convert input-state changes into delayed output actions, including delayed energisation, delayed release and pulse generation. In star-delta starting, timers define the transition from star starting to delta running.</span></p>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">进入真实工业场景还需要补充什么？</span><span class="lang lang-en">What would be added in an industrial setting?</span></summary>
+                <p><span class="lang lang-zh">更完整的工程应用需要补充实际设备参数、接线验证、在线监控截图、故障测试、联锁验证和安全规范审查。对于电机控制系统，还需要结合电机额定参数、控制柜图纸、保护整定和现场验收流程，形成可执行的调试和交付记录。</span><span class="lang lang-en">A more complete engineering application would add real equipment parameters, wiring checks, online monitoring captures, fault tests, interlock validation and safety review. Motor control work would also need rated motor data, cabinet drawings, protection settings and commissioning records.</span></p>
+              </details>
+            </div>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <button class="to-top" type="button" aria-label="Back to top">TOP</button>
+    <script src="../script.js"></script>
+  </body>
+</html>
