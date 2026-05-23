@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="光伏并网逆变器建模与功率控制仿真项目，基于 PSCAD/EMTDC、dq 坐标变换、PQ 控制、PI 双环控制和 SPWM 调制分析并网功率跟踪。"
+    />
+    <title>光伏并网逆变器建模与功率控制仿真研究 | 吴子洋</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body data-lang="zh">
+    <div class="page-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="../index.html#top" aria-label="返回首页">
+        <span class="brand-mark">WZY</span>
+        <span>
+          <strong>吴子洋</strong>
+          <small><span class="lang lang-zh">电气工程作品集</span><span class="lang lang-en">Electrical Engineering Portfolio</span></small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="nav" aria-label="项目页面导航">
+          <a href="../index.html#projects"><span class="lang lang-zh">项目</span><span class="lang lang-en">Projects</span></a>
+          <a href="../index.html#education"><span class="lang lang-zh">教育</span><span class="lang lang-en">Education</span></a>
+          <a href="../index.html#skills"><span class="lang lang-zh">技能</span><span class="lang lang-en">Skills</span></a>
+          <a href="../index.html#contact"><span class="lang lang-zh">联系</span><span class="lang lang-en">Contact</span></a>
+        </nav>
+        <button class="language-toggle" type="button" aria-label="Switch language">
+          <span data-lang-label="zh">EN</span>
+          <span data-lang-label="en">中文</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section project-detail-hero project-brief-hero">
+        <div class="brief-copy">
+          <a class="back-link" href="../index.html#projects">
+            <span class="lang lang-zh">返回项目经历</span>
+            <span class="lang lang-en">Back to Projects</span>
+          </a>
+          <p class="section-kicker">
+            <span class="lang lang-zh">项目详情 · 本科毕业设计 / 学术工程仿真项目</span>
+            <span class="lang lang-en">Project Detail · Undergraduate Thesis / Academic Engineering Simulation Project</span>
+          </p>
+          <h1>
+            <span class="lang lang-zh">光伏并网逆变器建模与功率控制仿真研究</span>
+            <span class="lang lang-en">Grid-Connected PV Inverter Modelling and Power Control Simulation</span>
+          </h1>
+          <p class="hero-lead">
+            <span class="lang lang-zh">
+              本项目围绕接入 380V 交流母线的三相分布式光伏并网逆变系统展开，使用 PSCAD/EMTDC 建立逆变器主电路、坐标变换、功率外环、电流内环和 SPWM 调制模型。项目基于 abc、αβ 和 dq 坐标系下的逆变器数学模型，设计电网电压定向的 PQ 控制与前馈解耦电流控制，并通过仿真观察有功功率、无功功率和 dq 轴电流的动态响应。
+            </span>
+            <span class="lang lang-en">
+              This academic engineering simulation project focuses on a three-phase grid-connected PV inverter connected to a 380V AC bus. PSCAD/EMTDC was used to build the inverter main circuit, coordinate transformation, power outer loop, current inner loop and SPWM modulation model. The work analyses active power, reactive power and dq-axis current responses under selected operating conditions.
+            </span>
+          </p>
+          <div class="tag-row">
+            <span class="tag-chip">PSCAD/EMTDC</span>
+            <span class="tag-chip"><span class="lang lang-zh">光伏并网</span><span class="lang lang-en">PV Grid Connection</span></span>
+            <span class="tag-chip">VSC</span>
+            <span class="tag-chip">dq</span>
+            <span class="tag-chip">PQ Control</span>
+            <span class="tag-chip">SPWM</span>
+          </div>
+        </div>
+
+        <figure class="brief-hero-media">
+          <img src="../assets/projects/pvinverter-detail-01-pscad-main-circuit.png" alt="PSCAD 三相并网逆变器主电路模型" />
+          <figcaption>
+            <span class="lang lang-zh">PSCAD 中的三相并网逆变器主电路，包含 VSC、滤波支路、电网侧测量量和直流侧连接。</span>
+            <span class="lang lang-en">PSCAD three-phase grid-connected inverter main circuit, including VSC, filtering branch, grid-side measurements and DC-side connection.</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section project-detail-section">
+        <article class="case-study">
+          <div class="case-metrics case-metrics-compact">
+            <div><strong>380V</strong><span><span class="lang lang-zh">交流母线</span><span class="lang lang-en">AC bus</span></span></div>
+            <div><strong>50Hz</strong><span><span class="lang lang-zh">电网频率</span><span class="lang lang-en">grid frequency</span></span></div>
+            <div><strong>0.5MVA</strong><span><span class="lang lang-zh">系统容量</span><span class="lang lang-en">system rating</span></span></div>
+            <div><strong>780V</strong><span><span class="lang lang-zh">直流侧电压</span><span class="lang lang-en">DC input</span></span></div>
+            <div><strong>0.3MW</strong><span><span class="lang lang-zh">有功参考</span><span class="lang lang-en">active-power reference</span></span></div>
+            <div><strong>1mH</strong><span><span class="lang lang-zh">滤波电感</span><span class="lang lang-en">filter inductor</span></span></div>
+            <div><strong>25μF</strong><span><span class="lang lang-zh">滤波电容</span><span class="lang lang-en">filter capacitor</span></span></div>
+            <div><strong>5s</strong><span><span class="lang lang-zh">仿真时长</span><span class="lang lang-en">simulation window</span></span></div>
+          </div>
+
+          <nav class="case-map" aria-label="Project section navigation">
+            <a href="#overview"><span class="lang lang-zh">项目概览</span><span class="lang lang-en">Overview</span></a>
+            <a href="#workflow"><span class="lang lang-zh">技术流程</span><span class="lang lang-en">Workflow</span></a>
+            <a href="#contribution"><span class="lang lang-zh">技术工作</span><span class="lang lang-en">Contribution</span></a>
+            <a href="#outputs"><span class="lang lang-zh">项目输出</span><span class="lang lang-en">Outputs</span></a>
+            <a href="#visuals"><span class="lang lang-zh">项目图示</span><span class="lang lang-en">Visuals</span></a>
+            <a href="#faq"><span class="lang lang-zh">FAQ</span><span class="lang lang-en">FAQ</span></a>
+          </nav>
+
+          <div class="case-grid" id="overview">
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">问题背景</span><span class="lang lang-en">Problem Context</span></h4>
+              <p class="case-note">
+                <span class="lang lang-zh">
+                  光伏发电系统需要通过并网逆变器把直流侧能量转换成满足电网电压、频率和电能质量要求的交流电。对于分布式光伏和光储系统，逆变器不仅承担能量转换功能，还需要控制有功功率输出、处理无功功率需求，并保持并网电流与电网条件协调。
+                </span>
+                <span class="lang lang-en">
+                  PV systems require grid-connected inverters to convert DC-side energy into AC power that meets grid voltage, frequency and power-quality requirements. In distributed PV and PV-storage systems, the inverter also needs to regulate active power, handle reactive-power requirements and coordinate grid current with network conditions.
+                </span>
+              </p>
+            </section>
+
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">项目定位</span><span class="lang lang-en">Project Positioning</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">本科毕业设计中的学术工程仿真项目，聚焦光伏并网逆变器建模与控制策略。</span><span class="lang lang-en">Academic engineering simulation project from an undergraduate thesis, focused on PV inverter modelling and control strategy.</span></li>
+                <li><span class="lang lang-zh">适用于展示新能源并网、电力电子仿真、分布式能源系统分析和工程技术支持相关能力。</span><span class="lang lang-en">Relevant to renewable grid connection, power-electronics simulation, distributed-energy analysis and technical support roles.</span></li>
+                <li><span class="lang lang-zh">项目产出包括技术论文、展示文档、PSCAD 工程文件、控制模型图和仿真曲线。</span><span class="lang lang-en">Project outputs include a technical thesis, presentation document, PSCAD project files, control model figures and simulation curves.</span></li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="case-panel case-wide section-anchor" id="workflow">
+            <h4><span class="lang lang-zh">技术流程</span><span class="lang lang-en">Technical Workflow</span></h4>
+            <div class="brief-table-wrap">
+              <table class="brief-table">
+                <tbody>
+                  <tr>
+                    <th><span class="lang lang-zh">阶段一</span><span class="lang lang-en">Stage 1</span></th>
+                    <td>
+                      <span class="lang lang-zh">建立系统结构与数学模型。输入三相 PWM 电压型逆变器结构、并网电压条件、滤波电感、电网电压和直流侧输入假设；基于 KVL/KCL 建立 abc 坐标系模型，并通过 Clark 和 Park 变换转到 αβ 与 dq 坐标系。</span>
+                      <span class="lang lang-en">System setup and mathematical modelling. The abc-frame model was developed from the three-phase PWM voltage-source inverter structure, grid conditions and filter assumptions, then transformed into αβ and dq frames using Clark and Park transformations.</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">阶段二</span><span class="lang lang-en">Stage 2</span></th>
+                    <td>
+                      <span class="lang lang-zh">设计功率控制策略。基于 dq 坐标系模型和瞬时有功、无功功率关系，采用电网电压定向控制和 PQ 控制，将功率控制转化为 q 轴和 d 轴电流控制。</span>
+                      <span class="lang lang-en">Power-control strategy design. Based on the dq-frame model and instantaneous active/reactive power relationships, grid-voltage-oriented PQ control was used to map power control into q-axis and d-axis current control.</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">阶段三</span><span class="lang lang-en">Stage 3</span></th>
+                    <td>
+                      <span class="lang lang-zh">搭建 PSCAD 仿真模型。将主电路、坐标变换模块、功率外环、电流内环和 SPWM 调制模块组合为完整仿真系统，并配置 380V、50Hz、0.5MVA、1mH、25μF、780V 和 0.3MW 等工况参数。</span>
+                      <span class="lang lang-en">PSCAD simulation model construction. The main circuit, coordinate transformation, power outer loop, current inner loop and SPWM modulation blocks were combined into one simulation system with 380V, 50Hz, 0.5MVA, 1mH, 25μF, 780V and 0.3MW settings.</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span class="lang lang-zh">阶段四</span><span class="lang lang-en">Stage 4</span></th>
+                    <td>
+                      <span class="lang lang-zh">分析仿真结果。比较参考值与实际输出曲线，观察 0.3MW 有功功率、0MVar 无功功率、dq 轴电流以及 3s 时从 0.3MW 到 0.35MW 阶跃变化下的动态响应。</span>
+                      <span class="lang lang-en">Simulation result interpretation. Reference and actual output curves were compared for 0.3MW active power, 0MVar reactive power, dq-axis current tracking and a 3s step change from 0.3MW to 0.35MW.</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <div class="case-grid" id="contribution">
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">技术工作</span><span class="lang lang-en">Technical Contribution</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">建立三相 PWM 电压型并网逆变器在 abc、αβ 和 dq 坐标系下的数学模型，用于分析电流耦合关系和控制变量转换。</span><span class="lang lang-en">Built mathematical models of the three-phase PWM voltage-source inverter in abc, αβ and dq frames to analyse current coupling and control-variable transformation.</span></li>
+                <li><span class="lang lang-zh">基于电网电压定向控制设计 PQ 控制框架，将有功和无功功率调节映射到 q 轴和 d 轴电流控制。</span><span class="lang lang-en">Designed a grid-voltage-oriented PQ control framework to map active and reactive power regulation into q-axis and d-axis current control.</span></li>
+                <li><span class="lang lang-zh">在 PSCAD/EMTDC 中搭建包含主电路、坐标变换、功率控制、电流内环和 SPWM 调制的并网逆变器仿真模型。</span><span class="lang lang-en">Built a PSCAD/EMTDC model covering the main circuit, coordinate transformation, power control, current inner loop and SPWM modulation.</span></li>
+                <li><span class="lang lang-zh">对有功功率、无功功率和 dq 轴电流响应曲线进行比较，解释模型在稳态跟踪和阶跃变化下的控制表现。</span><span class="lang lang-en">Compared active-power, reactive-power and dq-axis current response curves to interpret steady-state tracking and step-response behaviour.</span></li>
+              </ul>
+            </section>
+
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">工具与方法</span><span class="lang lang-en">Tools and Methods</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">工具：PSCAD/EMTDC、PowerPoint、Word、数学公式推导、PSCAD 工程文件。</span><span class="lang lang-en">Tools: PSCAD/EMTDC, PowerPoint, Word, mathematical derivation and PSCAD project files.</span></li>
+                <li><span class="lang lang-zh">方法：三相 PWM 电压型逆变器建模、abc-αβ-dq 坐标变换、电网电压定向控制、PQ 控制、PI 双环控制、前馈解耦控制、SPWM 调制、电磁暂态仿真。</span><span class="lang lang-en">Methods: three-phase PWM VSC modelling, abc-αβ-dq transformation, grid-voltage orientation, PQ control, PI double-loop control, feedforward decoupling, SPWM modulation and EMT simulation.</span></li>
+                <li><span class="lang lang-zh">输出通道：有功功率、无功功率、dq 轴电流、直流侧电压和 SPWM 控制信号。</span><span class="lang lang-en">Output channels: active power, reactive power, dq-axis currents, DC-side voltage and SPWM control signals.</span></li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="case-panel case-wide section-anchor" id="outputs">
+            <h4><span class="lang lang-zh">选定输出</span><span class="lang lang-en">Selected Outputs</span></h4>
+            <ul class="detail-list">
+              <li><span class="lang lang-zh">光伏并网系统简化结构图，展示光伏阵列、升压电路、直流母线、并网逆变器和电网之间的连接关系。</span><span class="lang lang-en">Simplified PV grid-connected system diagram showing the PV array, boost circuit, DC bus, grid-connected inverter and grid connection.</span></li>
+              <li><span class="lang lang-zh">三相 PWM 逆变器主电路模型，包含 VSC、滤波电感、等效电阻、电容、电网侧测量量和直流侧连接。</span><span class="lang lang-en">Three-phase PWM inverter main circuit including VSC, filter inductance, equivalent resistance, capacitance, grid-side measurements and DC-side connection.</span></li>
+              <li><span class="lang lang-zh">双环控制结构图，展示功率外环、dq 电流内环、坐标变换、相角检测和 SPWM 调制之间的控制链路。</span><span class="lang lang-en">Double-loop control diagram showing the power outer loop, dq current inner loop, coordinate transformation, phase detection and SPWM modulation chain.</span></li>
+              <li><span class="lang lang-zh">有功功率动态跟随结果：参考值为 0.3MW，实际输出经过调整后趋近参考值。</span><span class="lang lang-en">Active-power tracking result: the actual output approaches the 0.3MW reference after transient adjustment.</span></li>
+              <li><span class="lang lang-zh">阶跃工况结果：有功功率参考值在 3s 从 0.3MW 变化到 0.35MW，实际输出经过短暂调整后趋近新的目标值。</span><span class="lang lang-en">Step-response result: active-power reference changes from 0.3MW to 0.35MW at 3s and the output approaches the new target after a short adjustment.</span></li>
+            </ul>
+          </section>
+
+          <section class="case-visuals section-anchor" id="visuals" aria-labelledby="visual-title">
+            <div class="case-visuals-heading">
+              <p class="section-kicker"><span class="lang lang-zh">项目图示</span><span class="lang lang-en">Project Visuals</span></p>
+              <h3 id="visual-title">
+                <span class="lang lang-zh">模型、控制结构与仿真结果</span>
+                <span class="lang lang-en">Model, Control Structure and Simulation Results</span>
+              </h3>
+              <p>
+                <span class="lang lang-zh">以下图示集中展示模型结构、控制链路和仿真结果，便于读者理解系统从电路建模到功率响应分析的完整过程。</span>
+                <span class="lang lang-en">The visuals below focus on model structure, control chain and simulation results, showing the workflow from circuit modelling to power-response analysis.</span>
+              </p>
+            </div>
+
+            <div class="project-visual-grid">
+              <figure class="project-visual-card project-visual-card-wide">
+                <img src="../assets/projects/pvinverter-card-01-system-workflow.png" alt="光伏并网系统结构示意图" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">系统工作流</span><span class="lang lang-en">System Workflow</span></strong>
+                  <span class="lang lang-zh">该图展示光伏阵列、升压电路、直流母线、并网逆变器和电网之间的连接关系，适合作为项目整体入口图。</span>
+                  <span class="lang lang-en">This figure shows the connection between PV array, boost circuit, DC bus, grid-connected inverter and grid.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card project-visual-card-wide">
+                <img src="../assets/projects/pvinverter-detail-02-double-loop-control.png" alt="并网逆变器双环控制结构图" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">双环控制结构</span><span class="lang lang-en">Double-Loop Control Structure</span></strong>
+                  <span class="lang lang-zh">该图展示 PQ 控制、电流解耦、相角检测和 SPWM 调制之间的信号关系。</span>
+                  <span class="lang lang-en">This figure shows the signal relationship between PQ control, current decoupling, phase detection and SPWM modulation.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/pvinverter-detail-03-power-control-module.png" alt="PSCAD 功率外环控制模块" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">功率控制模块</span><span class="lang lang-en">Power Control Module</span></strong>
+                  <span class="lang lang-zh">该图展示 PSCAD 控制模块中有功、无功参考值与 dq 轴电流控制之间的连接。</span>
+                  <span class="lang lang-en">This figure shows how active and reactive references connect to dq-axis current control in PSCAD.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/pvinverter-detail-04-active-power-tracking.png" alt="有功功率动态跟随曲线" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">有功功率跟踪</span><span class="lang lang-en">Active-Power Tracking</span></strong>
+                  <span class="lang lang-zh">该图展示 0.3MW 参考值下有功功率输出逐步趋近目标的过程。</span>
+                  <span class="lang lang-en">This figure shows active-power output approaching the 0.3MW reference after transient adjustment.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/pvinverter-detail-05-reactive-power-tracking.png" alt="无功功率动态响应曲线" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">无功功率响应</span><span class="lang lang-en">Reactive-Power Response</span></strong>
+                  <span class="lang lang-zh">该图展示无功功率参考设为 0MVar 后，输出曲线在暂态调整后趋近参考目标。</span>
+                  <span class="lang lang-en">This figure shows the reactive-power response approaching the 0MVar reference after transient adjustment.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/pvinverter-detail-06-active-power-step-response.png" alt="有功功率阶跃响应曲线" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">阶跃响应</span><span class="lang lang-en">Step Response</span></strong>
+                  <span class="lang lang-zh">该图展示有功功率参考值在 3s 从 0.3MW 提升到 0.35MW 后的输出响应。</span>
+                  <span class="lang lang-en">This figure shows the output response after the active-power reference increases from 0.3MW to 0.35MW at 3s.</span>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="case-panel case-wide section-anchor" id="relevance">
+            <h4><span class="lang lang-zh">工程相关性</span><span class="lang lang-en">Engineering Relevance</span></h4>
+            <p class="case-note">
+              <span class="lang lang-zh">
+                该项目与新能源并网、电力电子控制、分布式光伏接入、储能系统接口、配电网仿真和技术支持类岗位相关。项目覆盖从系统结构理解、数学建模、控制策略设计到 PSCAD 仿真分析的完整技术路径，适合展示对并网逆变器控制逻辑、仿真参数和结果解释的理解。
+              </span>
+              <span class="lang lang-en">
+                This project is relevant to renewable grid connection, power-electronics control, distributed PV integration, storage-system interfaces, distribution-network simulation and technical support roles. It covers system structure, mathematical modelling, control strategy design and PSCAD-based result interpretation.
+              </span>
+            </p>
+          </section>
+
+          <section class="case-panel case-wide section-anchor" id="faq">
+            <h4><span class="lang lang-zh">常见问题</span><span class="lang lang-en">FAQ</span></h4>
+            <div class="faq-list-compact">
+              <details>
+                <summary><span class="lang lang-zh">这个项目研究的是什么？</span><span class="lang lang-en">What was the purpose of this project?</span></summary>
+                <div class="faq-answer">
+                  <span class="lang lang-zh">这个项目研究三相光伏并网逆变器如何通过建模和控制策略实现稳定并网。项目从逆变器主电路和数学模型出发，分析 abc、αβ 和 dq 坐标系之间的关系，并使用 PSCAD/EMTDC 搭建仿真模型。重点观察有功功率、无功功率和 dq 轴电流在控制系统中的跟踪表现。</span>
+                  <span class="lang lang-en">The project studies how a three-phase PV grid-connected inverter can be modelled and controlled for grid connection. It starts from the inverter circuit and mathematical model, then analyses abc, αβ and dq frame relationships before building the PSCAD/EMTDC simulation model.</span>
+                </div>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">为什么并网逆变器控制重要？</span><span class="lang lang-en">Why is inverter control important?</span></summary>
+                <div class="faq-answer">
+                  <span class="lang lang-zh">光伏系统输出的是直流电，而电网需要稳定的交流电。并网逆变器负责电能转换，也需要让输出电压、频率、电流和功率满足并网条件。控制策略会影响有功功率注入、无功功率调节和电流质量，因此它是分布式光伏接入和新能源电力电子系统中的关键环节。</span>
+                  <span class="lang lang-en">PV systems produce DC power while the grid requires stable AC power. A grid-connected inverter performs conversion and must keep voltage, frequency, current and power compatible with grid requirements. Control strategy affects active-power injection, reactive-power regulation and current quality.</span>
+                </div>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">为什么要把 abc 坐标系转换到 dq 坐标系？</span><span class="lang lang-en">Why transform abc variables into the dq frame?</span></summary>
+                <div class="faq-answer">
+                  <span class="lang lang-zh">三相逆变器在 abc 坐标系下的电压和电流是交流量，直接控制会受到相位变化和变量耦合影响。通过 Clark 变换和 Park 变换，可以把三相变量转换到同步旋转 dq 坐标系，使稳态量更适合 PI 控制，并便于将功率控制问题转化为电流分量控制问题。</span>
+                  <span class="lang lang-en">In the abc frame, inverter voltages and currents are sinusoidal and coupled. Clark and Park transformations convert three-phase variables into the synchronous dq frame, where steady-state quantities are easier to regulate with PI controllers and power control can be mapped to current components.</span>
+                </div>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">仿真结果怎样体现功率跟踪？</span><span class="lang lang-en">How do the results show power tracking?</span></summary>
+                <div class="faq-answer">
+                  <span class="lang lang-zh">在 0.3MW 有功功率参考下，仿真曲线显示实际有功功率经过暂态调整后趋近参考值。无功功率参考为 0MVar，输出曲线在调整后也趋近目标。进一步的阶跃工况中，有功功率参考值在 3s 从 0.3MW 变化到 0.35MW，实际输出经过短暂调整后趋近新的参考值。</span>
+                  <span class="lang lang-en">With a 0.3MW active-power reference, the simulated output approaches the reference after transient adjustment. The reactive-power curve also approaches the 0MVar target. In the step case, the active-power reference changes from 0.3MW to 0.35MW at 3s and the output approaches the new target.</span>
+                </div>
+              </details>
+              <details>
+                <summary><span class="lang lang-zh">如果进一步扩展，会优先改进什么？</span><span class="lang lang-en">What would be improved in a more advanced version?</span></summary>
+                <div class="faq-answer">
+                  <span class="lang lang-zh">进一步工作可以从更复杂的滤波器、更真实的电网条件和更完整的光伏侧模型入手。例如引入 LCL 滤波器、考虑三相电网电压不对称工况，或者把光伏阵列和储能单元从恒压源简化模型扩展为更完整的动态模型。</span>
+                  <span class="lang lang-en">Future work could extend the filter model, grid-condition assumptions and PV-side dynamics. Examples include LCL filtering, unbalanced three-phase grid voltage scenarios, and replacing the simplified DC source with more complete PV-array and storage dynamics.</span>
+                </div>
+              </details>
+            </div>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <button class="to-top" type="button" aria-label="Back to top">↑</button>
+    <script src="../script.js"></script>
+  </body>
+</html>
