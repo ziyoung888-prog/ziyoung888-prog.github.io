@@ -81,10 +81,10 @@
         </div>
 
         <figure class="brief-hero-media">
-          <img src="../assets/projects/plc-control-logic.svg" alt="PLC control logic workflow diagram" />
+          <img src="../assets/projects/plc-star-delta-control-case.jpg" alt="Star-delta motor starting control circuit and I/O allocation table" />
           <figcaption>
-            <span class="lang lang-zh">重绘的项目流程图：通信配置、I/O 映射、梯形图指令和星形-三角形电机启动控制。</span>
-            <span class="lang lang-en">Redrawn workflow diagram covering communication setup, I/O mapping, ladder instructions and star-delta motor starting control.</span>
+            <span class="lang lang-zh">星形-三角形电机启动控制案例，包含主电路、I/O 分配表和启动、切换、停止保护动作过程。</span>
+            <span class="lang lang-en">Star-delta motor starting case with the main circuit, I/O allocation table and the start, transition and stop-protection sequence.</span>
           </figcaption>
         </figure>
       </section>
@@ -125,7 +125,7 @@
               <ul class="detail-list">
                 <li><span class="lang lang-zh">大学课程实验项目，面向 PLC 基础控制逻辑、实验箱 I/O 回路和电机启动顺序控制。</span><span class="lang lang-en">University laboratory project focused on PLC control logic, training-box I/O circuits and motor starting sequence control.</span></li>
                 <li><span class="lang lang-zh">项目内容适合展示自动化、电气控制、设备技术支持和测试工程入门岗位中的基础分析能力。</span><span class="lang lang-en">Relevant to entry-level automation, electrical control, equipment support and testing roles.</span></li>
-                <li><span class="lang lang-zh">页面采用重绘示意图和结构化文字说明，避免直接依赖扫描页作为主要视觉素材。</span><span class="lang lang-en">The page uses a redrawn diagram and structured explanation rather than relying on scanned pages as primary visuals.</span></li>
+                <li><span class="lang lang-zh">项目材料覆盖实验平台、输入输出回路、梯形图指令和电机顺序控制案例。</span><span class="lang lang-en">The project material covers the laboratory platform, I/O circuits, ladder instructions and motor sequence-control examples.</span></li>
               </ul>
             </section>
           </div>
@@ -202,24 +202,51 @@
 
           <section class="case-visuals section-anchor" aria-labelledby="visual-title">
             <div class="case-visuals-heading">
-              <p class="section-kicker"><span class="lang lang-zh">视觉素材建议</span><span class="lang lang-en">Visual Asset Plan</span></p>
+              <p class="section-kicker"><span class="lang lang-zh">项目图示</span><span class="lang lang-en">Project Visuals</span></p>
               <h3 id="visual-title">
-                <span class="lang lang-zh">用于网页展示的工程视觉证据</span>
-                <span class="lang lang-en">Engineering Visuals for Portfolio Display</span>
+                <span class="lang lang-zh">PLC 实验平台、I/O 回路与控制逻辑</span>
+                <span class="lang lang-en">PLC Laboratory Platform, I/O Circuit and Control Logic</span>
               </h3>
               <p>
-                <span class="lang lang-zh">网页主图采用重绘流程图。详情页可补充 I/O 回路图、基础梯形图示例和定时器/计数器示意图。软件通信截图若公开使用，应裁剪或隐藏网络地址和设备识别信息。</span>
-                <span class="lang lang-en">The hero image uses a redrawn workflow diagram. Detail sections can add the I/O circuit, ladder examples and timer/counter diagrams. Software communication screenshots should be cropped or masked before public use.</span>
+                <span class="lang lang-zh">以下图示展示了项目中的实验平台、输入输出回路、基础梯形图指令和星形-三角形电机启动控制逻辑。它们对应通信配置、I/O 映射、程序逻辑和电机顺序控制四个关键环节。</span>
+                <span class="lang lang-en">The visuals below show the laboratory platform, input-output circuit, basic ladder instructions and star-delta motor starting logic used in the project. They correspond to communication setup, I/O mapping, program logic and motor sequence control.</span>
               </p>
             </div>
 
             <div class="project-visual-grid">
-              <figure class="project-visual-card project-visual-card-wide">
-                <img src="../assets/projects/plc-control-logic.svg" alt="Redrawn PLC control workflow diagram" />
+              <figure class="project-visual-card">
+                <img src="../assets/projects/plc-training-unit-hardware.jpg" alt="PLC training unit with Ethernet interface" />
                 <figcaption>
-                  <strong><span class="lang lang-zh">PLC 控制逻辑流程图</span><span class="lang lang-en">PLC Control Workflow</span></strong>
-                  <span class="lang lang-zh">该图概括了项目从通信配置、I/O 映射、梯形图指令到电机启动控制的技术递进关系，适合作为详情页顶部和项目卡片缩略图。</span>
-                  <span class="lang lang-en">This diagram summarises the project progression from communication setup and I/O mapping to ladder instructions and motor starting control, making it suitable for both the hero image and project-card thumbnail.</span>
+                  <strong><span class="lang lang-zh">PLC 实验平台</span><span class="lang lang-en">PLC Laboratory Platform</span></strong>
+                  <span class="lang lang-zh">该图展示 PLC 实验箱和以太网接口，用于说明 PC 与 PLC 建立通信、下载程序和开展基础控制实验的硬件环境。</span>
+                  <span class="lang lang-en">This figure shows the PLC training unit and Ethernet interface used for PC-PLC communication, program download and basic control experiments.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/plc-io-wiring-diagram.jpg" alt="PLC input and output circuit wiring diagram" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">输入输出回路</span><span class="lang lang-en">Input-Output Circuit</span></strong>
+                  <span class="lang lang-zh">该图展示按钮、输入端、输出端和指示灯之间的连接关系，用于解释物理元件如何映射到 PLC 输入和输出地址。</span>
+                  <span class="lang lang-en">This figure shows the connection between switches, input terminals, output terminals and indicator lamps, explaining how physical elements map to PLC I/O addresses.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/plc-basic-ladder-instructions.jpg" alt="Basic PLC ladder instruction examples and statement list" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">基础梯形图指令</span><span class="lang lang-en">Basic Ladder Instructions</span></strong>
+                  <span class="lang lang-zh">该图展示触点、线圈、串并联逻辑与语句表之间的对应关系，是理解 PLC 程序表达方式的基础。</span>
+                  <span class="lang lang-en">This figure shows contacts, coils, series/parallel logic and statement-list equivalents, forming the basis for interpreting PLC program expressions.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="project-visual-card">
+                <img src="../assets/projects/plc-star-delta-control-case.jpg" alt="Star-delta motor starting circuit, I/O allocation and action sequence" />
+                <figcaption>
+                  <strong><span class="lang lang-zh">星形-三角形启动控制</span><span class="lang lang-en">Star-Delta Starting Control</span></strong>
+                  <span class="lang lang-zh">该图展示三相异步电动机星形-三角形启动的主电路、I/O 分配和动作过程，重点在延时切换、接触器状态和停止保护逻辑。</span>
+                  <span class="lang lang-en">This figure shows the main circuit, I/O allocation and action sequence for star-delta starting, with emphasis on timed transition, contactor states and stop protection.</span>
                 </figcaption>
               </figure>
             </div>
