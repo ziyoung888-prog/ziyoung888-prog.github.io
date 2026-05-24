@@ -774,9 +774,9 @@ h3 {
 .portrait-frame img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 4.35;
+  aspect-ratio: 4 / 4.6;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center 12%;
 }
 
 .console-data {
@@ -1292,6 +1292,41 @@ h3 {
   font-weight: 700;
 }
 
+.education-head {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.education-head img {
+  display: block;
+  width: 68px;
+  height: 68px;
+  padding: 8px;
+  object-fit: contain;
+  border: 1px solid var(--line-strong);
+  background: rgba(238, 245, 241, 0.95);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+}
+
+.education-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.education-tags span {
+  border: 1px solid rgba(126, 247, 215, 0.16);
+  padding: 6px 9px;
+  color: #c7dedf;
+  background: rgba(112, 245, 221, 0.06);
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.2;
+}
+
 .experience-head {
   display: grid;
   grid-template-columns: 82px minmax(0, 1fr);
@@ -1356,6 +1391,29 @@ h3 {
   height: 7px;
   border: 1px solid var(--cyan);
   background: rgba(112, 245, 221, 0.12);
+}
+
+.experience-photo {
+  margin: 18px 0 0;
+  border: 1px solid rgba(126, 247, 215, 0.14);
+  background: rgba(7, 16, 21, 0.36);
+}
+
+.experience-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+.experience-photo figcaption {
+  margin: 0;
+  padding: 11px 14px 12px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+  border-top: 1px solid rgba(126, 247, 215, 0.12);
 }
 
 .skills-section {
@@ -1759,8 +1817,8 @@ h3 {
   }
 
   .portrait-frame img {
-    aspect-ratio: 16 / 12;
-    object-position: center 20%;
+    aspect-ratio: 4 / 4.4;
+    object-position: center 10%;
   }
 
   .hero-path,
@@ -1788,6 +1846,24 @@ h3 {
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .education-head {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .education-head img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .education-tags {
+    gap: 7px;
+  }
+
+  .experience-photo img {
+    aspect-ratio: 4 / 3;
   }
 
   .award-item,
