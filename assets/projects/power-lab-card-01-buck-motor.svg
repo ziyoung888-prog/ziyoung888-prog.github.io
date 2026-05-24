@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Power engineering laboratory visual</title>
+  <desc id="desc">A technical illustration combining a buck converter circuit, measurement traces and induction motor torque-speed analysis.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07151a"/>
+      <stop offset="1" stop-color="#12362f"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" x2="1">
+      <stop offset="0" stop-color="#70f5dd"/>
+      <stop offset="1" stop-color="#49d17c"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="960" height="640" fill="url(#bg)"/>
+  <g opacity=".18" stroke="#70f5dd" stroke-width="1">
+    <path d="M0 80H960M0 160H960M0 240H960M0 320H960M0 400H960M0 480H960M0 560H960"/>
+    <path d="M120 0V640M240 0V640M360 0V640M480 0V640M600 0V640M720 0V640M840 0V640"/>
+  </g>
+  <rect x="52" y="50" width="856" height="540" fill="#071015" opacity=".72" stroke="#244f4d"/>
+  <text x="82" y="105" fill="#e7fffb" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">Power Engineering Laboratory</text>
+  <text x="82" y="137" fill="#9fb9bc" font-family="Consolas, monospace" font-size="16">Buck converter measurement + induction motor equivalent-circuit analysis</text>
+
+  <g transform="translate(86 190)">
+    <rect width="360" height="250" rx="4" fill="#0b2024" stroke="#2c615d"/>
+    <text x="22" y="38" fill="#70f5dd" font-family="Consolas, monospace" font-size="17" font-weight="700">BUCK CONVERTER</text>
+    <path d="M42 122H96M96 122v-38h52v76h52M200 122h42m0-42v84m0-84l56 42-56 42M298 122h42" fill="none" stroke="url(#cyan)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    <path d="M120 84l28 76M160 84l-28 76" stroke="#ffc457" stroke-width="3"/>
+    <path d="M64 188c32-54 58-20 92-58s58 12 96-44 62 0 86-28" fill="none" stroke="#ffc457" stroke-width="4"/>
+    <text x="22" y="222" fill="#cfe6e5" font-family="Consolas, monospace" font-size="14">Efficiency: 82.84% SyncBuck ON</text>
+  </g>
+
+  <g transform="translate(514 190)">
+    <rect width="360" height="250" rx="4" fill="#0b2024" stroke="#2c615d"/>
+    <text x="22" y="38" fill="#70f5dd" font-family="Consolas, monospace" font-size="17" font-weight="700">INDUCTION MOTOR</text>
+    <circle cx="106" cy="126" r="62" fill="none" stroke="#70f5dd" stroke-width="6"/>
+    <circle cx="106" cy="126" r="28" fill="none" stroke="#ffc457" stroke-width="5"/>
+    <path d="M72 84l68 84M140 84l-68 84M44 126h124" stroke="#70f5dd" stroke-width="3" opacity=".75"/>
+    <path d="M200 188c12-70 58-122 128-130" fill="none" stroke="#ffc457" stroke-width="5" stroke-linecap="round"/>
+    <path d="M198 188H336M198 188V58" stroke="#6c8a8c" stroke-width="2"/>
+    <text x="206" y="222" fill="#cfe6e5" font-family="Consolas, monospace" font-size="14">Max efficiency: 40.1691%</text>
+  </g>
+
+  <g transform="translate(86 482)" font-family="Consolas, monospace" font-size="14">
+    <rect width="788" height="56" rx="3" fill="#0a171c" stroke="#244f4d"/>
+    <text x="20" y="35" fill="#70f5dd">OSCILLOSCOPE</text>
+    <text x="178" y="35" fill="#ffc457">POWER ANALYSER</text>
+    <text x="358" y="35" fill="#70f5dd">LTSPICE</text>
+    <text x="485" y="35" fill="#ffc457">MATLAB</text>
+    <text x="612" y="35" fill="#70f5dd">VIVA PRESENTATION</text>
+  </g>
+</svg>
