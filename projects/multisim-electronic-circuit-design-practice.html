@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="电基础设计实验项目，包含模电实验 OCL 音频功率放大器设计与数电实验交通信号灯控制器设计，覆盖参数计算、Multisim 仿真、逻辑设计、结果检验和总结反思。"
+      content="电基础设计实验项目，包含模电实验 OCL 音频功率放大器设计与数电实验交通信号灯控制器设计，覆盖参数计算、Multisim 仿真、面包板实物复现、逻辑设计、结果检验和总结反思。"
     />
     <title>电基础设计实验：模电与数电综合设计 | 吴子洋</title>
     <link rel="stylesheet" href="../styles.css" />
@@ -52,10 +52,10 @@
           </h1>
           <p class="hero-lead">
             <span class="lang lang-zh">
-              该项目由两个本科电基础设计实验组成：模电部分完成 OCL 音频功率放大器设计，数电部分完成交通信号灯控制器设计。项目从设计任务和技术指标出发，完成电路方案论证、参数计算、元器件选择、Multisim 仿真、结果检验和问题反思，训练了从电路理论到可验证设计结果的完整工程思维。
+              该项目由两个本科电基础设计实验组成：模电部分完成 OCL 音频功率放大器设计，数电部分完成交通信号灯控制器设计。项目从设计任务和技术指标出发，完成电路方案论证、参数计算、元器件选择、Multisim 仿真、面包板实物复现、结果检验和问题反思，训练了从电路理论到可验证设计结果的完整工程思维。
             </span>
             <span class="lang lang-en">
-              This undergraduate circuit design project combines an OCL audio power amplifier and a traffic signal controller. It covered requirement breakdown, circuit design, parameter calculation, component selection, Multisim simulation, result checking and reflection.
+              This undergraduate circuit design project combines an OCL audio power amplifier and a traffic signal controller. It covered requirement breakdown, component selection, Multisim simulation, breadboard implementation, result checking and reflection.
             </span>
           </p>
           <div class="tag-row">
@@ -64,14 +64,14 @@
             <span class="tag-chip">74LS190</span>
             <span class="tag-chip">74LS138</span>
             <span class="tag-chip">555</span>
-            <span class="tag-chip"><span class="lang lang-zh">模电 / 数电</span><span class="lang lang-en">Analogue / Digital</span></span>
+            <span class="tag-chip"><span class="lang lang-zh">面包板实物调试</span><span class="lang lang-en">Breadboard Debugging</span></span>
           </div>
         </div>
         <figure class="brief-hero-media">
           <img src="../assets/projects/circuit-card-01-multisim-systems.svg" alt="电基础设计实验中的 OCL 功率放大器和交通信号灯控制器仿真流程图" />
           <figcaption>
-            <span class="lang lang-zh">项目图示展示了模电与数电两条设计路径：从指标分解、参数计算进入 Multisim 仿真，再通过结果检验和问题反思形成实验报告。</span>
-            <span class="lang lang-en">The visual shows the analogue and digital design paths from requirements and calculation to Multisim simulation, result checking and reporting.</span>
+            <span class="lang lang-zh">项目图示展示了模电与数电两条设计路径：模电侧围绕功放指标进行仿真检验，数电侧先完成 Multisim 逻辑仿真，再用面包板和真实芯片复现交通灯控制器。</span>
+            <span class="lang lang-en">The visual shows the analogue simulation path and the digital workflow from Multisim logic verification to breadboard implementation.</span>
           </figcaption>
         </figure>
       </section>
@@ -83,7 +83,7 @@
             <div><strong>5W</strong><span><span class="lang lang-zh">功放目标输出功率</span><span class="lang lang-en">amplifier target power</span></span></div>
             <div><strong>0.197%</strong><span><span class="lang lang-zh">功放失真度结果</span><span class="lang lang-en">recorded distortion</span></span></div>
             <div><strong>12.242Hz-25.176kHz</strong><span><span class="lang lang-zh">仿真通频带结果</span><span class="lang lang-en">simulated bandwidth</span></span></div>
-            <div><strong>30s / 20s / 5s</strong><span><span class="lang lang-zh">交通灯时序</span><span class="lang lang-en">traffic timing</span></span></div>
+            <div><strong>面包板</strong><span><span class="lang lang-zh">数电实物复现</span><span class="lang lang-en">digital hardware build</span></span></div>
           </div>
 
           <nav class="case-map" aria-label="Project section navigation">
@@ -108,15 +108,15 @@
               <article>
                 <strong><span class="lang lang-zh">工程意义</span><span class="lang lang-en">Engineering meaning</span></strong>
                 <p>
-                  <span class="lang lang-zh">模电部分强调连续信号、功率输出、频率响应、失真和零点漂移；数电部分强调计数、译码、状态切换、时序控制和复位逻辑。两部分放在一起，能帮助我理解电子系统往往同时包含“模拟信号质量”和“数字控制逻辑”，设计时既要算得出来，也要能仿真验证。</span>
-                  <span class="lang lang-en">The analogue part focused on signal quality and power behaviour; the digital part focused on counting, decoding, timing and reset logic. Together they connect signal behaviour with control logic.</span>
+                  <span class="lang lang-zh">模电部分强调连续信号、功率输出、频率响应、失真和零点漂移；数电部分强调计数、译码、状态切换、时序控制、复位逻辑和真实插线调试。两部分放在一起，能帮助我理解电子系统既要在软件里验证逻辑，也要在真实器件连接中接受检验。</span>
+                  <span class="lang lang-en">The analogue part focused on signal quality and power behaviour; the digital part focused on counting, decoding, timing, reset logic and physical wiring debug.</span>
                 </p>
               </article>
               <article>
                 <strong><span class="lang lang-zh">对个人能力的帮助</span><span class="lang lang-en">Personal development</span></strong>
                 <p>
-                  <span class="lang lang-zh">这个项目强化了我拆解任务、计算参数、搭建仿真、根据结果反向修改设计的能力。报告中的反思也让我更早意识到：电路设计不是一次性画完图，而是反复检查连接、芯片状态、参数取值和局部功能的过程。</span>
-                  <span class="lang lang-en">The project strengthened requirement breakdown, parameter calculation, simulation setup and result-driven design adjustment. It also trained systematic checking instead of one-pass schematic drawing.</span>
+                  <span class="lang lang-zh">这个项目强化了我拆解任务、计算参数、搭建仿真、实物插线和根据结果反向修改设计的能力。报告中的反思也让我更早意识到：电路设计不是一次性画完图，而是反复检查连接、芯片状态、参数取值和局部功能的过程。</span>
+                  <span class="lang lang-en">The project strengthened requirement breakdown, parameter calculation, simulation setup, breadboard wiring and result-driven design adjustment.</span>
                 </p>
               </article>
             </div>
@@ -133,7 +133,7 @@
               <article class="portfolio-card">
                 <span class="tag"><span class="lang lang-zh">数电实验</span><span class="lang lang-en">Digital Lab</span></span>
                 <h5><span class="lang lang-zh">交通信号灯控制器设计</span><span class="lang lang-en">Traffic Signal Controller</span></h5>
-                <p><span class="lang lang-zh">使用 555 多谐振荡器、74LS190 同步十进制可逆计数器、74LS138 译码器、4511 显示译码芯片和门电路，实现主干道 30 秒、支干道 20 秒、黄灯 5 秒、1Hz 闪烁和系统归零功能。</span><span class="lang lang-en">Used a 555 timer, 74LS190 counters, 74LS138 decoder, 4511 display drivers and logic gates to implement traffic-light timing and reset behaviour.</span></p>
+                <p><span class="lang lang-zh">先在 Multisim 中使用 555 多谐振荡器、74LS190 同步十进制可逆计数器、74LS138 译码器、4511 显示译码芯片和门电路完成交通灯逻辑设计，再在面包板上用真实芯片和元器件复现仿真方案，实现主干道 30 秒、支干道 20 秒、黄灯 5 秒、1Hz 闪烁和系统归零功能。</span><span class="lang lang-en">Designed the traffic-light logic in Multisim with a 555 timer, 74LS190 counters, 74LS138 decoder, 4511 display drivers and logic gates, then reproduced the design on a breadboard with real chips and components.</span></p>
               </article>
             </div>
           </section>
@@ -145,7 +145,7 @@
                 <tbody>
                   <tr>
                     <th><span class="lang lang-zh">阶段一</span><span class="lang lang-en">Stage 1</span></th>
-                    <td><span class="lang lang-zh">拆解实验指标：模电侧关注输出功率、负载阻抗、输入信号、通频带、失真度和零点漂移；数电侧关注主支干道时序、倒计时显示、黄灯闪烁和复位功能。</span><span class="lang lang-en">Break down analogue targets for power and signal quality, and digital targets for timing, countdown display, flashing and reset.</span></td>
+                    <td><span class="lang lang-zh">拆解实验指标：模电侧关注输出功率、负载阻抗、输入信号、通频带、失真度和零点漂移；数电侧关注主支干道时序、倒计时显示、黄灯闪烁、复位功能和面包板实物复现可行性。</span><span class="lang lang-en">Break down analogue targets for power and signal quality, and digital targets for timing, display, flashing, reset and breadboard feasibility.</span></td>
                   </tr>
                   <tr>
                     <th><span class="lang lang-zh">阶段二</span><span class="lang lang-en">Stage 2</span></th>
@@ -157,11 +157,11 @@
                   </tr>
                   <tr>
                     <th><span class="lang lang-zh">阶段四</span><span class="lang lang-en">Stage 4</span></th>
-                    <td><span class="lang lang-zh">在 Multisim 中搭建并调试电路，使用虚拟示波器、功率表、失真度测试仪、波特图仪、数码管和 LED 状态显示检查电路表现。</span><span class="lang lang-en">Build and debug the circuits in Multisim using virtual instruments, waveform checks, display devices and LED state outputs.</span></td>
+                    <td><span class="lang lang-zh">在 Multisim 中搭建并调试电路，使用虚拟示波器、功率表、失真度测试仪、波特图仪、数码管和 LED 状态显示检查电路表现；数电部分在仿真通过后，进一步用面包板、真实芯片和元器件进行插线复现。</span><span class="lang lang-en">Build and debug the circuits in Multisim; after digital simulation passed, reproduce the traffic-light design on a breadboard with real chips and components.</span></td>
                   </tr>
                   <tr>
                     <th><span class="lang lang-zh">阶段五</span><span class="lang lang-en">Stage 5</span></th>
-                    <td><span class="lang lang-zh">根据仿真结果复核指标并总结问题：包括功放输出、失真、零点漂移、通频带、静态工作点，以及交通灯倒计时、状态转换、布线混乱、芯片连接和分块排查经验。</span><span class="lang lang-en">Check simulated results against targets and summarise issues around amplifier metrics, timing logic, wiring layout, chip connection and modular troubleshooting.</span></td>
+                    <td><span class="lang lang-zh">根据仿真和实物调试结果复核指标并总结问题：包括功放输出、失真、零点漂移、通频带、静态工作点，以及交通灯倒计时、状态转换、面包板布线、芯片引脚、器件检查和分块排查经验。</span><span class="lang lang-en">Check simulation and hardware results against targets, then summarise amplifier metrics, timing logic, breadboard wiring, chip pins and modular troubleshooting.</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -184,9 +184,9 @@
                 <h5><span class="lang lang-zh">数电实验结果</span><span class="lang lang-en">Digital results</span></h5>
                 <ul class="detail-list">
                   <li><span class="lang lang-zh">实现主干道绿灯 30 秒、主干道黄灯 5 秒、支干道绿灯 20 秒、支干道黄灯 5 秒的循环状态。</span><span class="lang lang-en">Implemented 30s main-road green, 5s main-road yellow, 20s branch-road green and 5s branch-road yellow states.</span></li>
-                  <li><span class="lang lang-zh">使用两个 74LS190 级联实现两位数码管倒计时，并通过译码与逻辑门控制红黄绿 LED 状态。</span><span class="lang lang-en">Used cascaded 74LS190 counters for two-digit countdown and decoding logic for LED states.</span></li>
+                  <li><span class="lang lang-zh">使用两个 74LS190 级联实现两位数码管倒计时，并通过译码与逻辑门控制红黄绿 LED 状态；仿真方案进一步在面包板上用真实芯片和元器件进行插线复现。</span><span class="lang lang-en">Used cascaded 74LS190 counters for two-digit countdown and decoding logic for LED states, then reproduced the simulated design on a breadboard.</span></li>
                   <li><span class="lang lang-zh">黄灯按 1Hz 闪烁，并设置系统归零按钮。</span><span class="lang lang-en">Implemented 1Hz yellow-light flashing and a system reset button.</span></li>
-                  <li><span class="lang lang-zh">实验反思记录了布线交叉、元件参数选择、芯片引脚问题和非门输入输出接反等调试问题，并总结了分块检查和重新布线的重要性。</span><span class="lang lang-en">The report reflects on wiring, component selection, chip-pin issues and modular troubleshooting.</span></li>
+                  <li><span class="lang lang-zh">实验反思记录了布线交叉、元件参数选择、插板前芯片检查不足、芯片引脚问题和非门输入输出接反等调试问题，并总结了分块检查和重新布线的重要性。</span><span class="lang lang-en">The report reflects on wiring, component selection, chip checking before breadboarding, chip-pin issues and modular troubleshooting.</span></li>
                 </ul>
               </div>
             </div>
@@ -196,7 +196,7 @@
             <h4><span class="lang lang-zh">对个人能力与岗位需求的联系</span><span class="lang lang-en">Relevance to Engineering Roles</span></h4>
             <p class="case-note">
               <span class="lang lang-zh">
-                这个项目适合支撑硬件测试、电子助理工程师、设备调试、自动化基础、质量验证和技术支持相关岗位。模电部分训练了指标到参数的推导、频响与失真判断、虚拟仪表测量和结果解释；数电部分训练了计数器级联、状态译码、时序控制、复位逻辑和故障定位。对早期工程岗位而言，它展示的是把课程知识转化为可检查、可调试、可复盘设计结果的基础能力。
+                这个项目适合支撑硬件测试、电子助理工程师、设备调试、自动化基础、质量验证和技术支持相关岗位。模电部分训练了指标到参数的推导、频响与失真判断、虚拟仪表测量和结果解释；数电部分训练了计数器级联、状态译码、时序控制、复位逻辑、面包板插线和真实芯片故障定位。对早期工程岗位而言，它展示的是把课程知识转化为可检查、可调试、可复盘设计结果的基础能力。
               </span>
               <span class="lang lang-en">
                 This project maps to hardware testing, junior electronics engineering, equipment debugging, automation fundamentals, quality verification and technical support. It connects specification analysis, circuit modelling, simulation checking and troubleshooting.
@@ -209,8 +209,8 @@
             <figure class="brief-hero-media">
               <img src="../assets/projects/circuit-card-01-multisim-systems.svg" alt="电基础设计实验流程图：模电 OCL 功放与数电交通灯控制器" />
               <figcaption>
-                <span class="lang lang-zh">电基础设计实验流程图：展示 OCL 音频功率放大器和交通信号灯控制器如何从指标、参数计算进入 Multisim 仿真与结果检验。</span>
-                <span class="lang lang-en">Electrical foundation design lab visual showing the OCL amplifier and traffic signal controller workflow.</span>
+                <span class="lang lang-zh">电基础设计实验流程图：展示 OCL 音频功率放大器如何完成仿真检验，以及交通信号灯控制器如何从 Multisim 逻辑仿真进入面包板实物复现。</span>
+                <span class="lang lang-en">Electrical foundation design lab visual showing the OCL amplifier simulation path and traffic signal controller breadboard workflow.</span>
               </figcaption>
             </figure>
           </section>
@@ -219,7 +219,7 @@
             <h4><span class="lang lang-zh">项目问答</span><span class="lang lang-en">Project FAQ</span></h4>
             <details>
               <summary><span class="lang lang-zh">这个项目的设计重点是什么？</span><span class="lang lang-en">What was the main design focus?</span></summary>
-              <p><span class="lang lang-zh">项目重点是从指标开始组织设计流程。模电部分需要根据输出功率、负载、通频带、输入信号和失真要求选择 OCL 功放结构并计算参数；数电部分需要把交通灯规则转成计数、置数、译码和状态循环逻辑。Multisim 用于验证设计是否符合预期，而设计判断来自指标拆解、器件理解和调试过程。</span><span class="lang lang-en">The project started from design requirements. Multisim was used to verify circuit behaviour, while the design judgement came from requirement breakdown, component understanding and debugging.</span></p>
+              <p><span class="lang lang-zh">项目重点是从指标开始组织设计流程。模电部分需要根据输出功率、负载、通频带、输入信号和失真要求选择 OCL 功放结构并计算参数；数电部分需要把交通灯规则转成计数、置数、译码和状态循环逻辑，并把 Multisim 中验证通过的方案用面包板和真实芯片复现。设计判断来自指标拆解、器件理解、软件验证和硬件调试过程。</span><span class="lang lang-en">The project started from design requirements. The digital design was verified in Multisim and then reproduced on a breadboard with real chips and components.</span></p>
             </details>
             <details>
               <summary><span class="lang lang-zh">模电部分最关键的技术点是什么？</span><span class="lang lang-en">What was the key analogue design point?</span></summary>
@@ -227,7 +227,7 @@
             </details>
             <details>
               <summary><span class="lang lang-zh">数电部分最关键的技术点是什么？</span><span class="lang lang-en">What was the key digital design point?</span></summary>
-              <p><span class="lang lang-zh">关键点是把交通灯运行规则转成可循环的数字逻辑。项目使用 555 产生 1Hz 时钟，使用 74LS190 实现倒计时和状态累加，使用 74LS138 译码输出不同交通状态，再通过门电路控制 LED 和数码管显示。调试时需要处理连线、置数、级联、芯片引脚和复位逻辑问题。</span><span class="lang lang-en">The key was converting traffic-light behaviour into cyclic digital logic using clock generation, counters, decoding and display control.</span></p>
+              <p><span class="lang lang-zh">关键点是把交通灯运行规则转成可循环的数字逻辑，并从软件仿真走到真实硬件复现。项目使用 555 产生 1Hz 时钟，使用 74LS190 实现倒计时和状态累加，使用 74LS138 译码输出不同交通状态，再通过门电路控制 LED 和数码管显示。面包板调试时需要处理插线、置数、级联、芯片引脚、器件检查和复位逻辑问题。</span><span class="lang lang-en">The key was converting traffic-light behaviour into cyclic digital logic and reproducing the verified design on physical breadboard hardware.</span></p>
             </details>
           </section>
         </article>
