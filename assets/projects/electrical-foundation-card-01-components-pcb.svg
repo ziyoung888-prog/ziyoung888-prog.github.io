@@ -1,0 +1,46 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Electrical foundation practice visual</title>
+  <desc id="desc">A clean portfolio illustration of component recognition, Multisim simulation, PCB routing and soldering debug workflow.</desc>
+  <rect width="960" height="640" rx="36" fill="#F7FAFC"/>
+  <rect x="44" y="48" width="872" height="544" rx="30" fill="#FFFFFF" stroke="#D7E1EA" stroke-width="2"/>
+  <path d="M91 165H858" stroke="#E7EEF5" stroke-width="2"/>
+  <circle cx="104" cy="106" r="14" fill="#EF4444"/>
+  <circle cx="146" cy="106" r="14" fill="#F59E0B"/>
+  <circle cx="188" cy="106" r="14" fill="#22C55E"/>
+  <text x="238" y="116" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#17324D">电基础认知实践</text>
+  <text x="238" y="146" font-family="Inter, Arial, sans-serif" font-size="16" fill="#5B7288">元器件识别 · Multisim 仿真 · Ultiboard PCB · 焊接调试</text>
+
+  <rect x="92" y="208" width="202" height="138" rx="20" fill="#EEF7FF" stroke="#C7DDF4" stroke-width="2"/>
+  <text x="119" y="244" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17324D">元器件识别</text>
+  <path d="M123 286H174" stroke="#2F80ED" stroke-width="8" stroke-linecap="round"/>
+  <path d="M174 286L192 268L211 304L230 268L248 304L266 286H286" stroke="#2F80ED" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="153" cy="315" r="16" fill="#FFFFFF" stroke="#16A34A" stroke-width="5"/>
+  <path d="M146 315H160M153 308V322" stroke="#16A34A" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="379" y="208" width="202" height="138" rx="20" fill="#F6F1FF" stroke="#D7C6F3" stroke-width="2"/>
+  <text x="406" y="244" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17324D">仿真验证</text>
+  <rect x="410" y="266" width="142" height="52" rx="10" fill="#FFFFFF" stroke="#7C3AED" stroke-width="3"/>
+  <path d="M422 292C438 268 454 316 470 292C486 268 502 316 518 292C532 272 542 302 552 286" stroke="#7C3AED" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="420" y="334" font-family="Inter, Arial, sans-serif" font-size="13" fill="#6B5A80">Multisim waveform</text>
+
+  <rect x="666" y="208" width="202" height="138" rx="20" fill="#F0FDF4" stroke="#BEE6C9" stroke-width="2"/>
+  <text x="693" y="244" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17324D">PCB 绘制</text>
+  <rect x="707" y="267" width="118" height="60" rx="12" fill="#14532D"/>
+  <circle cx="730" cy="286" r="8" fill="#A7F3D0"/>
+  <circle cx="802" cy="286" r="8" fill="#A7F3D0"/>
+  <circle cx="766" cy="310" r="8" fill="#A7F3D0"/>
+  <path d="M730 286H766V310H802V286" stroke="#86EFAC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M309 277H356" stroke="#7E93A8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M346 267L356 277L346 287" stroke="#7E93A8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M596 277H643" stroke="#7E93A8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M633 267L643 277L633 287" stroke="#7E93A8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="180" y="418" width="600" height="86" rx="22" fill="#FFF7ED" stroke="#FED7AA" stroke-width="2"/>
+  <text x="217" y="454" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17324D">焊接装配与故障调试</text>
+  <text x="217" y="485" font-family="Inter, Arial, sans-serif" font-size="15" fill="#6B7280">把原理图、PCB、元器件极性、焊点质量和测量结果连接成完整硬件实践闭环</text>
+  <path d="M694 444L734 484" stroke="#EA580C" stroke-width="8" stroke-linecap="round"/>
+  <path d="M719 431L707 443L735 471L747 459C756 450 756 438 747 429C738 420 726 421 719 431Z" fill="#FDBA74" stroke="#EA580C" stroke-width="4"/>
+  <circle cx="674" cy="424" r="10" fill="#EA580C"/>
+  <path d="M675 434C670 460 661 478 642 494" stroke="#EA580C" stroke-width="4" stroke-linecap="round"/>
+</svg>
