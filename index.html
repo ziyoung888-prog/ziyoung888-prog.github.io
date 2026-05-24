@@ -42,6 +42,13 @@
       <section class="hero">
         <div class="hero-copy">
           <p class="eyebrow"><span class="lang lang-zh">电力系统 / 光伏储能 / 风电建模</span><span class="lang lang-en">POWER SYSTEMS / PV-BESS / WIND MODELLING</span></p>
+          <div class="electric-symbols" aria-hidden="true">
+            <span>AC</span>
+            <span>DC</span>
+            <span>Ω</span>
+            <span>∿</span>
+            <span>⏚</span>
+          </div>
           <h1>
             <span class="lang lang-zh">面向新能源系统的电气工程应届生</span>
             <span class="lang lang-en">Electrical engineering graduate focused on renewable energy systems</span>
@@ -66,18 +73,26 @@
             </a>
           </div>
 
-          <div class="signal-strip" aria-label="核心能力指标">
-            <span><strong>939 kWp</strong> <span class="lang lang-zh">光伏系统设计</span><span class="lang lang-en">PV design</span></span>
-            <span><strong>1164.8 kWh</strong> <span class="lang lang-zh">储能容量配置</span><span class="lang lang-en">BESS sizing</span></span>
-            <span><strong>12 MW</strong> <span class="lang lang-zh">风机模型</span><span class="lang lang-en">wind turbine model</span></span>
+          <div class="hero-path" aria-label="核心能力路径">
+            <span>
+              <strong><span class="lang lang-zh">建模</span><span class="lang lang-en">Model</span></strong>
+              <span class="lang lang-zh">把电气问题转化为可计算模型</span>
+              <span class="lang lang-en">Turn engineering problems into computable models</span>
+            </span>
+            <span>
+              <strong><span class="lang lang-zh">仿真</span><span class="lang lang-en">Simulate</span></strong>
+              <span class="lang lang-zh">用工程软件比较方案与运行状态</span>
+              <span class="lang lang-en">Compare scenarios and operating conditions</span>
+            </span>
+            <span>
+              <strong><span class="lang lang-zh">验证</span><span class="lang lang-en">Validate</span></strong>
+              <span class="lang lang-zh">结合结果解释、测试和技术文档输出</span>
+              <span class="lang lang-en">Interpret results through testing and reporting</span>
+            </span>
           </div>
         </div>
 
-        <aside class="hero-console" aria-label="候选人概览">
-          <div class="console-topline">
-            <span class="status-dot"></span>
-            <span><span class="lang lang-zh">候选人信息</span><span class="lang lang-en">Candidate profile online</span></span>
-          </div>
+        <aside class="hero-console" aria-label="个人概览">
           <div class="portrait-frame">
             <img src="./assets/profile-photo.png" alt="吴子洋头像" />
           </div>
@@ -401,10 +416,10 @@
               </h3>
               <p>
                 <span class="lang lang-zh">
-                  学习电力系统分析、可再生能源集成、电网运行与调度、电力电子、先进控制方法、数据驱动建模等课程，并在项目中使用 MATLAB/Simulink、PVsyst、ASHES 完成建模、仿真与数据分析。
+                  围绕电力系统分析、可再生能源集成、电网运行与调度、电力电子、先进控制方法和数据驱动建模建立硕士阶段知识框架。课程项目中使用 MATLAB/Simulink、PVsyst、ASHES、PowerWorld 等工具完成建模、仿真、结果解释和技术报告输出，训练方向对应新能源系统设计、电力系统分析、工程仿真、测试验证和技术支持岗位。
                 </span>
                 <span class="lang lang-en">
-                  Studied power system analysis, renewable energy integration, grid operation and dispatch, power electronics, advanced control and data-driven modelling, applying MATLAB/Simulink, PVsyst and ASHES in modelling, simulation and data analysis projects.
+                  Built postgraduate knowledge across power system analysis, renewable energy integration, grid operation and dispatch, power electronics, advanced control and data-driven modelling. Coursework projects used MATLAB/Simulink, PVsyst, ASHES and PowerWorld for modelling, simulation, result interpretation and technical reporting, aligning with renewable energy, power-system analysis, engineering simulation, testing and technical-support roles.
                 </span>
               </p>
             </div>
@@ -418,10 +433,10 @@
               </h3>
               <p>
                 <span class="lang lang-zh">
-                  学习电路原理、电机与电力拖动、自动控制原理、信号与系统、嵌入式系统、电力电子技术和电力系统分析，通过课程设计与实验积累电路建模、系统仿真和控制策略验证经验。
+                  本科阶段系统学习电路原理、电机与电力拖动、自动控制原理、信号与系统、嵌入式系统、电力电子技术和电力系统分析。通过 PLC、EDA、单片机、Multisim 电路设计和光伏并网逆变器仿真等课程实践，积累硬件接口理解、控制逻辑设计、仿真验证和实验报告表达经验，可衔接自动化控制、测试工程、设备调试和电气技术支持岗位。
                 </span>
                 <span class="lang lang-en">
-                  Built foundations in circuit theory, electrical machines and drives, automatic control, signals and systems, embedded systems, power electronics and power system analysis, with practical experience in circuit modelling, system simulation and control strategy validation.
+                  Built undergraduate foundations in circuit theory, electrical machines and drives, automatic control, signals and systems, embedded systems, power electronics and power system analysis. Coursework practice in PLC, EDA, 8051 microcontrollers, Multisim circuit design and PV-inverter simulation developed hardware-interface understanding, control-logic design, simulation validation and technical reporting for automation, testing, commissioning and electrical technical-support roles.
                 </span>
               </p>
             </div>
@@ -442,35 +457,57 @@
           <article class="timeline-item">
             <time>2023.09 - 2023.10</time>
             <div>
-              <h3>
-                <span class="lang lang-zh">中车大连机车车辆有限公司 · 生产跟单实习</span>
-                <span class="lang lang-en">CRRC Dalian · Production Follow-up Intern</span>
-              </h3>
-              <p>
-                <span class="lang lang-zh">
-                  参与安全生产培训并通过公司三级安全教育测试；在城铁分厂、电气分厂观察生产流程，了解自动焊接产线和关键生产环节，与工程师沟通生产效率优化和设备可靠性问题。
-                </span>
-                <span class="lang lang-en">
-                  Completed safety production training and observed production workflows in urban rail and electrical workshops, including automated welding lines, key production stages, production-efficiency improvement and equipment-reliability issues.
-                </span>
-              </p>
+              <div class="experience-head">
+                <div class="company-mark company-mark-crrc" aria-hidden="true">CRRC</div>
+                <div>
+                  <h3>
+                    <span class="lang lang-zh">中车大连机车车辆有限公司 · 生产实习生</span>
+                    <span class="lang lang-en">CRRC Dalian · Production Intern</span>
+                  </h3>
+                  <p class="experience-subtitle">
+                    <span class="lang lang-zh">轨道交通装备制造 / 安全生产 / 工艺认知</span>
+                    <span class="lang lang-en">Rail-transit manufacturing / Safety / Production process</span>
+                  </p>
+                </div>
+              </div>
+              <ul class="experience-list">
+                <li>
+                  <span class="lang lang-zh">系统完成中车集团三级安全生产培训并通过考核，覆盖人身防护、设备操作规范和应急处置流程，全程零违规完成实习任务。</span>
+                  <span class="lang lang-en">Completed CRRC three-level safety training and assessment, covering personal protection, equipment operation rules and emergency procedures, with no violations during the internship.</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">深入城铁分厂、电气分厂等 4 个核心车间，梳理全自动焊接等关键制造工序，与一线工程师交流生产效率提升思路，增强对大型规范化制造体系的理解。</span>
+                  <span class="lang lang-en">Visited four core workshops including urban-rail and electrical workshops, reviewed key processes such as automated welding, and discussed production-efficiency improvement with front-line engineers.</span>
+                </li>
+              </ul>
             </div>
           </article>
           <article class="timeline-item">
             <time>2022.07 - 2022.09</time>
             <div>
-              <h3>
-                <span class="lang lang-zh">深圳市芯隆通电子科技有限公司 · 测试工程师实习</span>
-                <span class="lang lang-en">Shenzhen Xinlongtong Electronics · Test Engineer Intern</span>
-              </h3>
-              <p>
-                <span class="lang lang-zh">
-                  参与硬件测试和设备维护，依据测试结果提出产品缺陷改进建议；负责 IC 夹具与自动烧录设备的操作、调试和维护，通过预防性维护降低设备故障率并支持生产线效率提升。
-                </span>
-                <span class="lang lang-en">
-                  Supported hardware testing and equipment maintenance, proposed product-defect improvements from test results, and operated, debugged and maintained IC fixtures and automatic programming equipment to reduce downtime and support production efficiency.
-                </span>
-              </p>
+              <div class="experience-head">
+                <div class="company-mark company-mark-chip" aria-hidden="true">芯隆通</div>
+                <div>
+                  <h3>
+                    <span class="lang lang-zh">深圳市芯隆通电子科技有限公司 · 测试工程师实习生</span>
+                    <span class="lang lang-en">Shenzhen Xinlongtong Electronics · Test Engineer Intern</span>
+                  </h3>
+                  <p class="experience-subtitle">
+                    <span class="lang lang-zh">芯片功能测试 / 自动烧录设备维护 / 缺陷记录</span>
+                    <span class="lang lang-en">IC functional testing / Programming equipment maintenance / Defect logging</span>
+                  </p>
+                </div>
+              </div>
+              <ul class="experience-list">
+                <li>
+                  <span class="lang lang-zh">对多款型号芯片执行功能测试，覆盖过流检测、开机功能验证和启动速度测量；按型号切换配置夹具测试程序，分类记录缺陷并输出改进建议。</span>
+                  <span class="lang lang-en">Performed functional testing for multiple IC models, covering over-current detection, power-on verification and start-up speed measurement; switched fixture programmes by model, logged defects and provided improvement suggestions.</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">维护 3 台自动烧录机，排查吸嘴定位偏移、Z 轴行程和冲击力三类精度故障并完成参数校准；结合 IC 夹具预防性点检，建立标准化排查流程和故障解决方案库，设备故障率降低 30%。</span>
+                  <span class="lang lang-en">Maintained three automatic programming machines, resolved nozzle-position offset, Z-axis travel and impact-force accuracy issues, calibrated parameters, and built a troubleshooting workflow and fault-solution library that reduced equipment failure rate by 30%.</span>
+                </li>
+              </ul>
             </div>
           </article>
         </div>
@@ -485,35 +522,44 @@
           </h2>
         </div>
 
-        <div class="skills-grid">
-          <article class="skill-block">
+        <div class="skills-loop" aria-label="闭环能力矩阵">
+          <div class="skills-loop-core">
+            <span class="lang lang-zh">岗位方向</span>
+            <span class="lang lang-en">Role Focus</span>
+            <strong>
+              <span class="lang lang-zh">新能源工程 · 测试验证 · 技术支持</span>
+              <span class="lang lang-en">Renewable Energy · Testing · Technical Support</span>
+            </strong>
+          </div>
+          <article class="skill-node skill-node-1">
             <span>01</span>
-            <h3><span class="lang lang-zh">电力工程</span><span class="lang lang-en">Power Engineering</span></h3>
-            <p>
-              <span class="lang lang-zh">电力系统分析、电力电子、电机与电力拖动、自动控制、配电网分析</span>
-              <span class="lang lang-en">Power system analysis, power electronics, electrical machines and drives, automatic control, distribution network analysis</span>
-            </p>
+            <h3><span class="lang lang-zh">电气工程基础</span><span class="lang lang-en">Electrical Foundation</span></h3>
+            <p><span class="lang lang-zh">电力系统、电力电子、电机拖动和自动控制基础，可支撑电气方案理解与工程问题拆解。</span><span class="lang lang-en">Power systems, power electronics, drives and control foundations for engineering problem breakdown.</span></p>
           </article>
-          <article class="skill-block">
+          <article class="skill-node skill-node-2">
             <span>02</span>
-            <h3><span class="lang lang-zh">新能源系统</span><span class="lang lang-en">Renewable Systems</span></h3>
-            <p>
-              <span class="lang lang-zh">光伏储能系统设计、BESS 配置、峰值削减、经济性分析、并网支撑</span>
-              <span class="lang lang-en">PV-BESS system design, BESS sizing, peak shaving, techno-economic analysis, grid support</span>
-            </p>
+            <h3><span class="lang lang-zh">新能源建模</span><span class="lang lang-en">Renewable Modelling</span></h3>
+            <p><span class="lang lang-zh">使用 PVsyst、ASHES、PowerWorld、MATLAB/Simulink 进行光伏、储能、风电和电力系统仿真。</span><span class="lang lang-en">PV, BESS, wind and power-system simulation using PVsyst, ASHES, PowerWorld and MATLAB/Simulink.</span></p>
           </article>
-          <article class="skill-block">
+          <article class="skill-node skill-node-3">
             <span>03</span>
-            <h3><span class="lang lang-zh">仿真与工程软件</span><span class="lang lang-en">Simulation Tools</span></h3>
-            <p><span class="lang lang-zh">MATLAB/Simulink、PVsyst、ASHES、Multisim、Vivado、Excel、Visio</span><span class="lang lang-en">MATLAB/Simulink, PVsyst, ASHES, Multisim, Vivado, MS Excel, MS Visio</span></p>
+            <h3><span class="lang lang-zh">测试与验证</span><span class="lang lang-en">Testing and Validation</span></h3>
+            <p><span class="lang lang-zh">具备芯片功能测试、夹具配置、自动烧录设备维护和仿真结果校核经历，适配测试工程岗位。</span><span class="lang lang-en">IC functional testing, fixture setup, equipment maintenance and simulation checking for testing roles.</span></p>
           </article>
-          <article class="skill-block">
+          <article class="skill-node skill-node-4">
             <span>04</span>
-            <h3><span class="lang lang-zh">沟通与文档</span><span class="lang lang-en">Communication</span></h3>
-            <p>
-              <span class="lang lang-zh">英语熟练，雅思、大学英语六级；具备跨文化学习经历和技术文档表达能力</span>
-              <span class="lang lang-en">Proficient English communication, IELTS and CET-6 background, cross-cultural study experience and technical documentation ability</span>
-            </p>
+            <h3><span class="lang lang-zh">控制与硬件实践</span><span class="lang lang-en">Control and Hardware</span></h3>
+            <p><span class="lang lang-zh">覆盖 PLC、Verilog HDL、51 单片机、Multisim 电路仿真，能衔接自动化控制和设备调试场景。</span><span class="lang lang-en">PLC, Verilog HDL, 8051 and Multisim practice for automation and commissioning contexts.</span></p>
+          </article>
+          <article class="skill-node skill-node-5">
+            <span>05</span>
+            <h3><span class="lang lang-zh">质量与现场意识</span><span class="lang lang-en">Quality and Site Awareness</span></h3>
+            <p><span class="lang lang-zh">经历安全生产培训、车间工艺观察和设备故障排查，理解规范化生产环境中的安全、效率和质量要求。</span><span class="lang lang-en">Safety training, workshop process observation and equipment troubleshooting experience.</span></p>
+          </article>
+          <article class="skill-node skill-node-6">
+            <span>06</span>
+            <h3><span class="lang lang-zh">技术表达</span><span class="lang lang-en">Technical Communication</span></h3>
+            <p><span class="lang lang-zh">具备英文课程、技术报告、竞赛论文和项目展示经验，可把复杂技术结果转化为清晰文档。</span><span class="lang lang-en">English coursework, technical reports, competition papers and project presentation experience.</span></p>
           </article>
         </div>
       </section>
@@ -614,7 +660,7 @@
                   <span class="lang lang-en">CET-6 English Certificate</span>
                 </h3>
                 <span class="award-level">
-                  <span class="lang lang-zh">语言能力证明</span>
+                  <span class="lang lang-zh">语言能力</span>
                   <span class="lang lang-en">Language Certificate</span>
                 </span>
               </div>
@@ -640,7 +686,7 @@
                   <span class="lang lang-en">IELTS 6.5</span>
                 </h3>
                 <span class="award-level">
-                  <span class="lang lang-zh">语言能力证明</span>
+                  <span class="lang lang-zh">语言能力</span>
                   <span class="lang lang-en">Language Certificate</span>
                 </span>
               </div>
@@ -819,8 +865,8 @@
         <div>
           <p class="section-kicker"><span class="lang lang-zh">联系</span><span class="lang lang-en">Contact</span></p>
           <h2>
-            <span class="lang lang-zh">期待新能源、电气工程、测试工程与技术支持相关机会。</span>
-            <span class="lang lang-en">Open to opportunities in renewable energy, electrical engineering, testing engineering and technical support.</span>
+            <span class="lang lang-zh">愿把每一次仿真、测试与现场观察，汇成更可靠的新能源与电气工程方案。</span>
+            <span class="lang lang-en">Ready to turn simulation, testing and field observation into more reliable renewable-energy and electrical-engineering solutions.</span>
           </h2>
         </div>
         <div class="contact-panel">
