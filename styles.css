@@ -467,6 +467,8 @@ h3 {
 }
 
 .brief-table-wrap {
+  width: 100%;
+  max-width: 100%;
   overflow-x: auto;
 }
 
@@ -1007,6 +1009,7 @@ h3 {
 }
 
 .case-study {
+  overflow: hidden;
   margin-top: 28px;
   border: 1px solid var(--line-strong);
   background:
@@ -1168,6 +1171,40 @@ h3 {
   font-size: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.project-rationale {
+  margin-top: 18px;
+}
+
+.rationale-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.rationale-grid article {
+  border: 1px solid rgba(126, 247, 215, 0.14);
+  background:
+    linear-gradient(180deg, rgba(112, 245, 221, 0.06), transparent),
+    rgba(7, 16, 21, 0.34);
+  padding: 18px;
+}
+
+.rationale-grid strong {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: var(--amber);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+.rationale-grid p {
+  margin: 0;
+  color: #c6dbdd;
+  font-size: 14.5px;
+  line-height: 1.74;
 }
 
 .star-list {
@@ -1865,6 +1902,7 @@ h3 {
   .case-grid,
   .case-map,
   .result-emphasis,
+  .rationale-grid,
   .skills-grid,
   .skills-loop,
   .workflow-grid {
