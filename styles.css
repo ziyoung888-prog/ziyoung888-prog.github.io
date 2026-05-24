@@ -1292,6 +1292,12 @@ h3 {
   font-weight: 700;
 }
 
+.timeline-meta {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+
 .education-head {
   display: grid;
   grid-template-columns: 76px minmax(0, 1fr);
@@ -1318,13 +1324,35 @@ h3 {
 }
 
 .education-tags span {
-  border: 1px solid rgba(126, 247, 215, 0.16);
-  padding: 6px 9px;
-  color: #c7dedf;
-  background: rgba(112, 245, 221, 0.06);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(126, 247, 215, 0.24);
+  border-radius: 999px;
+  padding: 7px 11px;
+  color: #e5f7f4;
+  background:
+    linear-gradient(135deg, rgba(112, 245, 221, 0.2), rgba(73, 209, 124, 0.08)),
+    rgba(8, 23, 28, 0.82);
   font-family: var(--mono);
   font-size: 11px;
   line-height: 1.2;
+  box-shadow: inset 0 0 18px rgba(112, 245, 221, 0.06);
+}
+
+.education-tags span:nth-child(3n + 2) {
+  border-color: rgba(255, 196, 87, 0.34);
+  color: #ffe7aa;
+  background:
+    linear-gradient(135deg, rgba(255, 196, 87, 0.2), rgba(112, 245, 221, 0.06)),
+    rgba(22, 20, 11, 0.76);
+}
+
+.education-tags span:nth-child(3n) {
+  border-color: rgba(112, 160, 255, 0.32);
+  color: #d7e3ff;
+  background:
+    linear-gradient(135deg, rgba(112, 160, 255, 0.2), rgba(112, 245, 221, 0.06)),
+    rgba(9, 16, 32, 0.78);
 }
 
 .experience-head {
@@ -1394,7 +1422,7 @@ h3 {
 }
 
 .experience-photo {
-  margin: 18px 0 0;
+  margin: 0;
   border: 1px solid rgba(126, 247, 215, 0.14);
   background: rgba(7, 16, 21, 0.36);
 }
@@ -1402,17 +1430,17 @@ h3 {
 .experience-photo img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: center;
 }
 
 .experience-photo figcaption {
   margin: 0;
-  padding: 11px 14px 12px;
+  padding: 8px 10px 9px;
   color: var(--muted);
-  font-size: 13px;
-  line-height: 1.65;
+  font-size: 11.5px;
+  line-height: 1.55;
   border-top: 1px solid rgba(126, 247, 215, 0.12);
 }
 
@@ -1863,7 +1891,7 @@ h3 {
   }
 
   .experience-photo img {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 9;
   }
 
   .award-item,
