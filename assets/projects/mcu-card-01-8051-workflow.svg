@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">8051 microcontroller development workflow</title>
+  <desc id="desc">A clean portfolio diagram showing Keil C51 coding, HEX generation, Proteus simulation, interrupt logic, timer logic and UART communication for an 8051 microcontroller project.</desc>
+  <rect width="900" height="620" fill="#f8fafc"/>
+  <rect x="44" y="42" width="812" height="536" rx="28" fill="#ffffff" stroke="#dbe3ee" stroke-width="2"/>
+  <text x="80" y="96" fill="#0f172a" font-family="Arial, sans-serif" font-size="30" font-weight="700">8051 Embedded System Workflow</text>
+  <text x="80" y="128" fill="#475569" font-family="Arial, sans-serif" font-size="16">Keil C51 · Proteus VSM · Interrupts · Timers · UART</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="80" y="178" width="170" height="92" rx="16" fill="#e0f2fe" stroke="#38bdf8"/>
+    <text x="105" y="218" fill="#075985" font-size="18" font-weight="700">Keil C51</text>
+    <text x="105" y="246" fill="#075985" font-size="14">C source code</text>
+    <rect x="310" y="178" width="170" height="92" rx="16" fill="#ecfdf5" stroke="#34d399"/>
+    <text x="335" y="218" fill="#047857" font-size="18" font-weight="700">Build HEX</text>
+    <text x="335" y="246" fill="#047857" font-size="14">firmware output</text>
+    <rect x="540" y="178" width="220" height="92" rx="16" fill="#fef3c7" stroke="#f59e0b"/>
+    <text x="565" y="218" fill="#92400e" font-size="18" font-weight="700">Proteus VSM</text>
+    <text x="565" y="246" fill="#92400e" font-size="14">circuit simulation</text>
+    <path d="M250 224H310" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M480 224H540" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="80" y="342" width="210" height="112" rx="16" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="110" y="382" fill="#0f172a" font-size="18" font-weight="700">Interrupt Control</text>
+    <text x="110" y="412" fill="#475569" font-size="14">INT0 / INT1 priority</text>
+    <rect x="345" y="342" width="210" height="112" rx="16" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="375" y="382" fill="#0f172a" font-size="18" font-weight="700">Timer Logic</text>
+    <text x="375" y="412" fill="#475569" font-size="14">TMOD / TH0 / TL0</text>
+    <rect x="610" y="342" width="210" height="112" rx="16" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="640" y="382" fill="#0f172a" font-size="18" font-weight="700">UART Serial</text>
+    <text x="640" y="412" fill="#475569" font-size="14">SCON / SBUF / 9600 bps</text>
+    <path d="M650 270V318H185V342" fill="none" stroke="#64748b" stroke-width="3"/>
+    <path d="M650 318H450V342" fill="none" stroke="#64748b" stroke-width="3"/>
+    <path d="M650 318H715V342" fill="none" stroke="#64748b" stroke-width="3"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

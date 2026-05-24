@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="51单片机系统设计与嵌入式编程实践项目，覆盖 Keil C51、Proteus、外部中断、定时器计数器和 UART 串行通信。" />
+    <title>51单片机系统设计与嵌入式编程实践 | 吴子洋</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body data-lang="zh">
+    <div class="page-grid" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="../index.html#top" aria-label="返回首页">
+        <span class="brand-mark">WZY</span>
+        <span><strong>吴子洋</strong><small>Electrical Engineering Portfolio</small></span>
+      </a>
+      <div class="header-actions">
+        <nav class="nav" aria-label="项目页面导航">
+          <a href="../index.html#projects"><span class="lang lang-zh">项目</span><span class="lang lang-en">Projects</span></a>
+          <a href="../index.html#skills"><span class="lang lang-zh">技能</span><span class="lang lang-en">Skills</span></a>
+          <a href="../index.html#contact"><span class="lang lang-zh">联系</span><span class="lang lang-en">Contact</span></a>
+        </nav>
+        <button class="language-toggle" type="button" aria-label="Switch language">
+          <span data-lang-label="zh">EN</span><span data-lang-label="en">中文</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section project-detail-hero project-brief-hero">
+        <div class="brief-copy">
+          <a class="back-link" href="../index.html#projects"><span class="lang lang-zh">返回项目经历</span><span class="lang lang-en">Back to Projects</span></a>
+          <p class="section-kicker"><span class="lang lang-zh">项目详情 · 大学课程实验项目</span><span class="lang lang-en">Project Detail · University Laboratory Project</span></p>
+          <h1><span class="lang lang-zh">51单片机系统设计与嵌入式编程实践</span><span class="lang lang-en">8051 Microcontroller System Design and Embedded C Practice</span></h1>
+          <p class="hero-lead">
+            <span class="lang lang-zh">该项目基于“单片机原理及应用”课程材料，围绕 MCS-51 体系结构、Keil C51 编程和 Proteus VSM 仿真展开。项目覆盖外部中断优先级、定时器/计数器初值计算、UART 串行通信配置、HEX 固件生成和仿真调试流程，将 51 单片机硬件寄存器、C51 程序结构和外设控制逻辑连接为一个完整的嵌入式实验流程。</span>
+            <span class="lang lang-en">This academic laboratory project is based on the Microcontroller Principles and Applications course. It covers MCS-51 architecture, Keil C51 programming and Proteus VSM simulation, linking interrupt priority, timer/counter calculation, UART configuration, HEX firmware generation and simulated peripheral control into one embedded-system workflow.</span>
+          </p>
+          <div class="tag-row">
+            <span class="tag-chip">Keil C51</span>
+            <span class="tag-chip">Proteus VSM</span>
+            <span class="tag-chip">MCS-51</span>
+            <span class="tag-chip">UART</span>
+            <span class="tag-chip"><span class="lang lang-zh">中断与定时器</span><span class="lang lang-en">Interrupts & Timers</span></span>
+          </div>
+        </div>
+        <figure class="brief-hero-media">
+          <img src="../assets/projects/mcu-card-01-8051-workflow.svg" alt="8051 单片机开发流程示意图" />
+          <figcaption><span class="lang lang-zh">8051 单片机实验开发流程，展示从 Keil C51 编程、HEX 生成到 Proteus 仿真，以及中断、定时器和 UART 外设逻辑。</span><span class="lang lang-en">8051 development workflow from Keil C51 coding and HEX generation to Proteus simulation, interrupt handling, timer logic and UART communication.</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="section project-detail-section">
+        <article class="case-study">
+          <div class="case-metrics case-metrics-compact">
+            <div><strong>10/10</strong><span><span class="lang lang-zh">章节作业完成</span><span class="lang lang-en">course tasks</span></span></div>
+            <div><strong>3</strong><span><span class="lang lang-zh">综合实验</span><span class="lang lang-en">lab exercises</span></span></div>
+            <div><strong>86/100</strong><span><span class="lang lang-zh">中断实验成绩</span><span class="lang lang-en">interrupt lab score</span></span></div>
+            <div><strong>0x4C00</strong><span><span class="lang lang-zh">50ms 定时初值</span><span class="lang lang-en">timer preload</span></span></div>
+            <div><strong>0xFD</strong><span><span class="lang lang-zh">9600bps 串口初值</span><span class="lang lang-en">UART reload</span></span></div>
+          </div>
+
+          <div class="case-grid">
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">问题背景</span><span class="lang lang-en">Problem Context</span></h4>
+              <p class="case-note"><span class="lang lang-zh">单片机应用系统需要同时理解硬件寄存器、外设时序、程序结构和电路连接。对于中断响应、定时输出和串行通信等常见场景，工程人员需要把寄存器配置、C 程序、I/O 端口和仿真结果对应起来，才能判断系统行为是否符合设计目标。</span><span class="lang lang-en">Microcontroller applications require an understanding of registers, peripheral timing, program structure and circuit connections. Interrupt response, timed output and serial communication all require a clear mapping between register settings, C code, I/O ports and simulation behaviour.</span></p>
+            </section>
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">项目定位</span><span class="lang lang-en">Project Type</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">大学课程实验项目，面向嵌入式基础、单片机外设编程和电路仿真验证。</span><span class="lang lang-en">University laboratory project focused on embedded fundamentals, microcontroller peripheral programming and circuit simulation.</span></li>
+                <li><span class="lang lang-zh">项目内容覆盖 MCS-51 硬件结构、特殊功能寄存器、C51 程序、外部中断、定时器和 UART。</span><span class="lang lang-en">The project covers MCS-51 hardware structure, special function registers, C51 programming, external interrupts, timers and UART.</span></li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="case-panel case-wide section-anchor">
+            <h4><span class="lang lang-zh">技术流程</span><span class="lang lang-en">Technical Workflow</span></h4>
+            <div class="brief-table-wrap">
+              <table class="brief-table"><tbody>
+                <tr><th><span class="lang lang-zh">阶段一</span><span class="lang lang-en">Stage 1</span></th><td><span class="lang lang-zh">建立 Keil C51 工程，选择 AT89C51/STC89C52 目标芯片，编写 C51 源文件并生成 HEX 固件。</span><span class="lang lang-en">Create a Keil C51 project, select the target AT89C51/STC89C52 device, write C51 source code and generate HEX firmware.</span></td></tr>
+                <tr><th><span class="lang lang-zh">阶段二</span><span class="lang lang-en">Stage 2</span></th><td><span class="lang lang-zh">在 Proteus 中绘制单片机最小系统和外围电路，加载 HEX 文件，观察 LED、按键和串口终端等外设响应。</span><span class="lang lang-en">Draw the minimum microcontroller system and peripheral circuit in Proteus, load the HEX file and observe LED, button and serial-terminal responses.</span></td></tr>
+                <tr><th><span class="lang lang-zh">阶段三</span><span class="lang lang-en">Stage 3</span></th><td><span class="lang lang-zh">配置 INT0/INT1 外部中断、IE/IP 优先级和 ISR 程序，验证不同优先级中断对流水灯状态的影响。</span><span class="lang lang-en">Configure INT0/INT1 external interrupts, IE/IP priority and ISR routines, then verify how interrupt priority changes LED sequence behaviour.</span></td></tr>
+                <tr><th><span class="lang lang-zh">阶段四</span><span class="lang lang-en">Stage 4</span></th><td><span class="lang lang-zh">基于 11.0592MHz 晶振计算定时器初值和 UART 波特率初值，用 TH0/TL0、TMOD、SCON、SBUF 等寄存器实现定时输出与 9600bps 串口收发。</span><span class="lang lang-en">Calculate timer preload and UART reload values from an 11.0592MHz clock, using TH0/TL0, TMOD, SCON and SBUF for timed output and 9600bps serial communication.</span></td></tr>
+              </tbody></table>
+            </div>
+          </section>
+
+          <div class="case-grid">
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">技术工作</span><span class="lang lang-en">Technical Contribution</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">使用 C51 编写流水灯主程序、外部中断服务程序、定时器中断程序和串口收发函数。</span><span class="lang lang-en">Wrote C51 routines for LED sequencing, external interrupt service, timer interrupts and UART send/receive functions.</span></li>
+                <li><span class="lang lang-zh">配置 EX0/EX1、IT0/IT1、PX0/PX1 等中断相关位，分析边沿触发与优先级对程序执行顺序的影响。</span><span class="lang lang-en">Configured EX0/EX1, IT0/IT1 and PX0/PX1 settings to analyse edge-triggered interrupt behaviour and priority effects.</span></li>
+                <li><span class="lang lang-zh">根据 50ms 定时目标推导 TH0=0x4C、TL0=0x00，并在定时中断中手动重装初值。</span><span class="lang lang-en">Derived TH0=0x4C and TL0=0x00 for a 50ms timing target and reloaded the timer values inside the interrupt routine.</span></li>
+                <li><span class="lang lang-zh">使用 T1 方式 2 自动重装产生 9600bps 波特率，配置 SCON、REN、TI/RI 标志位完成串口通信逻辑。</span><span class="lang lang-en">Used Timer 1 mode 2 auto-reload to generate a 9600bps baud rate and configured SCON, REN, TI/RI flags for serial communication logic.</span></li>
+              </ul>
+            </section>
+            <section class="case-panel section-anchor">
+              <h4><span class="lang lang-zh">工具与方法</span><span class="lang lang-en">Tools and Methods</span></h4>
+              <ul class="detail-list">
+                <li><span class="lang lang-zh">工具：Keil µVision C51、Proteus VSM、AT89/STC 系列 51 单片机、HEX 固件文件。</span><span class="lang lang-en">Tools: Keil µVision C51, Proteus VSM, AT89/STC 8051-family microcontrollers and HEX firmware files.</span></li>
+                <li><span class="lang lang-zh">方法：寄存器配置、I/O 端口控制、外部中断、定时器初值计算、UART 波特率计算、仿真调试。</span><span class="lang lang-en">Methods: register configuration, I/O control, external interrupts, timer preload calculation, UART baud-rate calculation and simulation debugging.</span></li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="case-panel case-wide section-anchor">
+            <h4><span class="lang lang-zh">选定输出</span><span class="lang lang-en">Selected Outputs</span></h4>
+            <ul class="detail-list">
+              <li><span class="lang lang-zh">外部中断实验：主程序 P1 口流水灯，INT0 触发全亮/全灭闪烁，INT1 触发高低 4 位交替显示。</span><span class="lang lang-en">External interrupt lab: P1 LED sequence in the main loop, INT0 for all-on/all-off flashing and INT1 for high/low four-bit alternation.</span></li>
+              <li><span class="lang lang-zh">定时器实验：T0 方式 1 下使用 0x4C00 初值实现 50ms 定时，并通过计数累加实现周期输出。</span><span class="lang lang-en">Timer lab: T0 mode 1 uses 0x4C00 preload for 50ms timing and counter accumulation for periodic output.</span></li>
+              <li><span class="lang lang-zh">串口实验：T1 方式 2 自动重装，TH1/TL1=0xFD，对应 11.0592MHz 晶振下 9600bps 串口通信。</span><span class="lang lang-en">UART lab: T1 mode 2 auto-reload with TH1/TL1=0xFD for 9600bps serial communication with an 11.0592MHz crystal.</span></li>
+            </ul>
+          </section>
+
+          <section class="case-panel case-wide section-anchor">
+            <h4><span class="lang lang-zh">工程相关性</span><span class="lang lang-en">Engineering Relevance</span></h4>
+            <p class="case-note"><span class="lang lang-zh">该项目与嵌入式开发、硬件测试、设备调试、自动化控制和技术支持岗位中的基础任务相关。项目训练了从寄存器配置、代码编写、电路连接到仿真验证的闭环流程，可迁移到传感器采集、按键输入、状态指示、串口调试和小型控制器维护等入门级工程场景。</span><span class="lang lang-en">This project is relevant to embedded development, hardware testing, equipment debugging, automation control and technical support. It trains the closed loop from register configuration and coding to circuit connection and simulation verification.</span></p>
+          </section>
+        </article>
+      </section>
+    </main>
+    <button class="to-top" type="button" aria-label="Back to top">↑</button>
+    <script src="../script.js"></script>
+  </body>
+</html>
