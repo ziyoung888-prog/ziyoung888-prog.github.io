@@ -268,10 +268,26 @@
 
             <div class="faq-list-compact">
               <details>
+                <summary><span class="lang lang-zh">珀斯地区的光照条件在项目中如何取值？</span><span class="lang lang-en">How was the Perth solar resource represented in the project?</span></summary>
+                <div class="faq-answer">
+                  <span class="lang lang-zh">课程报告中的太阳资源对比表给出珀斯月平均日照时长约 8-9 h/day，折算全年约 2920-3285 h/year；同时给出峰值日照时数（Peak Sun Hours）约 5 h/day，全球水平辐照度（Global Horizontal Irradiance, GHI）约 5.4-6.2 kWh/m²/day，直接法向辐照度（Direct Normal Irradiance, DNI）约 6.0-6.5 kWh/m²/day。项目容量初算采用 9 h/day 作为日照时长假设，用 Fremantle 港口 50% 年用电目标 2786.67 MWh/year 反推最小阵列功率约 848.3 kW，最终方案配置为 939 kWp。</span>
+                  <span class="lang lang-en">The solar-resource comparison table used in the report lists Perth monthly average sunshine duration at about 8-9 h/day, equivalent to about 2920-3285 h/year. It also lists peak sun hours at about 5 h/day, GHI at about 5.4-6.2 kWh/m²/day and DNI at about 6.0-6.5 kWh/m²/day. The preliminary sizing used 9 h/day and a 2786.67 MWh/year target for 50% of Fremantle Harbour electricity demand, giving a minimum array size of about 848.3 kW. The final design used 939 kWp.</span>
+                </div>
+              </details>
+
+              <details>
                 <summary><span class="lang lang-zh">电池具体用了什么型号？容量是怎么来的？</span><span class="lang lang-en">Which battery model was used, and how was capacity calculated?</span></summary>
                 <div class="faq-answer">
                   <span class="lang lang-zh">报告采用 BYD Battery Box Premium HVS 12.8 的光伏仿真软件（PVsyst）数据库参数。单个电池单元按 512 V、25 Ah 计算，项目采用 1 串 91 并，因此理想容量为 1 × 91 × 512 V × 25 Ah = 1,164,800 Wh，即 1164.8 kWh。考虑 80% 放电深度（Depth of Discharge, DoD），可用容量约 931.8 kWh。报告还给出电池生命周期可储能量约 5534.7 MWh，用于说明该配置能够支持商业负荷削峰填谷，但仍不足以完全解决高光伏渗透率下的电网调节问题。</span>
                   <span class="lang lang-en">The report used PVsyst database parameters for BYD Battery Box Premium HVS 12.8. Each battery unit is modelled as 512 V and 25 Ah. With 1 in series and 91 in parallel, ideal capacity is 1 x 91 x 512 V x 25 Ah = 1,164,800 Wh, or 1164.8 kWh. At 80% depth of discharge, usable energy is about 931.8 kWh. The report also gives about 5534.7 MWh lifetime stored energy, supporting peak trimming and valley filling but not enough to fully regulate a high-PV-penetration port system.</span>
+                </div>
+              </details>
+
+              <details>
+                <summary><span class="lang lang-zh">储能充满电需要多久？充放电功率如何理解？</span><span class="lang lang-en">How long would the battery take to charge, and how should charge power be interpreted?</span></summary>
+                <div class="faq-answer">
+                  <span class="lang lang-zh">本课程设计明确给出了储能能量容量，但没有单独给出电池变流器（Power Conversion System, PCS）的额定充放电功率，因此不能把“几小时充满”写成固定设备参数。可用于面试解释的边界是：系统配置 26 台 30 kWac 串型逆变器，交流侧总容量为 780 kWac；若只做理论上限估算，1164.8 kWh 名义容量在 780 kW 下约需 1.49 h，931.8 kWh 可用容量约需 1.19 h。但真实充电时间取决于光伏富余功率、PCS 额定功率、SOC 限制、温度和控制策略，不能直接等同于光伏逆变器容量除以电池容量。</span>
+                  <span class="lang lang-en">The coursework design specifies battery energy capacity but does not define a separate PCS charge/discharge power rating, so charging time should not be presented as a fixed equipment parameter. A useful interview boundary is that the PV system uses 26 x 30 kWac string inverters, giving 780 kWac total AC capacity. As a theoretical upper-bound estimate, 1164.8 kWh nominal capacity would take about 1.49 h at 780 kW, and 931.8 kWh usable capacity about 1.19 h. In practice, charging time depends on PV surplus, PCS rating, SOC limits, temperature and control strategy.</span>
                 </div>
               </details>
 

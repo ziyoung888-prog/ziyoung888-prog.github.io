@@ -349,6 +349,22 @@
             <h4><span class="lang lang-zh">技术深挖问答</span><span class="lang lang-en">Technical Deep Dive FAQ</span></h4>
             <div class="qa-grid">
               <details>
+                <summary><span class="lang lang-zh">风电场扩建项目中使用的风机高度和尺寸是多少？</span><span class="lang lang-en">What turbine height and dimensions were used in the wind-farm extension project?</span></summary>
+                <p>
+                  <span class="lang lang-zh">项目中需要区分两个阶段。第一阶段风电场选址和发电量计算使用 GE Haliade-X 级别的 12MW 机型参数：转子直径 220m、轮毂高度 138m、叶尖高度 248m，用于机位布置、遮影距离和能量计算。第二阶段 ASHE 风机设计则建立自定义 12MW 模型：转子半径 110m、叶片长度约 106.64m、轮毂高度 170.74m、3 叶片、单桩基础，额定风速约 10.5m/s，设计叶尖速比 9.6。</span>
+                  <span class="lang lang-en">The project uses two related but distinct turbine definitions. Stage 1 siting and energy calculation used GE Haliade-X class 12MW parameters: 220m rotor diameter, 138m hub height and 248m tip height for layout, shadow-flicker and energy calculations. Stage 2 built a bespoke 12MW ASHE model with 110m rotor radius, about 106.64m blade length, 170.74m hub height, three blades and a monopile foundation, with rated wind speed around 10.5m/s and design TSR 9.6.</span>
+                </p>
+              </details>
+
+              <details>
+                <summary><span class="lang lang-zh">新增风机之间的距离是多少？间距依据是什么？</span><span class="lang lang-en">What turbine spacing was used, and what was the basis for it?</span></summary>
+                <p>
+                  <span class="lang lang-zh">课程报告采用以转子直径 D 为单位的机位间距检查。新增机组转子直径约 220m，因此 5D 约为 1100m，7D 约为 1540m，10D 约为 2200m。报告中采用“主导风向至少 5D、横风向至少 3D”的布置原则，并在展示材料中检查了 5D 和 7D 间距。根据 N1-N7 坐标换算，新增机组最近距离约为 1682m，即约 7.64D；相邻机位距离大致在 1682-2078m 之间，约 7.64D-9.44D。住宅遮影距离按 10D 约 2200m 进行约束检查。</span>
+                  <span class="lang lang-en">The coursework checked turbine spacing using rotor diameter D. With a new-turbine rotor diameter of about 220m, 5D is about 1100m, 7D about 1540m and 10D about 2200m. The report used at least 5D in the prevailing wind direction and at least 3D cross-wind, while the presentation also checked 5D and 7D spacing. Based on the N1-N7 coordinates, the closest new-turbine separation is about 1682m, or 7.64D; adjacent spacing is roughly 1682-2078m, or 7.64D-9.44D. A 10D, about 2200m, buffer was used for residential shadow-flicker checks.</span>
+                </p>
+              </details>
+
+              <details>
                 <summary><span class="lang lang-zh">为什么选择 Boulmer 作为长期修正参考站？</span><span class="lang lang-en">Why was Boulmer selected as the MCP reference station?</span></summary>
                 <p>
                   <span class="lang lang-zh">MCP 步骤比较了 Albemarle、Boulmer、Charterhall、Gogarbank、Leuchars 和 Redesdale Camp 等气象站与 Blyth 场址的日均风速相关性。Boulmer 与 Blyth 的相关关系最好，线性相关系数 R²=0.874，因此被用于长期风速修正。这个选择使后续长期平均风速和 P90 风速不是只依赖短期现场测量，而是结合了更长时间尺度的气象参考数据。</span>
